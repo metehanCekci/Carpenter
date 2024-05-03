@@ -9,12 +9,17 @@ public class movementScript : MonoBehaviour
     public Rigidbody2D rb;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public Animator animator;
 
     private float horizontal;
     public float speed=2.0f;
     public float jumpingPower = 3f;
     public bool isFacingRight = true;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,6 +34,8 @@ public class movementScript : MonoBehaviour
         {
             Flip();
         }
+        animator.SetBool(name: "inAir", value: !isGrounded());
+        animator.SetBool(name: "isWalking", value: Mathf.Abs(horizontal) > 0f);
     }
     public void Jump(InputAction.CallbackContext context)
     {
