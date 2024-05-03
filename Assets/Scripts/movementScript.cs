@@ -35,7 +35,7 @@ public class movementScript : MonoBehaviour
         {
             Flip();
         }
-        animator.SetBool(name: "inAir", value: !isGrounded());
+        animator.SetBool(name: "onAir", value: !isGrounded());
         animator.SetBool(name: "isWalking", value: Mathf.Abs(horizontal) > 0f);
     }
  
