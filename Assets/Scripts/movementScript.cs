@@ -24,6 +24,7 @@ public class movementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
         if (!isFacingRight && horizontal > 0f)
@@ -37,6 +38,7 @@ public class movementScript : MonoBehaviour
         animator.SetBool(name: "inAir", value: !isGrounded());
         animator.SetBool(name: "isWalking", value: Mathf.Abs(horizontal) > 0f);
     }
+
     public void Jump(InputAction.CallbackContext context)
     {
         if (context.performed && isGrounded()) 
