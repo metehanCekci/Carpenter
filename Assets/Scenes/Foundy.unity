@@ -2153,16 +2153,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 6, y: 3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 23, y: 3, z: 0}
     second:
       serializedVersion: 2
@@ -3289,7 +3279,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: b1a2b2440383a0842b3d56ab3b2da8c8, type: 2}
   - m_RefCount: 60
     m_Data: {fileID: 11400000, guid: f1a7de3e4818d0c4ca8b61db904e4b33, type: 2}
-  - m_RefCount: 75
+  - m_RefCount: 74
     m_Data: {fileID: 11400000, guid: 04fa3895caf14a2468866cadec8d0a5e, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -3298,12 +3288,12 @@ Tilemap:
     m_Data: {fileID: 3485604563380180846, guid: 4db84d0a674b066479e7d9713e14eae3, type: 3}
   - m_RefCount: 60
     m_Data: {fileID: 5762951747103802331, guid: 4db84d0a674b066479e7d9713e14eae3, type: 3}
-  - m_RefCount: 75
+  - m_RefCount: 74
     m_Data: {fileID: 4698343848734849731, guid: 4db84d0a674b066479e7d9713e14eae3, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 240
+  - m_RefCount: 239
     m_Data:
       e00: 1
       e01: 0
@@ -3322,7 +3312,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 240
+  - m_RefCount: 239
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -3815,7 +3805,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3705829, y: 0.5255132}
+  m_Offset: {x: 1.2669246, y: 0.5255132}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3826,7 +3816,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0467303, y: 0.20370531}
+  m_Size: {x: 0.8394146, y: 0.20370531}
   m_EdgeRadius: 0
 --- !u!61 &1317751130
 BoxCollider2D:
