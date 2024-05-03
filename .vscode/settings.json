@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Carpenter.sln"
+    "dotnet.defaultSolution": "Marangoz.sln"
 }
