@@ -12,8 +12,8 @@ public class movementScript : MonoBehaviour
     public Animator animator;
 
     private float horizontal;
-    public float speed=2.0f;
-    public float jumpingPower = 3f;
+    public float speed=3.0f;
+    public float jumpingPower = 5f;
     public bool isFacingRight = true;
 
     private void Start()
@@ -38,7 +38,7 @@ public class movementScript : MonoBehaviour
         animator.SetBool(name: "inAir", value: !isGrounded());
         animator.SetBool(name: "isWalking", value: Mathf.Abs(horizontal) > 0f);
     }
-
+ 
     public void Jump(InputAction.CallbackContext context)
     {
         if (context.performed && isGrounded()) 
