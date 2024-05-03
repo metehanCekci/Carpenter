@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9c07fb0c5ebfdf44c9c9e62957ec592e
+guid: 80142bb1743f6e04c9825542d26dcf28
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cyborg_attack1_0
+      name: Cyborg_idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc07838bf3d66284486971a5d1d2aa4e
-      internalID: -2078844486
+      spriteID: 0067be34ed10812408a858a333e48fef
+      internalID: -1837216195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyborg_attack1_1
+      name: Cyborg_idle_1
       rect:
         serializedVersion: 2
         x: 48
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 515629f569b5aec4bafb689b06162291
-      internalID: 1949586896
+      spriteID: 1a86a60d920af1047942ef9034893f6d
+      internalID: -398575868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyborg_attack1_2
+      name: Cyborg_idle_2
       rect:
         serializedVersion: 2
         x: 96
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4992762dde6eff5408edf69e415499f3
-      internalID: 204003013
+      spriteID: cf11a0a276f098343b2a82c243c44f52
+      internalID: -1177116456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cyborg_attack1_3
+      name: Cyborg_idle_3
       rect:
         serializedVersion: 2
         x: 144
@@ -174,50 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5ec4bdf2cfc01c438739729494ca2bf
-      internalID: 1006864408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyborg_attack1_4
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04fd8b679d0d25f4c96f23eb24b153ba
-      internalID: 1669350087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyborg_attack1_5
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbbffeeb81c8e9e47ab642eb6e96e092
-      internalID: -658016370
+      spriteID: 85c2a1d7d23c96144a909dac544c1c69
+      internalID: 105079860
       vertices: []
       indices: 
       edges: []
@@ -233,12 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cyborg_attack1_0: -2078844486
-      Cyborg_attack1_1: 1949586896
-      Cyborg_attack1_2: 204003013
-      Cyborg_attack1_3: 1006864408
-      Cyborg_attack1_4: 1669350087
-      Cyborg_attack1_5: -658016370
+      Cyborg_idle_0: -1837216195
+      Cyborg_idle_1: -398575868
+      Cyborg_idle_2: -1177116456
+      Cyborg_idle_3: 105079860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
