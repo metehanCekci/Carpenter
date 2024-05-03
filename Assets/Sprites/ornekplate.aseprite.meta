@@ -71,9 +71,9 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -84,9 +84,9 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638503778862506970
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 43
       height: 64
-    spriteID: 6b27fa24a9101524f85db4733504e1a7
+    spriteID: 7e85713a8ac115546bf8efc349f6037e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,130 +141,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData:
-  - name: sol
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 47
-      width: 21
-      height: 21
-    spriteID: 2afe0ab62ed01f24da65fcf4a7aa8f85
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: orta
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 47
-      width: 21
-      height: 21
-    spriteID: 3dbf5227f927a374181690a7d4322a46
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: bos
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 4
-      width: 21
-      height: 21
-    spriteID: 4e91e3e28d5f06840b0e6b0509a5331d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: golge
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 26
-      y: 26
-      width: 21
-      height: 21
-    spriteID: bc829dfef72628b4496ee49b86242131
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+  spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1317222744
-    name: Layer 1
-    layerFlags: 3
+    guid: -1328608591
+    name: ornekplate
+    layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 1
+    - name: ornekplate
       frameIndex: 0
       cellRect:
         x: 1
         y: 0
         width: 43
         height: 64
-      spriteId: 08ae5929de5623040855c00330baad65
+      spriteId: 7e85713a8ac115546bf8efc349f6037e
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
