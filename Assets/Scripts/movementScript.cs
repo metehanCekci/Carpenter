@@ -96,19 +96,26 @@ public class movementScript : MonoBehaviour
             int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
             Debug.Log("gecti");
             
-            if (SceneManager.GetActiveScene().buildIndex!=4)
+            if (SceneManager.GetActiveScene().buildIndex!=0)
             {
-                SceneManager.LoadScene(2);
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(1);
+            }
+            if (SceneManager.GetActiveScene().buildIndex==1)
+            {
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(2);
             }
             if (SceneManager.GetActiveScene().buildIndex==2)
             {
-                SceneManager.LoadScene(3);
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(3);
             }
             if (SceneManager.GetActiveScene().buildIndex==3)
             {
-                SceneManager.LoadScene(4);
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(4);
             }
-            
+            if (SceneManager.GetActiveScene().buildIndex==4)
+            {
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(5);
+            }
         }
     }
 
