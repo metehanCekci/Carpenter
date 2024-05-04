@@ -10,6 +10,7 @@ public class movementScript : MonoBehaviour
     public LayerMask groundLayer;
     private Animator animator;
     public GravCheck gravCheck;
+    public GameObject levelChanger;
 
     private float horizontal;
     public float speed = 3.0f;
@@ -21,6 +22,7 @@ public class movementScript : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        levelChanger = GameObject.FindGameObjectWithTag("levelChanger");
         
     }
 
@@ -98,15 +100,15 @@ public class movementScript : MonoBehaviour
             Debug.Log("gecti");
             if (SceneManager.GetActiveScene().buildIndex==1)
             {
-                SceneManager.LoadScene(2);
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(2);
             }
             if (SceneManager.GetActiveScene().buildIndex==2)
             {
-                SceneManager.LoadScene(3);
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(3);
             }
             if (SceneManager.GetActiveScene().buildIndex==3)
             {
-                SceneManager.LoadScene(4);
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(4);
             }
             
         }
