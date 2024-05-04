@@ -123,7 +123,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: attack_Frame_0
     originalName: 
-    pivot: {x: 1.0357144, y: -0.09638554}
+    pivot: {x: 1.035714, y: -0.09638554}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -143,7 +143,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: attack_Frame_1
     originalName: 
-    pivot: {x: 1.117647, y: -0.11904762}
+    pivot: {x: 1.117647, y: -0.1190476}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -163,7 +163,7 @@ ScriptedImporter:
     uvTransform: {x: 68, y: 288}
   - name: attack_Frame_2
     originalName: 
-    pivot: {x: 0.9322034, y: -0.120000005}
+    pivot: {x: 0.9322034, y: -0.12}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -183,7 +183,7 @@ ScriptedImporter:
     uvTransform: {x: 68, y: 71}
   - name: attack_Frame_3
     originalName: 
-    pivot: {x: 1.1020408, y: -0.15}
+    pivot: {x: 1.102041, y: -0.15}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -203,7 +203,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 95}
   - name: attack_Frame_4
     originalName: 
-    pivot: {x: 1.0172414, y: -0.1607143}
+    pivot: {x: 1.017241, y: -0.1607143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -223,7 +223,7 @@ ScriptedImporter:
     uvTransform: {x: 68, y: 380}
   - name: attack_Frame_5
     originalName: 
-    pivot: {x: 1.0185186, y: -0.1607143}
+    pivot: {x: 1.018519, y: -0.1607143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -243,7 +243,7 @@ ScriptedImporter:
     uvTransform: {x: 68, y: 444}
   - name: attack_Frame_6
     originalName: 
-    pivot: {x: 1.0196079, y: -0.1607143}
+    pivot: {x: 1.019608, y: -0.1607143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -263,7 +263,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 163}
   - name: attack_Frame_7
     originalName: 
-    pivot: {x: 0.5641026, y: -0.15254237}
+    pivot: {x: 0.5641026, y: -0.1525424}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -283,7 +283,7 @@ ScriptedImporter:
     uvTransform: {x: 68, y: 4}
   - name: attack_Frame_8
     originalName: 
-    pivot: {x: 0.5405406, y: -0.15254237}
+    pivot: {x: 0.5405406, y: -0.1525424}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

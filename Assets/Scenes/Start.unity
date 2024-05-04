@@ -454,7 +454,7 @@ Transform:
   m_GameObject: {fileID: 594346572}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7983384, y: -3.011, z: 0.067305036}
+  m_LocalPosition: {x: -0.315, y: -5.113, z: 0.067305036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -744,6 +744,10 @@ PrefabInstance:
     - target: {fileID: 3571569514786583494, guid: 62a0d43a22b6ecc499d075f44dcb418d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140185628398289342, guid: 62a0d43a22b6ecc499d075f44dcb418d, type: 3}
+      propertyPath: m_Volume
+      value: 0.353
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1115,6 +1119,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1162089672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3025261501969907554, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+  m_PrefabInstance: {fileID: 938990732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1207410910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1659,6 +1668,10 @@ PrefabInstance:
       propertyPath: menu
       value: 
       objectReference: {fileID: 1233502901}
+    - target: {fileID: 8664550988701275749, guid: a790cd451a0afbc45811a51a14aa7e31, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1162089672}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1885,6 +1898,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4804487892494603649, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5421066351707349700, guid: 6931ce2858bd25943907e43f34469040, type: 3}
       propertyPath: m_Name
       value: levelChanger
@@ -2076,7 +2093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3775250474655750034, guid: f1d7b0cd393d9c640a02f89eee8b06eb, type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.339
       objectReference: {fileID: 0}
     - target: {fileID: 3775250474655750034, guid: f1d7b0cd393d9c640a02f89eee8b06eb, type: 3}
       propertyPath: m_audioClip
@@ -2145,7 +2162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7224910421936117162, guid: e2f0d83f9141f5140ba8f3a270fe4ec6, type: 3}
       propertyPath: m_Volume
-      value: 0.501
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 7224910421936117162, guid: e2f0d83f9141f5140ba8f3a270fe4ec6, type: 3}
       propertyPath: m_audioClip
@@ -71333,6 +71350,7 @@ SceneRoots:
   - {fileID: 1326457209}
   - {fileID: 179679146}
   - {fileID: 1774750776}
+  - {fileID: 594346574}
   - {fileID: 2110772360}
   - {fileID: 1207410910}
   - {fileID: 1233502900}
@@ -71346,7 +71364,6 @@ SceneRoots:
   - {fileID: 767073487}
   - {fileID: 249551392}
   - {fileID: 1131748643}
-  - {fileID: 594346574}
   - {fileID: 930120938}
   - {fileID: 164846719}
   - {fileID: 753461182}
