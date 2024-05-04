@@ -291,11 +291,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &119033554 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5826966643344064042, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-  m_PrefabInstance: {fileID: 530314839}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &177360654
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,11 +461,7 @@ PrefabInstance:
       objectReference: {fileID: 1440260788}
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: damage
-<<<<<<< HEAD
-      value: 20
-=======
       value: 1
->>>>>>> parent of 57f8c5f (Merge branch 'main' of https://github.com/metehanCekci/Marangoz)
       objectReference: {fileID: 0}
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: radius
@@ -650,75 +641,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 4c5040d4af8c94147b899c31af192871, type: 3}
---- !u!1001 &530314839
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.276
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.228
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691325607036552037, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 930220011}
-    - target: {fileID: 4691325607036552037, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 930220012}
-    - target: {fileID: 5826966643344064042, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: m_Name
-      value: Sayborg
-      objectReference: {fileID: 0}
-    - target: {fileID: 6025540098860878998, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
-      propertyPath: phs
-      value: 
-      objectReference: {fileID: 930220020}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
 --- !u!1 &786518466
 GameObject:
   m_ObjectHideFlags: 3
@@ -894,11 +816,6 @@ SpriteRenderer:
 --- !u!1 &930220011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3025261501969907554, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-  m_PrefabInstance: {fileID: 261882113}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &930220012 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2600294152374785799, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
   m_PrefabInstance: {fileID: 261882113}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &930220020
@@ -34057,7 +33974,7 @@ PrefabInstance:
     - target: {fileID: 6980145237322509280, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: spawnableObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 119033554}
+      objectReference: {fileID: 0}
     - target: {fileID: 7422987134812628306, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: m_Name
       value: Spawner (1)
@@ -34863,7 +34780,7 @@ PrefabInstance:
     - target: {fileID: 6980145237322509280, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: spawnableObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 119033554}
+      objectReference: {fileID: 0}
     - target: {fileID: 7422987134812628306, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: m_Name
       value: Spawner
@@ -34886,7 +34803,6 @@ SceneRoots:
   - {fileID: 2111423062}
   - {fileID: 66551407132054176}
   - {fileID: 1731749131}
-  - {fileID: 530314839}
   - {fileID: 5551171770726410717}
   - {fileID: 4412751634651805563}
   - {fileID: 7625841780594998997}
