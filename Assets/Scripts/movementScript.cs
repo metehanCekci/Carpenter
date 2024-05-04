@@ -9,20 +9,22 @@ public class movementScript : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     private Animator animator;
-    private GravCheck gravCheck;
-    public GameObject entranceClose;
+    public GravCheck gravCheck;
+    public GameObject levelChanger;
 
     private float horizontal;
     public float speed = 3.0f;
     public float jumpingPower = 5f;
     public bool isFacingRight = true;
-
+    
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        levelChanger = GameObject.FindGameObjectWithTag("levelChanger");
         
+
     }
 
     // Update is called once per frame
@@ -96,18 +98,18 @@ public class movementScript : MonoBehaviour
             
             if (SceneManager.GetActiveScene().buildIndex!=4)
             {
-                currentLevelIndex++;
-                SceneManager.LoadScene(currentLevelIndex);
-
+                SceneManager.LoadScene(2);
             }
-
+            if (SceneManager.GetActiveScene().buildIndex==2)
+            {
+                SceneManager.LoadScene(3);
+            }
+            if (SceneManager.GetActiveScene().buildIndex==3)
+            {
+                SceneManager.LoadScene(4);
+            }
+            
         }
-    }
-
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == 6)
-            entranceClose.SetActive(true); 
     }
 
 }
