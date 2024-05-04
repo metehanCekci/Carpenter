@@ -11,6 +11,7 @@ public class movementScript : MonoBehaviour
     private Animator animator;
     public GravCheck gravCheck;
     public GameObject levelChanger;
+    public GameObject entranceClose;
 
     private float horizontal;
     public float speed = 3.0f;
@@ -103,6 +104,14 @@ public class movementScript : MonoBehaviour
             {
                 levelChanger.GetComponent<levelChangerScript>().fadeToLevel(0);
             }
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 6)
+        {
+            entranceClose.SetActive(true);
         }
     }
 
