@@ -7,6 +7,7 @@ public class bulletScript : MonoBehaviour
     // Start is called before the first frame update
     public float speed = 5;
     public bool goingLeft = false;
+    public playerHpScript phs;
     void Start()
     {
         
@@ -22,6 +23,11 @@ public class bulletScript : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        //club penguin is kill
+        if(other.gameObject.CompareTag("Player"))
+        {
+            phs.HP--;
+            Destroy(this.gameObject);
+        }
+        
     }
 }

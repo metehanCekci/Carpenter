@@ -113,7 +113,6 @@ public class cyborgAi : MonoBehaviour
         }
         clone.SetActive(true);
         Destroy(clone , 5);
-        Debug.Log("hit");
         yield return new WaitForSeconds(0.1f);
         yield return new WaitForSeconds(attackDelay2);
         attackOnCooldown = false;
