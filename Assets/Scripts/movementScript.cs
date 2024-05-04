@@ -114,6 +114,14 @@ public class movementScript : MonoBehaviour
             {
                 levelChanger.GetComponent<levelChangerScript>().fadeToLevel(5);
             }
+            if (SceneManager.GetActiveScene().buildIndex == 5)
+            {
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(6);
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 6)
+            {
+                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(0);
+            }
         }
     }
 
