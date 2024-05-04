@@ -49,19 +49,20 @@ public class playerHpScript : MonoBehaviour
 
     public void takeDamage(Vector2 bulletPosition)
     {
-        kan.SetActive(true);
         Debug.Log("knockback var");
         sfx.playHurt();
-      Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
+        try
+        {Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
     // Calculate knockback direction
     Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
     Debug.Log(direction);
     // Apply knockback force
-    rb.AddForce(direction * knockbackForce, ForceMode2D.Force);
-
+    rb.AddForce(direction * knockbackForce, ForceMode2D.Force);}
+      
+    catch{}
         HP--;
     StartCoroutine(IFrames());
-        kan.SetActive(false);
+
     }
 
 }

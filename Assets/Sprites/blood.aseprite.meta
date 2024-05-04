@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 108
       width: 14
       height: 12
-    spriteID: e50d72b1f4f2ac4469d4323e1962c386
+    spriteID: 16bdb101343162841843bc1a11429d6a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 108
       width: 22
       height: 16
-    spriteID: 21736069790ed6e47b39dd17c3957a5e
+    spriteID: 476a0cba72d295a438f30c935d3e705d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 79
       width: 36
       height: 21
-    spriteID: 34dbb4e140b34cd499c5dba98358f110
+    spriteID: 927576ebacd86664a8c841808f5ae64c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 44
       width: 37
       height: 27
-    spriteID: ed585d4cf35a33b45a9bca94c4782054
+    spriteID: e4dc2c146fd204740a6ee8437780e25b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 4
       width: 40
       height: 32
-    spriteID: e928781e979fef84b93f474b28d672b3
+    spriteID: f202c21d4a66d604899922f5e3849781
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -237,7 +237,7 @@ ScriptedImporter:
         y: 27
         width: 14
         height: 12
-      spriteId: e50d72b1f4f2ac4469d4323e1962c386
+      spriteId: 16bdb101343162841843bc1a11429d6a
     - name: blood_Frame_1
       frameIndex: 1
       cellRect:
@@ -245,7 +245,7 @@ ScriptedImporter:
         y: 26
         width: 22
         height: 16
-      spriteId: 21736069790ed6e47b39dd17c3957a5e
+      spriteId: 476a0cba72d295a438f30c935d3e705d
     - name: blood_Frame_2
       frameIndex: 2
       cellRect:
@@ -253,7 +253,7 @@ ScriptedImporter:
         y: 21
         width: 36
         height: 21
-      spriteId: 34dbb4e140b34cd499c5dba98358f110
+      spriteId: 927576ebacd86664a8c841808f5ae64c
     - name: blood_Frame_3
       frameIndex: 3
       cellRect:
@@ -261,7 +261,7 @@ ScriptedImporter:
         y: 15
         width: 37
         height: 27
-      spriteId: ed585d4cf35a33b45a9bca94c4782054
+      spriteId: e4dc2c146fd204740a6ee8437780e25b
     - name: blood_Frame_4
       frameIndex: 4
       cellRect:
@@ -269,7 +269,7 @@ ScriptedImporter:
         y: 10
         width: 40
         height: 32
-      spriteId: e928781e979fef84b93f474b28d672b3
+      spriteId: f202c21d4a66d604899922f5e3849781
     linkedCells: []
     parentIndex: -1
   platformSettings: []
