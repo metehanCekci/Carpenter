@@ -52,31 +52,16 @@ public class playerHpScript : MonoBehaviour
     // Calculate knockback direction
     Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
 
-
+    Debug.Log(direction);
     // Apply knockback force
-    rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+    rb.AddForce(direction * knockbackForce, ForceMode2D.Force);
 
 
     HP--;
     StartCoroutine(IFrames());
     }
 
-    public void takeDamageColl(Vector2 bulletPosition)
-    {
-
-        sfx.playHurt(); 
-          Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y, 0);
-    // Calculate knockback direction
-    Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
-
-
-    // Apply knockback force
-    rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
-
-
-    HP--;
-    StartCoroutine(IFrames());
-    }
+    
 
 }
     

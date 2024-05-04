@@ -30,6 +30,7 @@ public class bulletScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            phs = other.transform.GetComponent<playerHpScript>();
             if (other.gameObject.layer == 8)
             {
 
