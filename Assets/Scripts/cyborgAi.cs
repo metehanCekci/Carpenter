@@ -135,9 +135,9 @@ public class cyborgAi : MonoBehaviour
 
     }
     
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
 
+    public void OnCollisionStay2D(Collision2D collision)
+    {
         if(collision.gameObject.CompareTag("Player"))
         {
 
@@ -148,6 +148,7 @@ public class cyborgAi : MonoBehaviour
             }
 
         }
-
     }
+
+    
 }
