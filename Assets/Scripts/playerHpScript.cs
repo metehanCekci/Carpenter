@@ -21,6 +21,7 @@ public class playerHpScript : MonoBehaviour
     void Start()
     {
         died.SetActive(false);
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -46,9 +47,9 @@ public class playerHpScript : MonoBehaviour
 
     public void takeDamage(Vector2 bulletPosition)
     {
-
+        Debug.Log("knockback var");
         sfx.playHurt();
-      Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y, 0);
+      Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
     // Calculate knockback direction
     Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
 
@@ -60,8 +61,6 @@ public class playerHpScript : MonoBehaviour
     HP--;
     StartCoroutine(IFrames());
     }
-
-    
 
 }
     
