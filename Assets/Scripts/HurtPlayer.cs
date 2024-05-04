@@ -5,6 +5,7 @@ using UnityEngine;
 public class HurtPlayer : MonoBehaviour
 {
     public int damageAmt;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,9 +24,7 @@ public class HurtPlayer : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
 
-            //player take damage
-            Debug.Log("hit");
-
+            
         }
         
     }

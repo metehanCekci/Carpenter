@@ -9,6 +9,7 @@ public class bulletScript : MonoBehaviour
     public bool goingLeft = false;
     public float knockbackForce = 999;
     public Rigidbody2D rb;
+    public AudioSource audioPlayer;
 
     public Vector2 direction;
     public Vector2 knockback;
@@ -32,8 +33,11 @@ public class bulletScript : MonoBehaviour
         {
             if(other.gameObject.layer == 8)
             {
-            // Calculate knockback direction
-            Vector2 direction = (transform.position - other.transform.position).normalized;
+                
+                Debug.Log("hit");
+                audioPlayer.Play();
+                // Calculate knockback direction
+                Vector2 direction = (transform.position - other.transform.position).normalized;
             // Apply knockback force
             rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
             phs.HP--;
