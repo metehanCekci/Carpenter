@@ -231,7 +231,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0d3d4b8ee7df70845956367504c49dc3, type: 3}
-    m_FontSize: 36
+    m_FontSize: 20
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 0
@@ -279,29 +279,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 501151070}
-  - component: {fileID: 501151069}
+  - component: {fileID: 501151071}
   m_Layer: 0
   m_Name: textScript
-  m_TagString: Untagged
+  m_TagString: textWriter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &501151069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501151068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09084978a83cee48887780f9beaabd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textComponent: {fileID: 400687430}
-  fullText: 'Lorem ipsum donor sit amet '
-  delay: 0.1
 --- !u!4 &501151070
 Transform:
   m_ObjectHideFlags: 0
@@ -317,6 +302,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &501151071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501151068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954955501d93e3d45b1082c6a387c769, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 400687430}
+  fullText: 
+  delay: 0.1
+  bittimi: 0
+  text1: "Bu oyun, maceran\u0131n doruklar\u0131nda sizi bekleyen bir yolculu\u011Fa
+    davet ediyor. Tehlikeli engelleri a\u015F\u0131n, gizemli labirentlerde kaybolun
+    ve s\u0131rad\u0131\u015F\u0131 bir maceraya at\u0131l\u0131n!"
+  text2: "Heyecan verici bulmacalar\u0131, zorlu d\xFC\u015Fmanlar\u0131 ve nefes
+    kesen aksiyon sahneleriyle dolu bu oyun, sizi ekran ba\u015F\u0131na kilitleyecek.
+    Haz\u0131r m\u0131s\u0131n\u0131z? Macera ba\u015Flas\u0131n!"
+  text3: "E\u015Fsiz grafikleri ve atmosferiyle, Carpenter size unutulmaz bir deneyim
+    sunuyor. Her bir ad\u0131m\u0131n\u0131zda, gizemli bir d\xFCnyay\u0131 ke\u015Ffedecek
+    ve s\u0131rlar\u0131 a\xE7\u0131\u011Fa \xE7\u0131karacaks\u0131n\u0131z."
+  text4: "Karakterinizi ustal\u0131kla y\xF6nlendirin, yeteneklerinizi sergileyin
+    ve maceran\u0131n kahraman\u0131 olun. Carpenter, sizi bekleyen zorlu m\xFCcadelelerle
+    dolu bir d\xFCnyaya g\xF6t\xFCr\xFCyor."
 --- !u!1 &697233394
 GameObject:
   m_ObjectHideFlags: 0

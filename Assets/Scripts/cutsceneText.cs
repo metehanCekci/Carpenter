@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class cutsceneText : MonoBehaviour
 {
     public Text textComponent;
-    private string fullText;
+    public string fullText;
     public float delay = 0.1f;
     public bool bittimi = false; // Baþlangýçta false olmalý
     private int textIndex = 0;
@@ -20,7 +21,8 @@ public class cutsceneText : MonoBehaviour
 
     void Start()
     {
-        // Ýlk metni baþlangýçta göstermek için burada çaðýrabilirsiniz
+        fullText = text1;
+        StartCoroutine(ShowText());
     }
 
     void Update()
@@ -29,19 +31,24 @@ public class cutsceneText : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space)) // GetKey yerine GetKeyDown kullanmalýsýnýz
             {
+                Debug.Log("Bitti ve space algýlandý");
                 // Metinler arasýnda geçiþ yapmak için textIndex'i kontrol edin
                 switch (textIndex)
                 {
                     case 0:
+                        delay = 0.1f;
                         fullText = text1;
                         break;
                     case 1:
+                        delay = 0.1f;
                         fullText = text2;
                         break;
                     case 2:
+                        delay = 0.1f;
                         fullText = text3;
                         break;
                     case 3:
+                        delay = 0.1f;
                         fullText = text4;
                         break;
                     default:
@@ -51,20 +58,36 @@ public class cutsceneText : MonoBehaviour
                 textIndex++; // textIndex'i arttýrýn
                 StartCoroutine(ShowText()); // Coroutine'u baþlatýn
             }
+            if (currentText == text4)
+            {
+                SceneManager.LoadScene(2);
+            }
+        }
+        else
+        {
+            bekle();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                delay = 0;
+            }
         }
     }
 
     IEnumerator ShowText()
     {
-        // Her yeni metin için currentText'i sýfýrlayýn
-        currentText = "";
-        // Metni teker teker göstermek için bir döngü oluþturun
-        foreach (char letter in fullText)
+        Debug.Log("coroutine baþladý");
+        bittimi = false;
+        for (int i = 0; i <= fullText.Length; i++)
         {
-            // Her bir harfi ekleyerek metni teker teker gösterin
-            currentText += letter;
-            textComponent.text = currentText; // Güncellenmiþ metni Text bileþenine atayýn
-            yield return new WaitForSeconds(delay); // Her harf arasýnda bir gecikme saðlayýn
+            Debug.Log("döngü baþladý");           
+            currentText = fullText.Substring(0, i);
+            textComponent.text = currentText;
+            yield return new WaitForSeconds(delay);
         }
+        bittimi = true;
+    }
+    IEnumerator bekle()
+    {
+        yield return new WaitForSeconds(2);
     }
 }

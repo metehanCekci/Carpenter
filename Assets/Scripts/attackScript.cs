@@ -37,14 +37,14 @@ public class attackScript : MonoBehaviour
             Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
             foreach (Collider2D enemyGameObject in enemy)
             {
-                sFX.playHit();
+               /* sFX.playHit();
                 CS.ShakeIt();
                 Vector2 knockback;
                 if(eF.facingRight)
                 enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt* -1, 2.0f) , ForceMode2D.Impulse);
                 else
                 enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt , 2.0f) , ForceMode2D.Impulse);
-                
+                */
                 enemyGameObject.GetComponent<enemyHealth>().health -= damage;
                 if (enemyGameObject.GetComponent<enemyHealth>().health <= 0)
                 {
