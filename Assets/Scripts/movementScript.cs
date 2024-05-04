@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class movementScript : MonoBehaviour
 {
@@ -88,6 +89,16 @@ public class movementScript : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         horizontal = context.ReadValue<Vector2>().x;
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag=="fallDetector")
+        {
+            if (SceneManager.GetActiveScene().buildIndex==1)
+            {
+
+            }
+        }
     }
 
 

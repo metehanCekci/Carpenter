@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - GravCollider
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -16,8 +15,8 @@ TagManager:
   - Enemy
   - Vulnerable
   - InVulnerable
-  - 
-  - 
+  - Player
+  - fallDetector
   - 
   - 
   - 
