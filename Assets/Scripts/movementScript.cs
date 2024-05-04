@@ -58,6 +58,14 @@ public class movementScript : MonoBehaviour
         animator.SetBool(name: "onGround", value: isGrounded());
         animator.SetBool(name: "isWalking", value: Mathf.Abs(horizontal) > 0f);
 
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f);
+        if (hit.collider != null && hit.collider.CompareTag("Enemy"))
+        {
+            // Raycast, bir düþmanýn Collider'ýna çarptýysa, düþmanýn içinden geçmiþsinizdir.
+            // Burada gerekli iþlemleri yapabilirsiniz, örneðin düþmanýn içinden geçmek için karakterin yüksekliðini ayarlayabilirsiniz.
+            // transform.position = new Vector3(transform.position.x, hit.collider.transform.position.y, transform.position.z);
+        }
     }
 
     public void Jump(InputAction.CallbackContext context)

@@ -27,7 +27,7 @@ public class cyborgAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        transform.Translate(Vector3.back*Time.deltaTime * 1);
     }
 
     // Update is called once per frame
@@ -101,7 +101,6 @@ public class cyborgAi : MonoBehaviour
         canMove = false;
         yield return new WaitForSeconds(attackDelay);
         hurtBox.SetActive(true);
-        Debug.Log("hit");
         yield return new WaitForSeconds(0.1f);
         hurtBox.SetActive(false);
         yield return new WaitForSeconds(attackDelay2);
@@ -141,7 +140,7 @@ public class cyborgAi : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-
+            
             if(collision.gameObject.layer == 8)
             {
                 Vector2 playerPosition = new Vector2(collision.transform.position.x, collision.transform.position.y);

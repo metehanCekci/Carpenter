@@ -55,7 +55,6 @@ public class playerHpScript : MonoBehaviour
                 Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
                 // Calculate knockback direction
                 Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
-                Debug.Log(direction);
                 // Apply knockback force
                 rb.AddForce(direction * knockbackForce, ForceMode2D.Force);
             }

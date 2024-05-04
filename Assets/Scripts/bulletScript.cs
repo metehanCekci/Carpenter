@@ -35,7 +35,6 @@ public class bulletScript : MonoBehaviour
             {
                 phs=other.gameObject.GetComponent<playerHpScript>();
                 phs.takeDamage(transform.position);
-                Debug.Log("cagirildi");
                 Destroy(gameObject);
 
             }

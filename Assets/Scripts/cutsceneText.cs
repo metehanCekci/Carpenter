@@ -31,7 +31,6 @@ public class cutsceneText : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space)) // GetKey yerine GetKeyDown kullanmalýsýnýz
             {
-                Debug.Log("Bitti ve space algýlandý");
                 // Metinler arasýnda geçiþ yapmak için textIndex'i kontrol edin
                 switch (textIndex)
                 {
@@ -75,11 +74,9 @@ public class cutsceneText : MonoBehaviour
 
     IEnumerator ShowText()
     {
-        Debug.Log("coroutine baþladý");
         bittimi = false;
         for (int i = 0; i <= fullText.Length; i++)
-        {
-            Debug.Log("döngü baþladý");           
+        {         
             currentText = fullText.Substring(0, i);
             textComponent.text = currentText;
             yield return new WaitForSeconds(delay);
