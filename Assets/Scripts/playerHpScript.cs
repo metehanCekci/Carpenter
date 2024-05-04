@@ -43,11 +43,6 @@ public class playerHpScript : MonoBehaviour
         this.gameObject.layer = 8;
 
     }
-    
-    public void iFramesFunc()
-    {
-        StartCoroutine(IFrames());
-    }
 
     public void takeDamage(Collider2D other)
     {
@@ -56,7 +51,7 @@ public class playerHpScript : MonoBehaviour
         // Apply knockback force
         rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
         HP--;
-        iFramesFunc();
+        StartCoroutine(IFrames());
     }
 
     public void takeDamageColl(Collision2D collision)
@@ -68,10 +63,10 @@ public class playerHpScript : MonoBehaviour
         // Apply knockback force
         rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
         HP--;
-        iFramesFunc();
+        StartCoroutine(IFrames());
     }
 
-    }
+}
     
     
 

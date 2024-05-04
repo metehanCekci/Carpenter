@@ -23,7 +23,7 @@ public class bulletScript : MonoBehaviour
     void Update()
     {
 
-        this.transform.position += transform.right * speed * Time.deltaTime;
+        transform.position += transform.right * speed * Time.deltaTime;
 
 
     }
@@ -36,7 +36,7 @@ public class bulletScript : MonoBehaviour
             {
 
                 phs.takeDamage(other);
-                Destroy(this.gameObject);
+                Destroy(gameObject);
 
             }
 

@@ -57,11 +57,6 @@ public class movementScript : MonoBehaviour
 
     }
 
-    public void Menu()
-    {
-
-    }
-
     public void Jump(InputAction.CallbackContext context)
     {
         if (context.performed && isGrounded())
