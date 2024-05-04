@@ -29080,8 +29080,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1738048548}
     - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: direction.x
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: direction.y
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: knockback.x
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: knockback.y
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: knockbackForce
-      value: 99909
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4909505301362853999, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: m_LocalPosition.x
