@@ -31,6 +31,10 @@ public class attackScript : MonoBehaviour
         {
             Debug.Log("Hit enemy!");
             enemyGameObject.GetComponent<enemyHealth>().health -= damage;
+            if (enemyGameObject.GetComponent<enemyHealth>().health<=0)
+            {
+                Destroy(enemyGameObject.gameObject);
+            }
         }
     }
     private void OnDrawGizmos()

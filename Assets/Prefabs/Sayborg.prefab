@@ -432,7 +432,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617cf8d2a3230914ba01442be249f761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player:
+    serializedVersion: 2
+    m_Bits: 256
   hurtBox: {fileID: 2074129789927985613}
   target: {fileID: 0}
   anim: {fileID: 8721857358688091380}
@@ -455,4 +457,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a7bbcb5d6e03434d99519dbecabbe95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 10

@@ -21,7 +21,16 @@ public class cyborgAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Player = GameObject.FindGameObjectWithTag("Vulnerable");
+        if (Player != null)
+        {
+            target = Player.transform;
+            Debug.Log("hedef alındı");
+        }
+        else
+        {
+            Debug.LogError("Hedef bulunamadı. Lütfen bir Player tag'ine sahip GameObject ekleyin.");
+        }
     }
 
     // Update is called once per frame

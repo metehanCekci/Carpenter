@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class spawnerScript : MonoBehaviour
 {
+    [SerializeField]
     public GameObject[] spawnableObjects;
-    public float spawnInterval = 1f; // Saniyeler cinsinden
+    [SerializeField]
+    public float spawnInterval = 0.5f; // Saniyeler cinsinden
 
     private float timer = 0f;
     private int currentIndex = 0;
@@ -20,6 +22,7 @@ public class spawnerScript : MonoBehaviour
             timer = 0f;
         }
     }
+
 
     private void SpawnNextObject()
     {
