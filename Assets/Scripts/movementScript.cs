@@ -90,11 +90,9 @@ public class movementScript : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("temas");
         if (collision.CompareTag("fallDetector"))
         {
             int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
-            Debug.Log("gecti");
             
             if (SceneManager.GetActiveScene().buildIndex!=0)
             {
