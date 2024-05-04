@@ -7,8 +7,15 @@ public class playerHpScript : MonoBehaviour
 {
     public int maxHP = 10;
     public int HP = 10;
+    public SFXLoader sfx;
     public float IFrameDuration = 0.5f;
     public GameObject died;
+    public Rigidbody2D rb;
+
+    
+    public float knockbackForce = 999;
+    public Vector2 direction;
+    public Vector2 knockback;
 
     // Start is called before the first frame update
     void Start()
@@ -36,11 +43,30 @@ public class playerHpScript : MonoBehaviour
         this.gameObject.layer = 8;
 
     }
-    
-    public void iFramesFunc()
+
+    public void takeDamage(Collider2D other)
     {
+        sfx.playHurt();
+        Vector2 direction = (transform.position - other.transform.position).normalized;
+        // Apply knockback force
+        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+        HP--;
         StartCoroutine(IFrames());
     }
-    
-    
+
+    public void takeDamageColl(Collision2D collision)
+    {
+
+        sfx.playHurt();
+        // Calculate knockback direction
+        Vector2 direction = (transform.position - collision.transform.position).normalized;
+        // Apply knockback force
+        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+        HP--;
+        StartCoroutine(IFrames());
+    }
+
 }
+    
+    
+

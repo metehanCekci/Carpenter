@@ -138,11 +138,7 @@ public class cyborgAi : MonoBehaviour
 
             if(collision.gameObject.layer == 8)
             {
-            Vector2 direction = (collision.gameObject.transform.position - transform.position).normalized;
-            Vector2 knockback = direction * knockbackForce;
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(knockback, ForceMode2D.Impulse);
-            collision.gameObject.GetComponent<playerHpScript>().HP--;
-            collision.gameObject.GetComponent<playerHpScript>().iFramesFunc();
+                collision.gameObject.GetComponent<playerHpScript>().takeDamageColl(collision);
             }
 
         }

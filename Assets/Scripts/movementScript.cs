@@ -16,7 +16,7 @@ public class movementScript : MonoBehaviour
     public float speed = 3.0f;
     public float jumpingPower = 5f;
     public bool isFacingRight = true;
-
+    
 
     private void Start()
     {
@@ -24,6 +24,7 @@ public class movementScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         levelChanger = GameObject.FindGameObjectWithTag("levelChanger");
         
+
     }
 
     // Update is called once per frame
@@ -55,11 +56,6 @@ public class movementScript : MonoBehaviour
         animator.SetBool(name: "onAir", value: !isGrounded());
         animator.SetBool(name: "onGround", value: isGrounded());
         animator.SetBool(name: "isWalking", value: Mathf.Abs(horizontal) > 0f);
-
-    }
-
-    public void Menu()
-    {
 
     }
 
@@ -95,20 +91,22 @@ public class movementScript : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("temas");
-        if (collision.tag == "fallDetector")
+        if (collision.CompareTag("fallDetector"))
         {
+            int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
             Debug.Log("gecti");
-            if (SceneManager.GetActiveScene().buildIndex==1)
+            
+            if (SceneManager.GetActiveScene().buildIndex!=4)
             {
-                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(2);
+                SceneManager.LoadScene(2);
             }
             if (SceneManager.GetActiveScene().buildIndex==2)
             {
-                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(3);
+                SceneManager.LoadScene(3);
             }
             if (SceneManager.GetActiveScene().buildIndex==3)
             {
-                levelChanger.GetComponent<levelChangerScript>().fadeToLevel(4);
+                SceneManager.LoadScene(4);
             }
             
         }
