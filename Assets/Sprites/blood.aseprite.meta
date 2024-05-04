@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9c9c987f371bae243bba538547df995a
+guid: 01f4a326727b42c44b046245f65c3ba6
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: drone_Frame_0
+  - name: blood_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -0.44117647}
+    pivot: {x: 0.6428572, y: -2.25}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 46
-      y: 92
-      width: 34
-      height: 34
-    spriteID: fbd4affe693b43a4b88a4a4a6ace9d6d
+      x: 34
+      y: 108
+      width: 14
+      height: 12
+    spriteID: 3bee41f5e497a46488a43e7d1c49bc1b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,19 +140,79 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 46, y: 92}
-  - name: drone_Frame_1
+    uvTransform: {x: 34, y: 108}
+  - name: blood_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -0.41666666}
+    pivot: {x: 0.6363636, y: -1.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 108
+      width: 22
+      height: 16
+    spriteID: 133fb2c1805138645965fd6cc00ee0c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 108}
+  - name: blood_Frame_2
+    originalName: 
+    pivot: {x: 0.5555556, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 79
+      width: 36
+      height: 21
+    spriteID: 8f09491cc84335b4397ec0fa4264a6c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 79}
+  - name: blood_Frame_3
+    originalName: 
+    pivot: {x: 0.5675676, y: -0.5555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 37
+      height: 27
+    spriteID: e982f55971e011c48aab72bb63fdbf30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: blood_Frame_4
+    originalName: 
+    pivot: {x: 0.52500004, y: -0.3125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 34
-      height: 36
-    spriteID: dc9f77632efb8d14481f05d59590b0ae
+      width: 40
+      height: 32
+    spriteID: f937103c9aed2cb4095d5ee2c87e18b0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,199 +221,55 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: drone_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: -0.3611111}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 48
-      width: 34
-      height: 36
-    spriteID: ed06ce5128a1f1444a7c0c59f08c73a9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 48}
-  - name: drone_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: -0.30555555}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 92
-      width: 34
-      height: 36
-    spriteID: 61e04838d660e8d44ae80420cba3b53f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 92}
-  - name: drone_Frame_4
-    originalName: 
-    pivot: {x: 0.5, y: -0.3611111}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 136
-      width: 34
-      height: 36
-    spriteID: adb9289c9040eaa4dbc4b8a0d8e8e0c6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 136}
-  - name: drone_Frame_5
-    originalName: 
-    pivot: {x: 0.5, y: -0.44444445}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 180
-      width: 34
-      height: 36
-    spriteID: 1ccaa20b367c5264d9a430a148885e46
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 180}
-  - name: drone_Frame_6
-    originalName: 
-    pivot: {x: 0.5, y: -0.3611111}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 46
-      y: 4
-      width: 34
-      height: 36
-    spriteID: b4f1cc3a6bcfda0428bfc55615fcad9a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 46, y: 4}
-  - name: drone_Frame_7
-    originalName: 
-    pivot: {x: 0.5, y: -0.30555555}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 46
-      y: 48
-      width: 34
-      height: 36
-    spriteID: 7d073d9cf2dc04c4eb7e2492cc740b73
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 46, y: 48}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -728776408
-    name: drone
+    guid: 880355842
+    name: blood
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: drone_Frame_0
+    - name: blood_Frame_0
       frameIndex: 0
       cellRect:
-        x: 15
-        y: 15
-        width: 34
-        height: 34
-      spriteId: fbd4affe693b43a4b88a4a4a6ace9d6d
-    - name: drone_Frame_1
+        x: 23
+        y: 27
+        width: 14
+        height: 12
+      spriteId: 3bee41f5e497a46488a43e7d1c49bc1b
+    - name: blood_Frame_1
       frameIndex: 1
       cellRect:
-        x: 15
-        y: 15
-        width: 34
-        height: 36
-      spriteId: dc9f77632efb8d14481f05d59590b0ae
-    - name: drone_Frame_2
+        x: 18
+        y: 26
+        width: 22
+        height: 16
+      spriteId: 133fb2c1805138645965fd6cc00ee0c6
+    - name: blood_Frame_2
       frameIndex: 2
       cellRect:
-        x: 15
-        y: 13
-        width: 34
-        height: 36
-      spriteId: ed06ce5128a1f1444a7c0c59f08c73a9
-    - name: drone_Frame_3
+        x: 12
+        y: 21
+        width: 36
+        height: 21
+      spriteId: 8f09491cc84335b4397ec0fa4264a6c2
+    - name: blood_Frame_3
       frameIndex: 3
       cellRect:
-        x: 15
-        y: 11
-        width: 34
-        height: 36
-      spriteId: 61e04838d660e8d44ae80420cba3b53f
-    - name: drone_Frame_4
+        x: 11
+        y: 15
+        width: 37
+        height: 27
+      spriteId: e982f55971e011c48aab72bb63fdbf30
+    - name: blood_Frame_4
       frameIndex: 4
       cellRect:
-        x: 15
-        y: 13
-        width: 34
-        height: 36
-      spriteId: adb9289c9040eaa4dbc4b8a0d8e8e0c6
-    - name: drone_Frame_5
-      frameIndex: 5
-      cellRect:
-        x: 15
-        y: 16
-        width: 34
-        height: 36
-      spriteId: 1ccaa20b367c5264d9a430a148885e46
-    - name: drone_Frame_6
-      frameIndex: 6
-      cellRect:
-        x: 15
-        y: 13
-        width: 34
-        height: 36
-      spriteId: b4f1cc3a6bcfda0428bfc55615fcad9a
-    - name: drone_Frame_7
-      frameIndex: 7
-      cellRect:
-        x: 15
-        y: 11
-        width: 34
-        height: 36
-      spriteId: 7d073d9cf2dc04c4eb7e2492cc740b73
+        x: 11
+        y: 10
+        width: 40
+        height: 32
+      spriteId: f937103c9aed2cb4095d5ee2c87e18b0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
