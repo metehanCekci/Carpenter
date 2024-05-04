@@ -8,6 +8,7 @@ public class attackScript : MonoBehaviour
     public GameObject attackPoint;
     public float radius;
     public LayerMask enemies;
+    public float damage;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -17,7 +18,6 @@ public class attackScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             anim.SetBool("isAttacking", true);
-            Debug.Log("Saldýrdý!");
         }
     }
     public void endAttack()
@@ -30,6 +30,11 @@ public class attackScript : MonoBehaviour
         foreach (Collider2D enemyGameObject in enemy)
         {
             Debug.Log("Hit enemy!");
+            enemyGameObject.GetComponent<enemyHealth>().health -= damage;
         }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
     }
 }

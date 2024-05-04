@@ -128,8 +128,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 125
-      y: 4
+      x: 128
+      y: 72
       width: 27
       height: 61
     spriteID: a14f2d72779410a4c95d6a75c9676d9d
@@ -140,7 +140,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 125, y: 4}
+    uvTransform: {x: 128, y: 72}
   - name: moonwalk_Frame_1
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -148,8 +148,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 89
-      y: 4
+      x: 48
+      y: 73
       width: 28
       height: 61
     spriteID: 8c77a825ea56ab044a9470ed9d3c1824
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 89, y: 4}
+    uvTransform: {x: 48, y: 73}
   - name: moonwalk_Frame_2
     originalName: 
     pivot: {x: 0.4516129, y: 0}
@@ -168,7 +168,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 48
+      x: 87
       y: 132
       width: 31
       height: 56
@@ -180,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 132}
+    uvTransform: {x: 87, y: 132}
   - name: moonwalk_Frame_3
     originalName: 
     pivot: {x: 0.46875, y: 0}
@@ -188,7 +188,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 48
+      x: 87
       y: 68
       width: 32
       height: 56
@@ -200,7 +200,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 68}
+    uvTransform: {x: 87, y: 68}
   - name: moonwalk_Frame_4
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -208,8 +208,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 89
-      y: 73
+      x: 48
+      y: 142
       width: 28
       height: 61
     spriteID: 1e3b2eaba6535d940b65df9d3661d80b
@@ -220,7 +220,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 89, y: 73}
+    uvTransform: {x: 48, y: 142}
   - name: moonwalk_Frame_5
     originalName: 
     pivot: {x: 0.516129, y: 0}
@@ -228,8 +228,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 135
+      x: 48
+      y: 4
       width: 31
       height: 61
     spriteID: ec9efc2232cd86746bbbd939d827e02d
@@ -240,7 +240,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 135}
+    uvTransform: {x: 48, y: 4}
   - name: moonwalk_Frame_6
     originalName: 
     pivot: {x: 0.5277778, y: 0}
@@ -268,7 +268,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 48
+      x: 87
       y: 4
       width: 33
       height: 56
@@ -280,7 +280,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 4}
+    uvTransform: {x: 87, y: 4}
   - name: moonwalk_Frame_8
     originalName: 
     pivot: {x: 0.47222224, y: 0}
@@ -303,15 +303,15 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 72}
   - name: moonwalk_Frame_9
     originalName: 
-    pivot: {x: 0.4516129, y: 0}
+    pivot: {x: 0.47222224, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 48
-      y: 196
-      width: 31
-      height: 56
+      x: 4
+      y: 135
+      width: 36
+      height: 55
     spriteID: 8e7eb4f627b234240bf0e844d01015b5
     spriteBone: []
     spriteOutline: []
@@ -320,18 +320,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 196}
+    uvTransform: {x: 4, y: 135}
   - name: moonwalk_Frame_10
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.4516129, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 89
-      y: 142
-      width: 28
-      height: 60
+      x: 87
+      y: 196
+      width: 31
+      height: 56
     spriteID: 3302726599f0b834995a2852ee35f2ed
     spriteBone: []
     spriteOutline: []
@@ -340,7 +340,27 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 89, y: 142}
+    uvTransform: {x: 87, y: 196}
+  - name: moonwalk_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 4
+      width: 28
+      height: 60
+    spriteID: 51067bfd3a6137244814baca05a6b686
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 128, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -425,19 +445,27 @@ ScriptedImporter:
     - name: moonwalk_Frame_9
       frameIndex: 9
       cellRect:
-        x: 18
+        x: 15
         y: 0
-        width: 31
-        height: 56
+        width: 36
+        height: 55
       spriteId: 8e7eb4f627b234240bf0e844d01015b5
     - name: moonwalk_Frame_10
       frameIndex: 10
       cellRect:
         x: 18
         y: 0
+        width: 31
+        height: 56
+      spriteId: 3302726599f0b834995a2852ee35f2ed
+    - name: moonwalk_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 18
+        y: 0
         width: 28
         height: 60
-      spriteId: 3302726599f0b834995a2852ee35f2ed
+      spriteId: 51067bfd3a6137244814baca05a6b686
     linkedCells: []
     parentIndex: -1
   platformSettings: []
