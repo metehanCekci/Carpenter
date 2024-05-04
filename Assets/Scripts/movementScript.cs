@@ -16,13 +16,14 @@ public class movementScript : MonoBehaviour
     public float speed = 3.0f;
     public float jumpingPower = 5f;
     public bool isFacingRight = true;
-
+    
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         
+
     }
 
     // Update is called once per frame
