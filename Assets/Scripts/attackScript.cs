@@ -9,13 +9,15 @@ public class attackScript : MonoBehaviour
     public float radius;
     public LayerMask enemies;
     public float damage;
+
+    bool gamePaused = false;
     void Start()
     {
         anim = GetComponent<Animator>();
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!gamePaused && Input.GetMouseButtonDown(0))
         {
             anim.SetBool("isAttacking", true);
         }
@@ -26,19 +28,27 @@ public class attackScript : MonoBehaviour
     }
     public void attack()
     {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
-        foreach (Collider2D enemyGameObject in enemy)
+        if (!gamePaused)
         {
-            Debug.Log("Hit enemy!");
-            enemyGameObject.GetComponent<enemyHealth>().health -= damage;
-            if (enemyGameObject.GetComponent<enemyHealth>().health<=0)
+            Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+            foreach (Collider2D enemyGameObject in enemy)
             {
-                Destroy(enemyGameObject.gameObject);
+                Debug.Log("Hit enemy!");
+                enemyGameObject.GetComponent<enemyHealth>().health -= damage;
+                if (enemyGameObject.GetComponent<enemyHealth>().health <= 0)
+                {
+                    Destroy(enemyGameObject.gameObject);
+                }
             }
         }
+        
     }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
+    }
+    public void SetGamePaused(bool paused)
+    {
+        gamePaused = paused;
     }
 }
