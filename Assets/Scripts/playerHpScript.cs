@@ -12,7 +12,7 @@ public class playerHpScript : MonoBehaviour
     public GameObject died;
     public Rigidbody2D rb;
 
-    
+
     public float knockbackForce = 999;
     public Vector2 direction;
     public Vector2 knockback;
@@ -27,7 +27,7 @@ public class playerHpScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (HP<=0)
+        if (HP <= 0)
         {
             Time.timeScale = 0.0f;
             died.SetActive(true);
@@ -47,22 +47,27 @@ public class playerHpScript : MonoBehaviour
 
     public void takeDamage(Vector2 bulletPosition)
     {
-        sfx.playHurt();
-        try
-        {Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
-    // Calculate knockback direction
-    Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
-    Debug.Log(direction);
-    // Apply knockback force
-    rb.AddForce(direction * knockbackForce, ForceMode2D.Force);}
-      
-    catch{}
-        HP--;
-    StartCoroutine(IFrames());
+        if (this.gameObject.layer == 8)
+        {
+            sfx.playHurt();
+            try
+            {
+                Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
+                // Calculate knockback direction
+                Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
+                Debug.Log(direction);
+                // Apply knockback force
+                rb.AddForce(direction * knockbackForce, ForceMode2D.Force);
+            }
 
+            catch { }
+            HP--;
+            StartCoroutine(IFrames());
+
+        }
     }
 
 }
-    
-    
+
+
 

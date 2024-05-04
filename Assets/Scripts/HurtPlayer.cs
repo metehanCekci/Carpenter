@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HurtPlayer : MonoBehaviour
 {
-    public int damageAmt;
+    public playerHpScript phs;
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +24,19 @@ public class HurtPlayer : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
 
+            phs.takeDamage(other.transform.position);
+            
+        }
+        
+    }
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+
+
+        if(other.gameObject.CompareTag("Player"))
+        {
+
+            phs.takeDamage(other.transform.position);
             
         }
         

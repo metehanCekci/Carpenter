@@ -27,4 +27,16 @@ public class rangeDetector : MonoBehaviour
         }
         
     }
+
+        private void OnTriggerEnter2D(Collider2D other) 
+    {
+
+        if(other.gameObject.CompareTag("Player"))
+        {
+
+            this.transform.parent.GetComponent<cyborgAi>().Attack();
+
+        }
+        
+    }
 }
