@@ -20,7 +20,6 @@ public class GravCheck : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("GravCollider"))
         {
-
             StartCoroutine(GravChange());
         }
 
@@ -28,11 +27,12 @@ public class GravCheck : MonoBehaviour
 
     IEnumerator GravChange()
     {
+        
         GetComponent<Rigidbody2D>().gravityScale *= -1f;
         yield return new WaitForSeconds(.5f);
         if (!GravChanged)
         {
-            transform.rotation = Quaternion.Euler(180f, 180f, 0f);
+            transform.rotation = Quaternion.Euler(0f, 0f, 180f);
 
         }
         else

@@ -10,6 +10,7 @@ public class cyborgAi : MonoBehaviour
     public GameObject hurtBox;
     public Transform target;
     public Animator anim;
+    public enemyFacing eF;
 
     public float attackDelay;
     public float attackDelay2;
@@ -50,15 +51,20 @@ public class cyborgAi : MonoBehaviour
 
                 if (target.position.x < transform.position.x)
                 {
-                    if(inverted) transform.rotation = Quaternion.Euler(180, 180, 0);
+                    
+                    if(inverted) {transform.rotation = Quaternion.Euler(180, 180, 0);}
                     // Hedef soldaysa sola dön
-                    else transform.rotation = Quaternion.Euler(0, 180, 0); // Karakteri 180 derece döndürür (sola)
+                    
+                    else {transform.rotation = Quaternion.Euler(0, 180, 0);}  // Karakteri 180 derece döndürür (sola)
+                    eF.facingRight = false;
                 }
                 else
                 {
+                    
                     if(inverted) transform.rotation = Quaternion.Euler(180, 0, 0);
                     // Hedef soldaysa sola dön
                     else transform.rotation = Quaternion.Euler(0, 0, 0); // Karakteri 180 derece döndürür (sola)
+                    eF.facingRight = true;
                 }
 
                 // Takip eden GameObject'in pozisyonunu yavaşça hedefin pozisyonuna doğru güncelle

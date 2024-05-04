@@ -6,7 +6,9 @@ public class attackScript : MonoBehaviour
 {
     Animator anim;
     public GameObject attackPoint;
+    public enemyFacing eF;
     public float radius;
+    public float knockbackAmt;
     public SFXLoader sFX;
     public LayerMask enemies;
     public float damage;
@@ -37,6 +39,12 @@ public class attackScript : MonoBehaviour
             {
                 sFX.playHit();
                 CS.ShakeIt();
+                Vector2 knockback;
+                if(eF.facingRight)
+                enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt* -1, 2.0f) , ForceMode2D.Impulse);
+                else
+                enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt , 2.0f) , ForceMode2D.Impulse);
+                
                 enemyGameObject.GetComponent<enemyHealth>().health -= damage;
                 if (enemyGameObject.GetComponent<enemyHealth>().health <= 0)
                 {
