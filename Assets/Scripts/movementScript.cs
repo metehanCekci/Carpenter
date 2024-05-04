@@ -104,6 +104,10 @@ public class movementScript : MonoBehaviour
             {
                 SceneManager.LoadScene(3);
             }
+            if (SceneManager.GetActiveScene().buildIndex==3)
+            {
+                SceneManager.LoadScene(4);
+            }
             
         }
     }

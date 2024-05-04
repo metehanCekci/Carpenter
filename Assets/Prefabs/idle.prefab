@@ -123,19 +123,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 13f983f6df170354e8bbad7f90e6a48e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7575975
+      value: 0.88852876
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 13f983f6df170354e8bbad7f90e6a48e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.61570895
+      value: 0.71304214
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 13f983f6df170354e8bbad7f90e6a48e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 13f983f6df170354e8bbad7f90e6a48e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.94
+      value: 1.689
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 13f983f6df170354e8bbad7f90e6a48e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -495,3 +495,4 @@ MonoBehaviour:
   maxHP: 10
   HP: 10
   IFrameDuration: 1
+  died: {fileID: 0}
