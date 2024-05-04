@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 35b28e22560ec1140918fc5ba82da341
+guid: 049c677e49b7f1e4f9f9c741269e35ef
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,118 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: attack_Frame_0
+  - name: yakinci_punch_Frame_0
     originalName: 
-    pivot: {x: 0.94117653, y: 0}
+    pivot: {x: 0.71212125, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 264
+      width: 66
+      height: 122
+    spriteID: 4424f41b106108140b88329f30d3c428
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 264}
+  - name: yakinci_punch_Frame_1
+    originalName: 
+    pivot: {x: 0.71212125, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 181
+      y: 134
+      width: 66
+      height: 122
+    spriteID: ea5a809435fbf2e4d9696a026c2c62b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 181, y: 134}
+  - name: yakinci_punch_Frame_2
+    originalName: 
+    pivot: {x: 0.72058827, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 181
+      y: 4
+      width: 68
+      height: 122
+    spriteID: 0cf7348b6b3486c4fa9138ccfc0b7c28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 181, y: 4}
+  - name: yakinci_punch_Frame_3
+    originalName: 
+    pivot: {x: 0.75, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 4
+      width: 76
+      height: 122
+    spriteID: 0eb3601effe711b4ca70b8b0345d49d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 4}
+  - name: yakinci_punch_Frame_4
+    originalName: 
+    pivot: {x: 0.75, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 134
+      width: 76
+      height: 122
+    spriteID: ccf056ade05b3f644bc85cb0b9c1d393
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 134}
+  - name: yakinci_punch_Frame_5
+    originalName: 
+    pivot: {x: 0.76829267, y: -0.024590163}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 149
-      width: 51
-      height: 83
-    spriteID: 6d82db3150c24ef4b90ebd349bb616a5
+      y: 134
+      width: 82
+      height: 122
+    spriteID: 7cae31016e7b6644c8c804111ca60d01
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,19 +240,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 149}
-  - name: attack_Frame_1
+    uvTransform: {x: 4, y: 134}
+  - name: yakinci_punch_Frame_6
     originalName: 
-    pivot: {x: 0.779661, y: 0}
+    pivot: {x: 0.75641024, y: -0.024590163}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 68
-      width: 59
-      height: 73
-    spriteID: c2dd46172be6ed84f8671034d34d3b9f
+      y: 264
+      width: 78
+      height: 122
+    spriteID: a155948207bc6fc4fb470780cd2451c6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,99 +260,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 68}
-  - name: attack_Frame_2
+    uvTransform: {x: 4, y: 264}
+  - name: yakinci_punch_Frame_7
     originalName: 
-    pivot: {x: 0.9183673, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 199
-      y: 68
-      width: 49
-      height: 58
-    spriteID: 30e858cf07419e9419968ef0b5303ede
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 199, y: 68}
-  - name: attack_Frame_3
-    originalName: 
-    pivot: {x: 0.86206895, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 71
-      y: 68
-      width: 58
-      height: 53
-    spriteID: 964290cc101e9a644a56f8d7b869201f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 71, y: 68}
-  - name: attack_Frame_4
-    originalName: 
-    pivot: {x: 0.8518519, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 137
-      y: 68
-      width: 54
-      height: 53
-    spriteID: 455351a529f5ed341ac78f2b9cbe5713
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 137, y: 68}
-  - name: attack_Frame_5
-    originalName: 
-    pivot: {x: 0.84313726, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 63
-      y: 149
-      width: 51
-      height: 53
-    spriteID: 9f8c7ddf5e9a17c479d82bf91f0fcc25
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 63, y: 149}
-  - name: attack_Frame_6
-    originalName: 
-    pivot: {x: 0.44871795, y: 0}
+    pivot: {x: 0.69411767, y: -0.024590163}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 78
-      height: 56
-    spriteID: 9275afe7dd0c3e14fb8db14fdd5b48dd
+      width: 85
+      height: 122
+    spriteID: b5ea43626a0a36442abd3de488c753c3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -261,127 +281,79 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: attack_Frame_7
-    originalName: 
-    pivot: {x: 0.41891894, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 90
-      y: 4
-      width: 74
-      height: 56
-    spriteID: d2d34c4f90d53a84ea0c5b265ca2bfaf
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 90, y: 4}
-  - name: attack_Frame_8
-    originalName: 
-    pivot: {x: 0.41891894, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 172
-      y: 4
-      width: 74
-      height: 56
-    spriteID: 2829be4487715004ea76e5355b2d67f0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 172, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1296700270
-    name: attack
+    guid: -344905931
+    name: yakinci_punch
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: attack_Frame_0
+    - name: yakinci_punch_Frame_0
       frameIndex: 0
       cellRect:
-        x: 16
-        y: 0
-        width: 51
-        height: 83
-      spriteId: 6d82db3150c24ef4b90ebd349bb616a5
-    - name: attack_Frame_1
+        x: 17
+        y: 3
+        width: 66
+        height: 122
+      spriteId: 4424f41b106108140b88329f30d3c428
+    - name: yakinci_punch_Frame_1
       frameIndex: 1
       cellRect:
-        x: 18
-        y: 0
-        width: 59
-        height: 73
-      spriteId: c2dd46172be6ed84f8671034d34d3b9f
-    - name: attack_Frame_2
+        x: 17
+        y: 3
+        width: 66
+        height: 122
+      spriteId: ea5a809435fbf2e4d9696a026c2c62b4
+    - name: yakinci_punch_Frame_2
       frameIndex: 2
       cellRect:
-        x: 19
-        y: 0
-        width: 49
-        height: 58
-      spriteId: 30e858cf07419e9419968ef0b5303ede
-    - name: attack_Frame_3
+        x: 15
+        y: 3
+        width: 68
+        height: 122
+      spriteId: 0cf7348b6b3486c4fa9138ccfc0b7c28
+    - name: yakinci_punch_Frame_3
       frameIndex: 3
       cellRect:
-        x: 14
-        y: 0
-        width: 58
-        height: 53
-      spriteId: 964290cc101e9a644a56f8d7b869201f
-    - name: attack_Frame_4
+        x: 7
+        y: 3
+        width: 76
+        height: 122
+      spriteId: 0eb3601effe711b4ca70b8b0345d49d2
+    - name: yakinci_punch_Frame_4
       frameIndex: 4
       cellRect:
-        x: 18
-        y: 0
-        width: 54
-        height: 53
-      spriteId: 455351a529f5ed341ac78f2b9cbe5713
-    - name: attack_Frame_5
+        x: 7
+        y: 3
+        width: 76
+        height: 122
+      spriteId: ccf056ade05b3f644bc85cb0b9c1d393
+    - name: yakinci_punch_Frame_5
       frameIndex: 5
       cellRect:
-        x: 21
-        y: 0
-        width: 51
-        height: 53
-      spriteId: 9f8c7ddf5e9a17c479d82bf91f0fcc25
-    - name: attack_Frame_6
+        x: 1
+        y: 3
+        width: 82
+        height: 122
+      spriteId: 7cae31016e7b6644c8c804111ca60d01
+    - name: yakinci_punch_Frame_6
       frameIndex: 6
       cellRect:
-        x: 29
-        y: 0
+        x: 5
+        y: 3
         width: 78
-        height: 56
-      spriteId: 9275afe7dd0c3e14fb8db14fdd5b48dd
-    - name: attack_Frame_7
+        height: 122
+      spriteId: a155948207bc6fc4fb470780cd2451c6
+    - name: yakinci_punch_Frame_7
       frameIndex: 7
       cellRect:
-        x: 33
-        y: 0
-        width: 74
-        height: 56
-      spriteId: d2d34c4f90d53a84ea0c5b265ca2bfaf
-    - name: attack_Frame_8
-      frameIndex: 8
-      cellRect:
-        x: 33
-        y: 0
-        width: 74
-        height: 56
-      spriteId: 2829be4487715004ea76e5355b2d67f0
+        x: 5
+        y: 3
+        width: 85
+        height: 122
+      spriteId: b5ea43626a0a36442abd3de488c753c3
     linkedCells: []
     parentIndex: -1
   platformSettings: []
