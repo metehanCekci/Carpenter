@@ -13,14 +13,13 @@ public class menuScript : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-    private void Start()
+    void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex==2) 
-        {
-            menu.SetActive(false);
-            Time.timeScale = 1f;
-            isPaused = false;
-        }
+        
+        menu.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
+        
        
     }
     public void Reset()
