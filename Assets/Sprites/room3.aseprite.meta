@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64411a8b572e37f409b1eb6da06ef437
+guid: 4b77c48476cc0ba4782bc03c306929ed
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: carpenter
+  - name: room3
     originalName: 
-    pivot: {x: 0.489603, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 529
-      height: 309
-    spriteID: 022d2caedb420314a94606461ec98c66
+      width: 540
+      height: 360
+    spriteID: 7894b6bace536b4458e82a847dcc85fc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,20 +144,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2018101770
-    name: carpenter
+    guid: -44476362
+    name: room3
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: carpenter
+    - name: room3
       frameIndex: 0
       cellRect:
-        x: 11
+        x: 0
         y: 0
-        width: 529
-        height: 309
-      spriteId: 022d2caedb420314a94606461ec98c66
+        width: 540
+        height: 360
+      spriteId: 7894b6bace536b4458e82a847dcc85fc
     linkedCells: []
     parentIndex: -1
   platformSettings: []
