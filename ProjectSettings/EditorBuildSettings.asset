@@ -18,7 +18,13 @@ EditorBuildSettings:
     path: Assets/Scenes/ChinaTowny.unity
     guid: 8b71d7cd2158497478c203a9a04f8889
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Facilty.unity
+    guid: a7abe24c02c4025469d5ab1fe06a0d46
+  - enabled: 1
+    path: Assets/Scenes/bossFight.unity
+    guid: 5c27e7c8d4fc5a247ab0fa618d794602
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 6eaf2772a3cc4384d9aab7eb681a1dcf
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6e2a86c6f2ff88d48a01d7a60631476d, type: 2}

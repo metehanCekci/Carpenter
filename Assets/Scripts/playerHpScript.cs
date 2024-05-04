@@ -11,6 +11,7 @@ public class playerHpScript : MonoBehaviour
     public float IFrameDuration = 0.5f;
     public GameObject died;
     public Rigidbody2D rb;
+    public GameObject kan;
 
     
     public float knockbackForce = 999;
@@ -22,6 +23,7 @@ public class playerHpScript : MonoBehaviour
     {
         died.SetActive(false);
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        kan = GetComponent<GameObject>();
     }
 
     // Update is called once per frame
@@ -47,6 +49,7 @@ public class playerHpScript : MonoBehaviour
 
     public void takeDamage(Vector2 bulletPosition)
     {
+        kan.SetActive(true);
         Debug.Log("knockback var");
         sfx.playHurt();
       Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
@@ -58,6 +61,7 @@ public class playerHpScript : MonoBehaviour
 
         HP--;
     StartCoroutine(IFrames());
+        kan.SetActive(false);
     }
 
 }
