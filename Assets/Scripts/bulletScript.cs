@@ -14,7 +14,7 @@ public class bulletScript : MonoBehaviour
     public playerHpScript phs;
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -32,8 +32,9 @@ public class bulletScript : MonoBehaviour
         {
             if (other.gameObject.layer == 8)
             {
-
+                phs=other.gameObject.GetComponent<playerHpScript>();
                 phs.takeDamage(transform.position);
+                Debug.Log("cagirildi");
                 Destroy(gameObject);
 
             }
