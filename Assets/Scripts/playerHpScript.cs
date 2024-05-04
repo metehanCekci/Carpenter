@@ -44,26 +44,38 @@ public class playerHpScript : MonoBehaviour
 
     }
 
-    public void takeDamage(Collider2D other)
+    public void takeDamage(Vector2 bulletPosition)
     {
+
         sfx.playHurt();
-        Vector2 direction = (transform.position - other.transform.position).normalized;
-        // Apply knockback force
-        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
-        HP--;
-        StartCoroutine(IFrames());
+      Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y, 0);
+    // Calculate knockback direction
+    Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
+
+
+    // Apply knockback force
+    rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+
+
+    HP--;
+    StartCoroutine(IFrames());
     }
 
-    public void takeDamageColl(Collision2D collision)
+    public void takeDamageColl(Vector2 bulletPosition)
     {
 
-        sfx.playHurt();
-        // Calculate knockback direction
-        Vector2 direction = (transform.position - collision.transform.position).normalized;
-        // Apply knockback force
-        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
-        HP--;
-        StartCoroutine(IFrames());
+        sfx.playHurt(); 
+          Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y, 0);
+    // Calculate knockback direction
+    Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
+
+
+    // Apply knockback force
+    rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+
+
+    HP--;
+    StartCoroutine(IFrames());
     }
 
 }
