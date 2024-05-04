@@ -7,6 +7,11 @@ public class bulletScript : MonoBehaviour
     // Start is called before the first frame update
     public float speed = 5;
     public bool goingLeft = false;
+    public float knockbackForce = 999;
+    public Rigidbody2D rb;
+
+    public Vector2 direction;
+    public Vector2 knockback;
     public playerHpScript phs;
     void Start()
     {
@@ -27,6 +32,10 @@ public class bulletScript : MonoBehaviour
         {
             if(other.gameObject.layer == 8)
             {
+            // Calculate knockback direction
+            Vector2 direction = (transform.position - other.transform.position).normalized;
+            // Apply knockback force
+            rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
             phs.HP--;
             phs.iFramesFunc();
             }

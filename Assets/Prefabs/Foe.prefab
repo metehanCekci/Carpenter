@@ -14,13 +14,14 @@ GameObject:
   - component: {fileID: 6862789043512663032}
   - component: {fileID: 2831912409894543466}
   - component: {fileID: 1870221739002533918}
+  - component: {fileID: 804296796828177291}
   m_Layer: 7
   m_Name: Foe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3453162199758982294
 Transform:
   m_ObjectHideFlags: 0
@@ -30,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 205530271976328638}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7766, y: 1.4632, z: 0}
-  m_LocalScale: {x: 0.7151, y: 0.6709, z: 1}
+  m_LocalPosition: {x: -5.515, y: -0.33, z: 0}
+  m_LocalScale: {x: 0.86009276, y: 0.96316385, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5925724999408267340}
@@ -174,8 +175,12 @@ MonoBehaviour:
   anim: {fileID: 7755727753897284818}
   attackDelay: 1
   attackDelay2: 1
+  knockbackForce: 2
+  knockback: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
   isAwake: 1
   canMove: 1
+  inverted: 0
   ranged: 1
   attackOnCooldown: 0
   speed: 1
@@ -206,6 +211,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &804296796828177291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205530271976328638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7bbcb5d6e03434d99519dbecabbe95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
 --- !u!1 &302664304863554760
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +272,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   goingLeft: 0
+  knockbackForce: 1000
+  rb: {fileID: 0}
+  direction: {x: 0, y: 0}
+  knockback: {x: 0, y: 0}
   phs: {fileID: 0}
 --- !u!61 &6157916249266415873
 BoxCollider2D:

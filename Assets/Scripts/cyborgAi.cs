@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class cyborgAi : MonoBehaviour
@@ -12,6 +13,9 @@ public class cyborgAi : MonoBehaviour
 
     public float attackDelay;
     public float attackDelay2;
+    public float knockbackForce;
+    public Vector2 knockback;
+    public Vector2 direction;
     public bool isAwake = false;
     public bool canMove = true;
     public bool inverted = false;
@@ -22,16 +26,7 @@ public class cyborgAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Vulnerable");
-        if (Player != null)
-        {
-            target = Player.transform;
-            Debug.Log("hedef alındı");
-        }
-        else
-        {
-            Debug.LogError("Hedef bulunamadı. Lütfen bir Player tag'ine sahip GameObject ekleyin.");
-        }
+
     }
 
     // Update is called once per frame
@@ -143,6 +138,9 @@ public class cyborgAi : MonoBehaviour
 
             if(collision.gameObject.layer == 8)
             {
+            Vector2 direction = (collision.gameObject.transform.position - transform.position).normalized;
+            Vector2 knockback = direction * knockbackForce;
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(knockback, ForceMode2D.Impulse);
             collision.gameObject.GetComponent<playerHpScript>().HP--;
             collision.gameObject.GetComponent<playerHpScript>().iFramesFunc();
             }
