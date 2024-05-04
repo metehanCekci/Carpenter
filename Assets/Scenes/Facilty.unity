@@ -500,11 +500,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1e5ca150295c2c40b2d5d6e5904f5f2, type: 3}
---- !u!1 &146812035 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 101627659127177423, guid: b1e5ca150295c2c40b2d5d6e5904f5f2, type: 3}
-  m_PrefabInstance: {fileID: 146812034}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &416022820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29023,14 +29018,6 @@ PrefabInstance:
       propertyPath: levelChanger
       value: 
       objectReference: {fileID: 1518026571}
-    - target: {fileID: 2392025518851102505, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: entranceClose
-      value: 
-      objectReference: {fileID: 146812035}
-    - target: {fileID: 2600294152374785799, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7848322
-      objectReference: {fileID: 0}
     - target: {fileID: 2600294152374785799, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.147
@@ -29075,10 +29062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: idle
       objectReference: {fileID: 0}
-    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: rb
-      value: 
-      objectReference: {fileID: 96030870}
+    - target: {fileID: 3025261501969907554, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: sfx
       value: 
@@ -29087,34 +29074,6 @@ PrefabInstance:
       propertyPath: died
       value: 
       objectReference: {fileID: 1738048548}
-    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: direction.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: direction.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: knockback.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: knockback.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3125707571456873493, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: knockbackForce
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909505301362853999, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.277
-      objectReference: {fileID: 0}
-    - target: {fileID: 4909505301362853999, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.383
-      objectReference: {fileID: 0}
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: CS
       value: 
@@ -29123,22 +29082,6 @@ PrefabInstance:
       propertyPath: sFX
       value: 
       objectReference: {fileID: 1646507396}
-    - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: damage
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: radius
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6772472603072122249, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 8869550438665976046, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.78
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
