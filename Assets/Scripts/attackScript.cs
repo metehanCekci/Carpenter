@@ -72,22 +72,23 @@ public class attackScript : MonoBehaviour
     {
         if (collision.CompareTag("weapon"))
         {
-            if(Input.GetKeyDown(KeyCode.Mouse1)) 
-            {
                 if (parryable)
                 {
-                    Debug.Log("parry calisti");
-                    playerHpScript.GetComponent<playerHpScript>().takeNoDamage = true;
+                    if (Input.GetKey(KeyCode.Mouse1))
+                    {
+                        Debug.Log("parry calisti");
+                        playerHpScript.GetComponent<playerHpScript>().takeNoDamage = true;
                     cyborgAi.GetComponent<cyborgAi>().enabled = false;
-                    beklet();
-                    playerHpScript.GetComponent<playerHpScript>().takeNoDamage = false;
-                    cyborgAi.GetComponent<cyborgAi>().enabled = true;
+                        beklet();
+                        playerHpScript.GetComponent<playerHpScript>().takeNoDamage = false;
+                        cyborgAi.GetComponent<cyborgAi>().enabled = true;
+                    }
                 }
-            }
+            
         }
     }
     IEnumerator beklet()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(30);
     }
 }

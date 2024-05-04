@@ -31,18 +31,20 @@ public class bulletScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("parry calisti");
+            
             attackScript.GetComponent<attackScript>().parryable = true;
             phs = other.transform.GetComponent<playerHpScript>();
             if (other.gameObject.layer == 8)
             {
-                phs=other.gameObject.GetComponent<playerHpScript>();
+                beklet();
+                attackScript.GetComponent<attackScript>().parryable = false;
+                phs =other.gameObject.GetComponent<playerHpScript>();
                 phs.takeDamage(transform.position);
                 Destroy(gameObject);
+                
 
             }
-            beklet();
-            attackScript.GetComponent<attackScript>().parryable = false;
+            
 
         }
     }

@@ -155,7 +155,7 @@ public class cyborgAi : MonoBehaviour
     }
     IEnumerator beklet()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(30);
         Debug.Log("parry bekletildi");
     }
 
