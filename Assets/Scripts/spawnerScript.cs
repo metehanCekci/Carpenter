@@ -34,6 +34,7 @@ public class spawnerScript : MonoBehaviour
         GameObject spawnableObject = spawnableObjects[currentIndex];
         GameObject newObject = Instantiate(spawnableObject);
         newObject.transform.position = this.gameObject.transform.position;
+        newObject.SetActive(true);
         currentIndex++;
     }
 }
