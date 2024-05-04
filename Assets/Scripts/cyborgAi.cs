@@ -47,8 +47,10 @@ public class cyborgAi : MonoBehaviour
                 Vector3 targetPosition = target.position;
 
                 // Yalnızca x ekseni boyunca takip etmek için y ve z pozisyonlarını sabit tut
-                targetPosition.y = transform.position.y;
-                targetPosition.z = transform.position.z;
+               
+                 targetPosition.y = transform.position.y;
+                 targetPosition.z = transform.position.z;
+               
 
                 if (target.position.x < transform.position.x)
                 {

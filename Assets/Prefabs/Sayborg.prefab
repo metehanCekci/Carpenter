@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 5393215063940928629}
   - component: {fileID: 4691325607036552037}
   - component: {fileID: 7628362822147333859}
+  - component: {fileID: -816534048307042739}
   m_Layer: 7
   m_Name: Sayborg
   m_TagString: Untagged
@@ -432,11 +433,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617cf8d2a3230914ba01442be249f761, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Player:
     serializedVersion: 2
     m_Bits: 256
+=======
+  Player: {fileID: 3025261501969907554, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+>>>>>>> dc2b4a4ee2fafb0c8f83fa2aa39eb5fac1a9c896
   hurtBox: {fileID: 2074129789927985613}
-  target: {fileID: 0}
+  target: {fileID: 2600294152374785799, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
   anim: {fileID: 8721857358688091380}
   attackDelay: 1
   attackDelay2: 1
@@ -457,4 +462,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a7bbcb5d6e03434d99519dbecabbe95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   health: 10
+=======
+  health: 50
+--- !u!114 &-816534048307042739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5826966643344064042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6329757bf7f7345b0b8d65ecb006c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GravChanged: 0
+>>>>>>> dc2b4a4ee2fafb0c8f83fa2aa39eb5fac1a9c896
