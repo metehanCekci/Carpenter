@@ -25,8 +25,13 @@ public class bulletScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.CompareTag("Player"))
         {
+            if(other.gameObject.layer == 8)
+            {
             phs.HP--;
+            phs.iFramesFunc();
+            }
             Destroy(this.gameObject);
+            
         }
         
     }
