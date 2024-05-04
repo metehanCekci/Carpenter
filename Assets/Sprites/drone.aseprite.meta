@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 35b28e22560ec1140918fc5ba82da341
+guid: 9c9c987f371bae243bba538547df995a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,38 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: attack_Frame_0
+  - name: drone_Frame_0
     originalName: 
-    pivot: {x: 1.035714, y: -0.09638554}
+    pivot: {x: 0.5, y: -0.44117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 92
+      width: 34
+      height: 34
+    spriteID: 0514d89b2658a1d43bb9dcbabde8f880
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 92}
+  - name: drone_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -0.41666666}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 56
-      height: 83
-    spriteID: 6d82db3150c24ef4b90ebd349bb616a5
+      width: 34
+      height: 36
+    spriteID: 8ae4282f409d5dd43a0d6b7e0dc4ed20
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,58 +161,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: attack_Frame_1
+  - name: drone_Frame_2
     originalName: 
-    pivot: {x: 1.117647, y: -0.1190476}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 68
-      y: 288
-      width: 51
-      height: 84
-    spriteID: c2dd46172be6ed84f8671034d34d3b9f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 68, y: 288}
-  - name: attack_Frame_2
-    originalName: 
-    pivot: {x: 0.9322034, y: -0.12}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 68
-      y: 71
-      width: 59
-      height: 75
-    spriteID: 30e858cf07419e9419968ef0b5303ede
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 68, y: 71}
-  - name: attack_Frame_3
-    originalName: 
-    pivot: {x: 1.102041, y: -0.15}
+    pivot: {x: 0.5, y: -0.3611111}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 95
-      width: 49
-      height: 60
-    spriteID: 964290cc101e9a644a56f8d7b869201f
+      y: 48
+      width: 34
+      height: 36
+    spriteID: 299f46b53f8e2a14e89f9d1ad0b130e1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,59 +180,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 95}
-  - name: attack_Frame_4
+    uvTransform: {x: 4, y: 48}
+  - name: drone_Frame_3
     originalName: 
-    pivot: {x: 1.017241, y: -0.1607143}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 68
-      y: 380
-      width: 58
-      height: 56
-    spriteID: 455351a529f5ed341ac78f2b9cbe5713
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 68, y: 380}
-  - name: attack_Frame_5
-    originalName: 
-    pivot: {x: 1.018519, y: -0.1607143}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 68
-      y: 444
-      width: 54
-      height: 56
-    spriteID: 9f8c7ddf5e9a17c479d82bf91f0fcc25
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 68, y: 444}
-  - name: attack_Frame_6
-    originalName: 
-    pivot: {x: 1.019608, y: -0.1607143}
+    pivot: {x: 0.5, y: -0.30555555}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 163
-      width: 51
-      height: 56
-    spriteID: 9275afe7dd0c3e14fb8db14fdd5b48dd
+      y: 92
+      width: 34
+      height: 36
+    spriteID: c64e56e6ce911444eb1e360093dde15e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -260,19 +200,59 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 163}
-  - name: attack_Frame_7
+    uvTransform: {x: 4, y: 92}
+  - name: drone_Frame_4
     originalName: 
-    pivot: {x: 0.5641026, y: -0.1525424}
+    pivot: {x: 0.5, y: -0.3611111}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 68
+      x: 4
+      y: 136
+      width: 34
+      height: 36
+    spriteID: 2092d2c4edaa173489a010daaeda4467
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 136}
+  - name: drone_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.44444445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 180
+      width: 34
+      height: 36
+    spriteID: d062e7e699b59fb4d81e01d311cd7f67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 180}
+  - name: drone_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.3611111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
       y: 4
-      width: 78
-      height: 59
-    spriteID: d2d34c4f90d53a84ea0c5b265ca2bfaf
+      width: 34
+      height: 36
+    spriteID: b6e94febe743cd04197bb4367be4848c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,19 +260,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 68, y: 4}
-  - name: attack_Frame_8
+    uvTransform: {x: 46, y: 4}
+  - name: drone_Frame_7
     originalName: 
-    pivot: {x: 0.5405406, y: -0.1525424}
+    pivot: {x: 0.5, y: -0.30555555}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 68
-      y: 154
-      width: 74
-      height: 59
-    spriteID: 2829be4487715004ea76e5355b2d67f0
+      x: 46
+      y: 48
+      width: 34
+      height: 36
+    spriteID: a68f6defc9c89e141adf3ddbb9c4dbc7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -300,120 +280,84 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 68, y: 154}
-  - name: attack_Frame_9
-    originalName: 
-    pivot: {x: 0.5405406, y: -0.15254237}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 68
-      y: 221
-      width: 74
-      height: 59
-    spriteID: 86cbf4e7332e5f74487bc06ed82f383e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 68, y: 221}
+    uvTransform: {x: 46, y: 48}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1296700270
-    name: attack
+    guid: -728776408
+    name: drone
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: attack_Frame_0
+    - name: drone_Frame_0
       frameIndex: 0
       cellRect:
-        x: 6
-        y: 8
-        width: 56
-        height: 83
-      spriteId: 6d82db3150c24ef4b90ebd349bb616a5
-    - name: attack_Frame_1
+        x: 15
+        y: 15
+        width: 34
+        height: 34
+      spriteId: 0514d89b2658a1d43bb9dcbabde8f880
+    - name: drone_Frame_1
       frameIndex: 1
       cellRect:
-        x: 7
-        y: 10
-        width: 51
-        height: 84
-      spriteId: c2dd46172be6ed84f8671034d34d3b9f
-    - name: attack_Frame_2
+        x: 15
+        y: 15
+        width: 34
+        height: 36
+      spriteId: 8ae4282f409d5dd43a0d6b7e0dc4ed20
+    - name: drone_Frame_2
       frameIndex: 2
       cellRect:
-        x: 9
-        y: 9
-        width: 59
-        height: 75
-      spriteId: 30e858cf07419e9419968ef0b5303ede
-    - name: attack_Frame_3
+        x: 15
+        y: 13
+        width: 34
+        height: 36
+      spriteId: 299f46b53f8e2a14e89f9d1ad0b130e1
+    - name: drone_Frame_3
       frameIndex: 3
       cellRect:
-        x: 10
-        y: 9
-        width: 49
-        height: 60
-      spriteId: 964290cc101e9a644a56f8d7b869201f
-    - name: attack_Frame_4
+        x: 15
+        y: 11
+        width: 34
+        height: 36
+      spriteId: c64e56e6ce911444eb1e360093dde15e
+    - name: drone_Frame_4
       frameIndex: 4
       cellRect:
-        x: 5
-        y: 9
-        width: 58
-        height: 56
-      spriteId: 455351a529f5ed341ac78f2b9cbe5713
-    - name: attack_Frame_5
+        x: 15
+        y: 13
+        width: 34
+        height: 36
+      spriteId: 2092d2c4edaa173489a010daaeda4467
+    - name: drone_Frame_5
       frameIndex: 5
       cellRect:
-        x: 9
-        y: 9
-        width: 54
-        height: 56
-      spriteId: 9f8c7ddf5e9a17c479d82bf91f0fcc25
-    - name: attack_Frame_6
+        x: 15
+        y: 16
+        width: 34
+        height: 36
+      spriteId: d062e7e699b59fb4d81e01d311cd7f67
+    - name: drone_Frame_6
       frameIndex: 6
       cellRect:
-        x: 12
-        y: 9
-        width: 51
-        height: 56
-      spriteId: 9275afe7dd0c3e14fb8db14fdd5b48dd
-    - name: attack_Frame_7
+        x: 15
+        y: 13
+        width: 34
+        height: 36
+      spriteId: b6e94febe743cd04197bb4367be4848c
+    - name: drone_Frame_7
       frameIndex: 7
       cellRect:
-        x: 20
-        y: 9
-        width: 78
-        height: 59
-      spriteId: d2d34c4f90d53a84ea0c5b265ca2bfaf
-    - name: attack_Frame_8
-      frameIndex: 8
-      cellRect:
-        x: 24
-        y: 9
-        width: 74
-        height: 59
-      spriteId: 2829be4487715004ea76e5355b2d67f0
-    - name: attack_Frame_9
-      frameIndex: 9
-      cellRect:
-        x: 24
-        y: 9
-        width: 74
-        height: 59
-      spriteId: 86cbf4e7332e5f74487bc06ed82f383e
+        x: 15
+        y: 11
+        width: 34
+        height: 36
+      spriteId: a68f6defc9c89e141adf3ddbb9c4dbc7
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 64, y: 64}
