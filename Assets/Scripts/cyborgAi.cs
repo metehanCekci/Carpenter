@@ -29,6 +29,8 @@ public class cyborgAi : MonoBehaviour
         {
             if (canMove)
             {
+
+                anim.SetBool("isRunning" , true);
                 // Hedefin pozisyonunu al
                 Vector3 targetPosition = target.position;
 
@@ -51,6 +53,12 @@ public class cyborgAi : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
 
             }
+            else
+            {
+
+                anim.SetBool("isRunning" , false);
+
+            }
 
         }
     }
@@ -60,6 +68,7 @@ public class cyborgAi : MonoBehaviour
         if (attackOnCooldown == false)
         {
             attackOnCooldown = true;
+            anim.SetBool("isAttacking", true);
             StartCoroutine(IEnuAttack());
         }
 
@@ -76,6 +85,7 @@ public class cyborgAi : MonoBehaviour
         hurtBox.SetActive(false);
         yield return new WaitForSeconds(attackDelay2);
         attackOnCooldown = false;
+        anim.SetBool("isAttacking", false);
         canMove = true;
 
     }

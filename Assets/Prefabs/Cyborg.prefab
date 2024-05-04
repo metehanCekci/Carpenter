@@ -259,9 +259,9 @@ MonoBehaviour:
   hurtBox: {fileID: 2034639741352972865}
   target: {fileID: 0}
   anim: {fileID: 8221033347569319184}
-  attackDelay: 1
-  attackDelay2: 1
-  isAwake: 0
+  attackDelay: 0.3
+  attackDelay2: 0.2
+  isAwake: 1
   canMove: 1
   attackOnCooldown: 0
   speed: 5
