@@ -27,5 +27,9 @@ public class attackScript : MonoBehaviour
     public void attack()
     {
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+        foreach (Collider2D enemyGameObject in enemy)
+        {
+            Debug.Log("Hit enemy!");
+        }
     }
 }
