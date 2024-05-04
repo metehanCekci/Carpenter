@@ -152,6 +152,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 13f983f6df170354e8bbad7f90e6a48e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2392025518851102505}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 13f983f6df170354e8bbad7f90e6a48e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6663401506134712396}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 13f983f6df170354e8bbad7f90e6a48e, type: 3}
 --- !u!4 &2600294152374785799 stripped
 Transform:
@@ -356,6 +359,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 5fb77cf2-716c-418c-9760-04ce5a6ecc90
     m_ActionName: Player/Escape[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
+        m_MethodName: Reset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 93cd944b-64c9-44f2-9e3c-bf187dba0d4e
+    m_ActionName: Player/Reset[/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -381,3 +400,15 @@ MonoBehaviour:
   speed: 1.7
   jumpingPower: 3.7
   isFacingRight: 1
+--- !u!114 &6663401506134712396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3025261501969907554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20799ec2e29203b45ac668ef7cbb0e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
