@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 43649c18c0f119a4d90424b0d87ab60f
+guid: 975bbdc9e0f1632499cde0a900eab4dc
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: oyna1btn_Frame_0
+  - name: yakinci_punch_Frame_0
     originalName: 
-    pivot: {x: 0.50495046, y: -0.43243244}
+    pivot: {x: 0.71212125, y: -0.024590163}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 94
-      width: 101
-      height: 74
-    spriteID: 7e2c36bbf4a90b74d94e725df2a9f066
+      x: 97
+      y: 264
+      width: 66
+      height: 122
+    spriteID: 73806eab00932294da504166b97f2077
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,19 +140,139 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 94}
-  - name: oyna1btn_Frame_1
+    uvTransform: {x: 97, y: 264}
+  - name: yakinci_punch_Frame_1
     originalName: 
-    pivot: {x: 0.50495046, y: -0.42682925}
+    pivot: {x: 0.71212125, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 181
+      y: 134
+      width: 66
+      height: 122
+    spriteID: e327a29cfe37c424aadc58e85181057a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 181, y: 134}
+  - name: yakinci_punch_Frame_2
+    originalName: 
+    pivot: {x: 0.72058827, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 181
+      y: 4
+      width: 68
+      height: 122
+    spriteID: 37ecf5e45b2959840a68716c5b327bcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 181, y: 4}
+  - name: yakinci_punch_Frame_3
+    originalName: 
+    pivot: {x: 0.75, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 4
+      width: 76
+      height: 122
+    spriteID: 1be8c2e24d4c133468c4a8794cc6ab25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 4}
+  - name: yakinci_punch_Frame_4
+    originalName: 
+    pivot: {x: 0.75, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 97
+      y: 134
+      width: 76
+      height: 122
+    spriteID: 6efdbb6d854e4a04f84200f538d00365
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 97, y: 134}
+  - name: yakinci_punch_Frame_5
+    originalName: 
+    pivot: {x: 0.76829267, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 134
+      width: 82
+      height: 122
+    spriteID: e12d950d1dd674547b01ca872e793cd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 134}
+  - name: yakinci_punch_Frame_6
+    originalName: 
+    pivot: {x: 0.75641024, y: -0.024590163}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 264
+      width: 78
+      height: 122
+    spriteID: d4aa9184c6fa72d429eca2b421bb8e22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 264}
+  - name: yakinci_punch_Frame_7
+    originalName: 
+    pivot: {x: 0.69411767, y: -0.024590163}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 101
-      height: 82
-    spriteID: 18ea0d1367112624b9bf18583bd5b8ae
+      width: 85
+      height: 122
+    spriteID: 00bc2b69a1e0c4a499f6e8bfff92926a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,87 +281,79 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: oyna1btn_Frame_2
-    originalName: 
-    pivot: {x: 0.5145631, y: -0.6268657}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 113
-      y: 80
-      width: 103
-      height: 67
-    spriteID: d63d1870f4b760b4f961874cf356ff23
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 113, y: 80}
-  - name: oyna1btn_Frame_3
-    originalName: 
-    pivot: {x: 0.4811321, y: -0.64705884}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 113
-      y: 4
-      width: 106
-      height: 68
-    spriteID: ec5cfde9e4de87d4c8329b57177d883e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 113, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -800611810
-    name: oyna1btn
+    guid: -344905931
+    name: yakinci_punch
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: oyna1btn_Frame_0
+    - name: yakinci_punch_Frame_0
       frameIndex: 0
       cellRect:
-        x: 13
-        y: 32
-        width: 101
-        height: 74
-      spriteId: 7e2c36bbf4a90b74d94e725df2a9f066
-    - name: oyna1btn_Frame_1
+        x: 17
+        y: 3
+        width: 66
+        height: 122
+      spriteId: 73806eab00932294da504166b97f2077
+    - name: yakinci_punch_Frame_1
       frameIndex: 1
       cellRect:
-        x: 13
-        y: 35
-        width: 101
-        height: 82
-      spriteId: 18ea0d1367112624b9bf18583bd5b8ae
-    - name: oyna1btn_Frame_2
+        x: 17
+        y: 3
+        width: 66
+        height: 122
+      spriteId: e327a29cfe37c424aadc58e85181057a
+    - name: yakinci_punch_Frame_2
       frameIndex: 2
       cellRect:
-        x: 11
-        y: 42
-        width: 103
-        height: 67
-      spriteId: d63d1870f4b760b4f961874cf356ff23
-    - name: oyna1btn_Frame_3
+        x: 15
+        y: 3
+        width: 68
+        height: 122
+      spriteId: 37ecf5e45b2959840a68716c5b327bcf
+    - name: yakinci_punch_Frame_3
       frameIndex: 3
       cellRect:
-        x: 13
-        y: 44
-        width: 106
-        height: 68
-      spriteId: ec5cfde9e4de87d4c8329b57177d883e
+        x: 7
+        y: 3
+        width: 76
+        height: 122
+      spriteId: 1be8c2e24d4c133468c4a8794cc6ab25
+    - name: yakinci_punch_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 7
+        y: 3
+        width: 76
+        height: 122
+      spriteId: 6efdbb6d854e4a04f84200f538d00365
+    - name: yakinci_punch_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 1
+        y: 3
+        width: 82
+        height: 122
+      spriteId: e12d950d1dd674547b01ca872e793cd5
+    - name: yakinci_punch_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 5
+        y: 3
+        width: 78
+        height: 122
+      spriteId: d4aa9184c6fa72d429eca2b421bb8e22
+    - name: yakinci_punch_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 5
+        y: 3
+        width: 85
+        height: 122
+      spriteId: 00bc2b69a1e0c4a499f6e8bfff92926a
     linkedCells: []
     parentIndex: -1
   platformSettings: []

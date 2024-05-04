@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 43649c18c0f119a4d90424b0d87ab60f
+guid: 01f4a326727b42c44b046245f65c3ba6
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: oyna1btn_Frame_0
+  - name: blood_Frame_0
     originalName: 
-    pivot: {x: 0.50495046, y: -0.43243244}
+    pivot: {x: 0.6428572, y: -2.25}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 94
-      width: 101
-      height: 74
-    spriteID: 7e2c36bbf4a90b74d94e725df2a9f066
+      x: 34
+      y: 108
+      width: 14
+      height: 12
+    spriteID: 3bee41f5e497a46488a43e7d1c49bc1b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,19 +140,79 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 94}
-  - name: oyna1btn_Frame_1
+    uvTransform: {x: 34, y: 108}
+  - name: blood_Frame_1
     originalName: 
-    pivot: {x: 0.50495046, y: -0.42682925}
+    pivot: {x: 0.6363636, y: -1.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 108
+      width: 22
+      height: 16
+    spriteID: 133fb2c1805138645965fd6cc00ee0c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 108}
+  - name: blood_Frame_2
+    originalName: 
+    pivot: {x: 0.5555556, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 79
+      width: 36
+      height: 21
+    spriteID: 8f09491cc84335b4397ec0fa4264a6c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 79}
+  - name: blood_Frame_3
+    originalName: 
+    pivot: {x: 0.5675676, y: -0.5555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 37
+      height: 27
+    spriteID: e982f55971e011c48aab72bb63fdbf30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: blood_Frame_4
+    originalName: 
+    pivot: {x: 0.52500004, y: -0.3125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 101
-      height: 82
-    spriteID: 18ea0d1367112624b9bf18583bd5b8ae
+      width: 40
+      height: 32
+    spriteID: f937103c9aed2cb4095d5ee2c87e18b0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,91 +221,59 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: oyna1btn_Frame_2
-    originalName: 
-    pivot: {x: 0.5145631, y: -0.6268657}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 113
-      y: 80
-      width: 103
-      height: 67
-    spriteID: d63d1870f4b760b4f961874cf356ff23
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 113, y: 80}
-  - name: oyna1btn_Frame_3
-    originalName: 
-    pivot: {x: 0.4811321, y: -0.64705884}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 113
-      y: 4
-      width: 106
-      height: 68
-    spriteID: ec5cfde9e4de87d4c8329b57177d883e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 113, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -800611810
-    name: oyna1btn
+    guid: 880355842
+    name: blood
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: oyna1btn_Frame_0
+    - name: blood_Frame_0
       frameIndex: 0
       cellRect:
-        x: 13
-        y: 32
-        width: 101
-        height: 74
-      spriteId: 7e2c36bbf4a90b74d94e725df2a9f066
-    - name: oyna1btn_Frame_1
+        x: 23
+        y: 27
+        width: 14
+        height: 12
+      spriteId: 3bee41f5e497a46488a43e7d1c49bc1b
+    - name: blood_Frame_1
       frameIndex: 1
       cellRect:
-        x: 13
-        y: 35
-        width: 101
-        height: 82
-      spriteId: 18ea0d1367112624b9bf18583bd5b8ae
-    - name: oyna1btn_Frame_2
+        x: 18
+        y: 26
+        width: 22
+        height: 16
+      spriteId: 133fb2c1805138645965fd6cc00ee0c6
+    - name: blood_Frame_2
       frameIndex: 2
       cellRect:
-        x: 11
-        y: 42
-        width: 103
-        height: 67
-      spriteId: d63d1870f4b760b4f961874cf356ff23
-    - name: oyna1btn_Frame_3
+        x: 12
+        y: 21
+        width: 36
+        height: 21
+      spriteId: 8f09491cc84335b4397ec0fa4264a6c2
+    - name: blood_Frame_3
       frameIndex: 3
       cellRect:
-        x: 13
-        y: 44
-        width: 106
-        height: 68
-      spriteId: ec5cfde9e4de87d4c8329b57177d883e
+        x: 11
+        y: 15
+        width: 37
+        height: 27
+      spriteId: e982f55971e011c48aab72bb63fdbf30
+    - name: blood_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 11
+        y: 10
+        width: 40
+        height: 32
+      spriteId: f937103c9aed2cb4095d5ee2c87e18b0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 64, y: 64}
