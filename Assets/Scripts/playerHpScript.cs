@@ -8,17 +8,22 @@ public class playerHpScript : MonoBehaviour
     public int maxHP = 10;
     public int HP = 10;
     public float IFrameDuration = 0.5f;
+    public GameObject died;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        died.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (HP<=0)
+        {
+            Time.timeScale = 0.0f;
+            died.SetActive(true);
+        }
     }
 
     IEnumerator IFrames()
@@ -36,6 +41,6 @@ public class playerHpScript : MonoBehaviour
     {
         StartCoroutine(IFrames());
     }
-
+    
     
 }

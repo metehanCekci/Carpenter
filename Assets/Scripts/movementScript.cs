@@ -90,13 +90,19 @@ public class movementScript : MonoBehaviour
     {
         horizontal = context.ReadValue<Vector2>().x;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("temas");
         if (collision.tag == "fallDetector")
         {
+            Debug.Log("gecti");
             if (SceneManager.GetActiveScene().buildIndex==1)
             {
                 SceneManager.LoadScene(2);
+            }
+            if (SceneManager.GetActiveScene().buildIndex==2)
+            {
+                SceneManager.LoadScene(3);
             }
             
         }
