@@ -225,8 +225,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 440, y: 50}
+  m_AnchoredPosition: {x: 0, y: 1442}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &710812234
 MonoBehaviour:
@@ -248,14 +248,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CARPENTER\nYap\u0131mc\u0131lar:\r\n- Ahmet Abdullah Be\u015Fer\n- Metehan
-    \xC7ek\xE7i\n- Kaan Aksoy\n- Ozan K\u0131l\u0131n\xE7arslan\n- Deniz Acar\n\r\nGeli\u015Ftiriciler:\r\n-
-    Ahmet Abdullah Be\u015Fer\n- Metehan \xC7ek\xE7i\n- Kaan Aksoy\n\r\nSanat:\r\n-
-    Ozan K\u0131l\u0131n\xE7arslan\n- Deniz Acar\n\r\nM\xFCzik ve Ses Efektleri:\r\n-
-    Ahmet Abdullah Be\u015Fer\n\r\nTest Ediciler:\r\n- Metehan \xC7ek\xE7i\n- Ahmet
-    Abdullah Be\u015Fer\n- Kaan Aksoy\n\r\nTe\u015Fekk\xFCrler:\r\n- Ailelerimiz
-    ve Arkada\u015Flar\u0131m\u0131z\r\n- \xD6\u011Fretmenlerimize\n- Ve Son Olarak
-    Kat\u0131lan Herkese..."
+  m_text: "<align=center><size=100>CARPENTER</size></align>\n<align=center><size=70>Yap\u0131mc\u0131lar</size></align>\n-
+    Ahmet Abdullah Be\u015Fer\n- Metehan \xC7ek\xE7i\n- Kaan Aksoy\n- Ozan K\u0131l\u0131n\xE7arslan\n-
+    Deniz Acar\n\r\n<align=center><size=70>Geli\u015Ftiriciler</size></align>\n-
+    Ahmet Abdullah Be\u015Fer\n- Metehan \xC7ek\xE7i\n- Kaan Aksoy\n\r\n<align=center><size=70>Sanat</size>\r</align>\n-
+    Ozan K\u0131l\u0131n\xE7arslan\n- Deniz Acar\n\r\n<align=center><size=70>M\xFCzik
+    ve Ses Efektleri</size></align>\n- Ahmet Abdullah Be\u015Fer\n\r\n<align=center><size=70>Test
+    Ediciler</size></align>\n- Metehan \xC7ek\xE7i\n- Ahmet Abdullah Be\u015Fer\n-
+    Kaan Aksoy\n- Maya(Kedi)\n\r\n<align=center><size=70>Te\u015Fekk\xFCrler!</size></align>\n-
+    Ailelerimiz ve Arkada\u015Flar\u0131m\u0131z\r\n- \xD6\u011Fretmenlerimize\n-
+    Ve Son Olarak Kat\u0131lan Herkese...\n<align=center><size=60>Te\u015Fekk\xFCrler!</size></align>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c50723586e5dd644785930759d4f97c6, type: 2}
   m_sharedMaterial: {fileID: 4134717260418544898, guid: c50723586e5dd644785930759d4f97c6, type: 2}
@@ -289,7 +291,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -318,7 +320,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -384.93744, w: -895.7712}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -367,8 +369,8 @@ Camera:
   m_GameObject: {fileID: 1438588992}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -390,11 +392,11 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 999999
+  field of view: 70.1
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -417,13 +419,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438588992}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.06, z: -9.43}
+  m_LocalRotation: {x: -0.5735764, y: 0, z: 0, w: 0.8191521}
+  m_LocalPosition: {x: 180, y: 0, z: -410.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -70, y: 0, z: 0}
 --- !u!1 &2134373841
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,8 +525,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1086, y: 556}
+  m_AnchoredPosition: {x: 0, y: 349}
+  m_SizeDelta: {x: 1100, y: 560}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

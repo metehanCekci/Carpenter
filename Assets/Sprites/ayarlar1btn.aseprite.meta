@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 103
       width: 112
       height: 80
-    spriteID: 28e8a4e94c712a84db7fdbb134bb4079
+    spriteID: 3b9aaf1c1b42fbb44af6fa3d1a20d915
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 91
       width: 112
       height: 77
-    spriteID: 21d2035003cf9a842b65c4389d162c47
+    spriteID: 746d89b10bcefba49b6ae1ab96dec0c0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 112
       height: 91
-    spriteID: 270f048f250da4c40adacfe6f05c8746
+    spriteID: 397bfd9c1b8fa6c4fac8fc4de29d1357
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 4
       width: 110
       height: 79
-    spriteID: 7287ffc8aa2c0fb4db34e44f5f9caa52
+    spriteID: 852c03a1be45942428873ddb4d58a6e0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -217,7 +217,7 @@ ScriptedImporter:
         y: 31
         width: 112
         height: 80
-      spriteId: 28e8a4e94c712a84db7fdbb134bb4079
+      spriteId: 3b9aaf1c1b42fbb44af6fa3d1a20d915
     - name: ayarlar1btn_Frame_1
       frameIndex: 1
       cellRect:
@@ -225,7 +225,7 @@ ScriptedImporter:
         y: 40
         width: 112
         height: 77
-      spriteId: 21d2035003cf9a842b65c4389d162c47
+      spriteId: 746d89b10bcefba49b6ae1ab96dec0c0
     - name: ayarlar1btn_Frame_2
       frameIndex: 2
       cellRect:
@@ -233,7 +233,7 @@ ScriptedImporter:
         y: 35
         width: 112
         height: 91
-      spriteId: 270f048f250da4c40adacfe6f05c8746
+      spriteId: 397bfd9c1b8fa6c4fac8fc4de29d1357
     - name: ayarlar1btn_Frame_3
       frameIndex: 3
       cellRect:
@@ -241,7 +241,7 @@ ScriptedImporter:
         y: 34
         width: 110
         height: 79
-      spriteId: 7287ffc8aa2c0fb4db34e44f5f9caa52
+      spriteId: 852c03a1be45942428873ddb4d58a6e0
     linkedCells: []
     parentIndex: -1
   platformSettings: []
