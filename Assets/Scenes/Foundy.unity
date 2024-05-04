@@ -466,7 +466,11 @@ PrefabInstance:
       objectReference: {fileID: 1440260788}
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: damage
+<<<<<<< HEAD
       value: 20
+=======
+      value: 1
+>>>>>>> parent of 57f8c5f (Merge branch 'main' of https://github.com/metehanCekci/Marangoz)
       objectReference: {fileID: 0}
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: radius
