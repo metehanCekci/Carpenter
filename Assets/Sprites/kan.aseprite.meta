@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2b20859c9823eb94a85261296a1c9bcf
+guid: 9a953637c2b892b499ca91134221b537
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: yakinci_Frame_0
+  - name: kan
     originalName: 
-    pivot: {x: 0.5903614, y: -0.024590163}
+    pivot: {x: 0.42857146, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 83
-      height: 122
-    spriteID: 01be2826aa05a274daeaa40de82fa447
+      width: 7
+      height: 7
+    spriteID: 59a66a0c060a33745a3e18fc1d343930
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,83 +141,27 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: yakinci_Frame_1
-    originalName: 
-    pivot: {x: 0.5802469, y: -0.024590163}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 134
-      width: 81
-      height: 122
-    spriteID: 06cce34497fd30046ba1066cdbfc1dcd
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 134}
-  - name: yakinci_Frame_2
-    originalName: 
-    pivot: {x: 0.5802469, y: -0.024590163}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 264
-      width: 81
-      height: 122
-    spriteID: a073db7ac33d543429cce5d1e7576e6b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 264}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 38545822
-    name: yakinci
+    guid: 1445903012
+    name: kan
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: yakinci_Frame_0
+    - name: kan
       frameIndex: 0
       cellRect:
-        x: 15
-        y: 3
-        width: 83
-        height: 122
-      spriteId: 01be2826aa05a274daeaa40de82fa447
-    - name: yakinci_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 17
-        y: 3
-        width: 81
-        height: 122
-      spriteId: 06cce34497fd30046ba1066cdbfc1dcd
-    - name: yakinci_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 17
-        y: 3
-        width: 81
-        height: 122
-      spriteId: a073db7ac33d543429cce5d1e7576e6b
+        x: 1
+        y: 0
+        width: 7
+        height: 7
+      spriteId: 59a66a0c060a33745a3e18fc1d343930
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 8, y: 8}
