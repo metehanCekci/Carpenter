@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cf3eef83f42e34a49a50af7ff0208c04
+guid: 44563adbde5c4164188760a104090fcf
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,98 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: blood_Frame_0
+  - name: yakinci_idle_Frame_0
     originalName: 
-    pivot: {x: 0.6428572, y: -2.25}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 34
-      y: 108
-      width: 14
-      height: 12
-    spriteID: 8aeda0b3d3fd9414b8e923bbb74c7d37
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 34, y: 108}
-  - name: blood_Frame_1
-    originalName: 
-    pivot: {x: 0.6363636, y: -1.625}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 108
-      width: 22
-      height: 16
-    spriteID: 00dad4c0ed4ad4f4cac8b7fdcd6b20b2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 108}
-  - name: blood_Frame_2
-    originalName: 
-    pivot: {x: 0.5555556, y: -1}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 79
-      width: 36
-      height: 21
-    spriteID: a924fb390dc9ad54683e6d8dc6214502
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 79}
-  - name: blood_Frame_3
-    originalName: 
-    pivot: {x: 0.5675676, y: -0.5555556}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 44
-      width: 37
-      height: 27
-    spriteID: d389f7c9ff85be74b81bb3a725aa13d6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 44}
-  - name: blood_Frame_4
-    originalName: 
-    pivot: {x: 0.52500004, y: -0.3125}
+    pivot: {x: 0.59756094, y: -0.015873017}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 40
-      height: 32
-    spriteID: 475fd12615f1b4249969f4c1b0d440ed
+      width: 82
+      height: 126
+    spriteID: 09e14e1ccd62c18488db2826b27fd43e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -221,59 +141,83 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: yakinci_idle_Frame_1
+    originalName: 
+    pivot: {x: 0.59756094, y: -0.007936508}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 138
+      width: 82
+      height: 126
+    spriteID: dbf5b6557eab85d4396d914f8c3da0a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 138}
+  - name: yakinci_idle_Frame_2
+    originalName: 
+    pivot: {x: 0.59756094, y: -0.015873017}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 272
+      width: 82
+      height: 126
+    spriteID: 0fd160adacb80cf41b3d8b3ae3719541
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 272}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 880355842
-    name: blood
+    guid: -412051967
+    name: yakinci_idle
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: blood_Frame_0
+    - name: yakinci_idle_Frame_0
       frameIndex: 0
       cellRect:
-        x: 23
-        y: 27
-        width: 14
-        height: 12
-      spriteId: 8aeda0b3d3fd9414b8e923bbb74c7d37
-    - name: blood_Frame_1
+        x: 15
+        y: 2
+        width: 82
+        height: 126
+      spriteId: 09e14e1ccd62c18488db2826b27fd43e
+    - name: yakinci_idle_Frame_1
       frameIndex: 1
       cellRect:
-        x: 18
-        y: 26
-        width: 22
-        height: 16
-      spriteId: 00dad4c0ed4ad4f4cac8b7fdcd6b20b2
-    - name: blood_Frame_2
+        x: 15
+        y: 1
+        width: 82
+        height: 126
+      spriteId: dbf5b6557eab85d4396d914f8c3da0a0
+    - name: yakinci_idle_Frame_2
       frameIndex: 2
       cellRect:
-        x: 12
-        y: 21
-        width: 36
-        height: 21
-      spriteId: a924fb390dc9ad54683e6d8dc6214502
-    - name: blood_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 11
-        y: 15
-        width: 37
-        height: 27
-      spriteId: d389f7c9ff85be74b81bb3a725aa13d6
-    - name: blood_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 11
-        y: 10
-        width: 40
-        height: 32
-      spriteId: 475fd12615f1b4249969f4c1b0d440ed
+        x: 15
+        y: 2
+        width: 82
+        height: 126
+      spriteId: 0fd160adacb80cf41b3d8b3ae3719541
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
+  canvasSize: {x: 128, y: 128}
