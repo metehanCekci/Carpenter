@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class movementScript : MonoBehaviour
 {
@@ -10,19 +9,22 @@ public class movementScript : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     private Animator animator;
+    private GravCheck gravCheck;
+    public GameObject entranceClose;
 
     private float horizontal;
-    public float speed=3.0f;
+    public float speed = 3.0f;
     public float jumpingPower = 5f;
     public bool isFacingRight = true;
-   
+
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        rb= GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -50,21 +52,19 @@ public class movementScript : MonoBehaviour
             Flip();
         }
         animator.SetBool(name: "onAir", value: !isGrounded());
-        animator.SetBool(name:"onGround", value: isGrounded());
+        animator.SetBool(name: "onGround", value: isGrounded());
         animator.SetBool(name: "isWalking", value: Mathf.Abs(horizontal) > 0f);
 
     }
 
-    public void Menu()
-    {
-
-    }
- 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (context.performed && isGrounded()) 
+        if (context.performed && isGrounded())
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            if (gravCheck.GravChanged)
+                rb.velocity = new Vector2(rb.velocity.x, jumpingPower * -1);
+            else
+                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
         if (context.canceled && rb.velocity.y > 0f)
         {
@@ -77,7 +77,7 @@ public class movementScript : MonoBehaviour
     }
     private void Flip()
     {
-        isFacingRight=!isFacingRight;
+        isFacingRight = !isFacingRight;
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
         transform.localScale = localScale;
@@ -86,4 +86,28 @@ public class movementScript : MonoBehaviour
     {
         horizontal = context.ReadValue<Vector2>().x;
     }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("temas");
+        if (collision.CompareTag("fallDetector"))
+        {
+            int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+            Debug.Log("gecti");
+            
+            if (SceneManager.GetActiveScene().buildIndex!=4)
+            {
+                currentLevelIndex++;
+                SceneManager.LoadScene(currentLevelIndex);
+
+            }
+
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 6)
+            entranceClose.SetActive(true); 
+    }
+
 }

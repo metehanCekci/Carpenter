@@ -9,19 +9,20 @@ public class menuScript : MonoBehaviour
 {
     private bool isPaused = false;
     public GameObject menu;
+    public GameObject player;
     public void startGame()
     {
         SceneManager.LoadScene(1);
     }
-    private void Start()
+    void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex==1) 
+        if (SceneManager.GetActiveScene().buildIndex!=0)
         {
             menu.SetActive(false);
             Time.timeScale = 1f;
             isPaused = false;
+            player = GameObject.FindGameObjectWithTag("Player");
         }
-       
     }
     public void Reset()
     {
@@ -36,10 +37,12 @@ public class menuScript : MonoBehaviour
         if (isPaused)
         {
             resume();
+            player.GetComponent<attackScript>().SetGamePaused(false);
         }
         else
         {
             pause();
+            player.GetComponent<attackScript>().SetGamePaused(true);
         }
     }
     public void quitGame()
