@@ -123,15 +123,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: foe_walk_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -0.23913044}
+    pivot: {x: 0.51724136, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 89
       y: 4
-      width: 34
-      height: 46
+      width: 29
+      height: 45
     spriteID: dcc6d1c1bec02f248b516e82562e5237
     spriteBone: []
     spriteOutline: []
@@ -140,17 +140,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 89, y: 4}
   - name: foe_walk_Frame_1
     originalName: 
-    pivot: {x: 0.51724136, y: -0.23913044}
+    pivot: {x: 0.5185185, y: -0.21739131}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 46
-      y: 164
-      width: 29
+      x: 89
+      y: 57
+      width: 27
       height: 46
     spriteID: 0b346a1ec5bdf1245b1a1f4376655e90
     spriteBone: []
@@ -160,18 +160,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 46, y: 164}
+    uvTransform: {x: 89, y: 57}
   - name: foe_walk_Frame_2
     originalName: 
-    pivot: {x: 0.4516129, y: -0.23913044}
+    pivot: {x: 0.54838705, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 46
-      y: 4
+      y: 54
       width: 31
-      height: 46
+      height: 45
     spriteID: 19495c992136b1d499cd0c30858fd46b
     spriteBone: []
     spriteOutline: []
@@ -180,18 +180,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 46, y: 4}
+    uvTransform: {x: 46, y: 54}
   - name: foe_walk_Frame_3
     originalName: 
-    pivot: {x: 0.39999998, y: -0.26666668}
+    pivot: {x: 0.5666667, y: -0.29545456}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 85
-      y: 4
-      width: 25
-      height: 45
+      x: 46
+      y: 160
+      width: 30
+      height: 44
     spriteID: 26a561358a2fb554e8c4d6a6a9ef5e67
     spriteBone: []
     spriteOutline: []
@@ -200,17 +200,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 85, y: 4}
+    uvTransform: {x: 46, y: 160}
   - name: foe_walk_Frame_4
     originalName: 
-    pivot: {x: 0.4375, y: -0.26666668}
+    pivot: {x: 0.5, y: -0.26666668}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 166
-      width: 32
+      y: 4
+      width: 34
       height: 45
     spriteID: d3dd78b2e1c51e3488bd65e7908f26b6
     spriteBone: []
@@ -220,19 +220,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 166}
+    uvTransform: {x: 4, y: 4}
   - name: foe_walk_Frame_5
     originalName: 
-    pivot: {x: 0.4516129, y: -0.29545456}
+    pivot: {x: 0.46875, y: -0.29545456}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 46
-      y: 112
-      width: 31
+      x: 4
+      y: 162
+      width: 32
       height: 44
-    spriteID: d290d2ad5ee6c8b41ac85a76b7d5fb81
+    spriteID: 8ad87f0da5fe7cd4da8a5b42b0cb3e90
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,19 +240,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 46, y: 112}
+    uvTransform: {x: 4, y: 162}
   - name: foe_walk_Frame_6
     originalName: 
-    pivot: {x: 0.4516129, y: -0.23913044}
+    pivot: {x: 0.54838705, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 46
-      y: 58
+      y: 107
       width: 31
-      height: 46
-    spriteID: 48e2bfd0e65d5e04cb8d5b45b4310865
+      height: 45
+    spriteID: f18ee5dc13791e945b2e7ee46f032423
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -260,19 +260,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 46, y: 58}
+    uvTransform: {x: 46, y: 107}
   - name: foe_walk_Frame_7
     originalName: 
-    pivot: {x: 0.5, y: -0.23913044}
+    pivot: {x: 0.5185185, y: -0.22222222}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 58
-      width: 34
-      height: 46
-    spriteID: 1a3452ee93242eb448f4792df5ecebcc
+      x: 89
+      y: 111
+      width: 27
+      height: 45
+    spriteID: 39599e5702e77cd478864d64d7c54212
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,19 +280,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 58}
+    uvTransform: {x: 89, y: 111}
   - name: foe_walk_Frame_8
     originalName: 
-    pivot: {x: 0.5, y: -0.23913044}
+    pivot: {x: 0.4848485, y: -0.22222222}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 112
-      width: 34
-      height: 46
-    spriteID: 83bf06c30e49ba249b6d24ae4f92b4f3
+      y: 109
+      width: 33
+      height: 45
+    spriteID: a1fbc804460dd3143bc8c3387fe8762a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -300,7 +300,47 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 112}
+    uvTransform: {x: 4, y: 109}
+  - name: foe_walk_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -0.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 57
+      width: 34
+      height: 44
+    spriteID: b4a61e183ab276a4cb39aaa6e528a559
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 57}
+  - name: foe_walk_Frame_10
+    originalName: 
+    pivot: {x: 0.51428574, y: -0.30952382}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 4
+      width: 35
+      height: 42
+    spriteID: 61a75623b96213840a1c732a7eee3844
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -313,75 +353,91 @@ ScriptedImporter:
     - name: foe_walk_Frame_0
       frameIndex: 0
       cellRect:
-        x: 15
+        x: 17
         y: 11
-        width: 34
-        height: 46
+        width: 29
+        height: 45
       spriteId: dcc6d1c1bec02f248b516e82562e5237
     - name: foe_walk_Frame_1
       frameIndex: 1
       cellRect:
-        x: 17
-        y: 11
-        width: 29
+        x: 18
+        y: 10
+        width: 27
         height: 46
       spriteId: 0b346a1ec5bdf1245b1a1f4376655e90
     - name: foe_walk_Frame_2
       frameIndex: 2
       cellRect:
-        x: 18
+        x: 15
         y: 11
         width: 31
-        height: 46
+        height: 45
       spriteId: 19495c992136b1d499cd0c30858fd46b
     - name: foe_walk_Frame_3
       frameIndex: 3
       cellRect:
-        x: 22
-        y: 12
-        width: 25
-        height: 45
+        x: 15
+        y: 13
+        width: 30
+        height: 44
       spriteId: 26a561358a2fb554e8c4d6a6a9ef5e67
     - name: foe_walk_Frame_4
       frameIndex: 4
       cellRect:
-        x: 18
+        x: 15
         y: 12
-        width: 32
+        width: 34
         height: 45
       spriteId: d3dd78b2e1c51e3488bd65e7908f26b6
     - name: foe_walk_Frame_5
       frameIndex: 5
       cellRect:
-        x: 18
+        x: 17
         y: 13
-        width: 31
+        width: 32
         height: 44
-      spriteId: d290d2ad5ee6c8b41ac85a76b7d5fb81
+      spriteId: 8ad87f0da5fe7cd4da8a5b42b0cb3e90
     - name: foe_walk_Frame_6
       frameIndex: 6
       cellRect:
-        x: 18
+        x: 15
         y: 11
         width: 31
-        height: 46
-      spriteId: 48e2bfd0e65d5e04cb8d5b45b4310865
+        height: 45
+      spriteId: f18ee5dc13791e945b2e7ee46f032423
     - name: foe_walk_Frame_7
       frameIndex: 7
       cellRect:
-        x: 15
-        y: 11
-        width: 34
-        height: 46
-      spriteId: 1a3452ee93242eb448f4792df5ecebcc
+        x: 18
+        y: 10
+        width: 27
+        height: 45
+      spriteId: 39599e5702e77cd478864d64d7c54212
     - name: foe_walk_Frame_8
       frameIndex: 8
+      cellRect:
+        x: 16
+        y: 10
+        width: 33
+        height: 45
+      spriteId: a1fbc804460dd3143bc8c3387fe8762a
+    - name: foe_walk_Frame_9
+      frameIndex: 9
       cellRect:
         x: 15
         y: 11
         width: 34
-        height: 46
-      spriteId: 83bf06c30e49ba249b6d24ae4f92b4f3
+        height: 44
+      spriteId: b4a61e183ab276a4cb39aaa6e528a559
+    - name: foe_walk_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 14
+        y: 13
+        width: 35
+        height: 42
+      spriteId: 61a75623b96213840a1c732a7eee3844
     linkedCells: []
     parentIndex: -1
   platformSettings: []
