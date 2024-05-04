@@ -21,7 +21,7 @@ public class playerHpScript : MonoBehaviour
     void Start()
     {
         died.SetActive(false);
-        rb = GetComponent<Rigidbody2D>();
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -54,11 +54,14 @@ public class playerHpScript : MonoBehaviour
     Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
 
 
-    // Apply knockback force
-    rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+        
+        if (rb != null)
+        {
+            Debug.Log("Çalýþtý");
+            rb.AddForce(direction * knockbackForce * Time.fixedDeltaTime ,ForceMode2D.Force); // Yeni bir kuvvet uygula
+        }
 
-
-    HP--;
+        HP--;
     StartCoroutine(IFrames());
     }
 }
