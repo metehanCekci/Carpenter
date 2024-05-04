@@ -9,7 +9,8 @@ public class movementScript : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     private Animator animator;
-    public GravCheck gravCheck;
+    private GravCheck gravCheck;
+    public GameObject entranceClose;
 
     private float horizontal;
     public float speed = 3.0f;
@@ -93,23 +94,25 @@ public class movementScript : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("temas");
-        if (collision.tag == "fallDetector")
+        if (collision.CompareTag("fallDetector"))
         {
+            int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
             Debug.Log("gecti");
-            if (SceneManager.GetActiveScene().buildIndex==1)
-            {
-                SceneManager.LoadScene(2);
-            }
-            if (SceneManager.GetActiveScene().buildIndex==2)
-            {
-                SceneManager.LoadScene(3);
-            }
-            if (SceneManager.GetActiveScene().buildIndex==3)
-            {
-                SceneManager.LoadScene(4);
-            }
             
+            if (SceneManager.GetActiveScene().buildIndex!=4)
+            {
+                currentLevelIndex++;
+                SceneManager.LoadScene(currentLevelIndex);
+
+            }
+
         }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 6)
+            entranceClose.SetActive(true); 
     }
 
 }
