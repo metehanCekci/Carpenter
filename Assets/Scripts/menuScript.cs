@@ -23,6 +23,10 @@ public class menuScript : MonoBehaviour
         }
        
     }
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     public void mainMenu()
     {
         SceneManager.LoadScene(0);

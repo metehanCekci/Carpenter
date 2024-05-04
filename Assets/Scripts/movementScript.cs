@@ -26,7 +26,18 @@ public class movementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (rb.velocity.y < 0)
+        {
+            //Aþaðý yonlu hareket
+            animator.SetBool(name: "isFalling", value: true);
+            animator.SetBool(name: "isJumping", value: false);
+        }
+        else
+        {
+            animator.SetBool(name: "isFalling", value: false);
+            animator.SetBool(name: "isJumping", value: true);
+        }
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
@@ -39,7 +50,9 @@ public class movementScript : MonoBehaviour
             Flip();
         }
         animator.SetBool(name: "onAir", value: !isGrounded());
+        animator.SetBool(name:"onGround", value: isGrounded());
         animator.SetBool(name: "isWalking", value: Mathf.Abs(horizontal) > 0f);
+
     }
 
     public void Menu()
