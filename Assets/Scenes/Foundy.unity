@@ -681,7 +681,11 @@ PrefabInstance:
       objectReference: {fileID: 1440260788}
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: damage
+<<<<<<< HEAD
       value: 2
+=======
+      value: 1
+>>>>>>> 433ab300d47a6e23db50cce2012bedc3c59fb71e
       objectReference: {fileID: 0}
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: radius
@@ -871,11 +875,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.276
+      value: -8.033
       objectReference: {fileID: 0}
     - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.228
+      value: 0.861
       objectReference: {fileID: 0}
     - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
       propertyPath: m_LocalPosition.z
@@ -920,6 +924,10 @@ PrefabInstance:
     - target: {fileID: 5826966643344064042, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
       propertyPath: m_Name
       value: Sayborg
+      objectReference: {fileID: 0}
+    - target: {fileID: 5826966643344064042, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6025540098860878998, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
       propertyPath: phs
@@ -47848,6 +47856,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1779271946
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.137
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313155033725085468, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691325607036552037, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 930220011}
+    - target: {fileID: 4691325607036552037, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 930220012}
+    - target: {fileID: 5826966643344064042, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_Name
+      value: Sayborg (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5826966643344064042, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025540098860878998, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: phs
+      value: 
+      objectReference: {fileID: 930220020}
+    - target: {fileID: 7628362822147333859, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
+      propertyPath: health
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9d04ffae4ab71f24c9cb1e960f7c7629, type: 3}
 --- !u!1 &1829610740
 GameObject:
   m_ObjectHideFlags: 0
@@ -49094,6 +49179,7 @@ SceneRoots:
   - {fileID: 66551407132054176}
   - {fileID: 1731749131}
   - {fileID: 530314839}
+  - {fileID: 1779271946}
   - {fileID: 5551171770726410717}
   - {fileID: 4412751634651805563}
   - {fileID: 7625841780594998997}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class spawnerScript : MonoBehaviour
 {
+    public bool isOver = false;
     [SerializeField]
     public GameObject[] spawnableObjects;
     [SerializeField]
@@ -14,12 +15,15 @@ public class spawnerScript : MonoBehaviour
 
     private void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer >= spawnInterval)
+        if (isOver == false)
         {
-            SpawnNextObject();
-            timer = 0f;
+            timer += Time.deltaTime;
+
+            if (timer >= spawnInterval)
+            {
+                SpawnNextObject();
+                timer = 0f;
+            }
         }
     }
 
@@ -28,12 +32,13 @@ public class spawnerScript : MonoBehaviour
     {
         if (currentIndex >= spawnableObjects.Length)
         {
-            currentIndex = 0;
+            isOver = true;
         }
 
         GameObject spawnableObject = spawnableObjects[currentIndex];
         GameObject newObject = Instantiate(spawnableObject);
         newObject.transform.position = this.gameObject.transform.position;
+        newObject.SetActive(true);
         currentIndex++;
     }
 }
