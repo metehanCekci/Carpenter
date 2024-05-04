@@ -505,8 +505,20 @@ PrefabInstance:
       value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 3943028504047482040, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: maxJumpTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943028504047482040, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: jumpingPower
       value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943028504047482040, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: longJumpForce
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943028504047482040, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: shortJumpForce
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5657330803994591263, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: m_Material
