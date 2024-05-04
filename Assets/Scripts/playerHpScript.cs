@@ -12,7 +12,7 @@ public class playerHpScript : MonoBehaviour
     public GameObject died;
     public Rigidbody2D rb;
 
-
+    public bool takeNoDamage = false;
     public float knockbackForce = 999;
     public Vector2 direction;
     public Vector2 knockback;
@@ -47,11 +47,12 @@ public class playerHpScript : MonoBehaviour
 
     public void takeDamage(Vector2 bulletPosition)
     {
-        if (this.gameObject.layer == 8)
+        if (this.gameObject.layer == 8 && takeNoDamage==false)
         {
             sfx.playHurt();
             try
             {
+                Debug.Log("hasar alma acik");
                 Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
                 // Calculate knockback direction
                 Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;

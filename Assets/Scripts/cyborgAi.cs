@@ -8,6 +8,7 @@ public class cyborgAi : MonoBehaviour
 {
     public GameObject Player;
     public GameObject hurtBox;
+    public GameObject attackScript;
     public Transform target;
     public Animator anim;
     public enemyFacing eF;
@@ -28,6 +29,7 @@ public class cyborgAi : MonoBehaviour
     void Start()
     {
         transform.Translate(Vector3.back*Time.deltaTime * 1);
+        attackScript = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -143,11 +145,18 @@ public class cyborgAi : MonoBehaviour
             
             if(collision.gameObject.layer == 8)
             {
+                attackScript.GetComponent<attackScript>().parryable = true;
                 Vector2 playerPosition = new Vector2(collision.transform.position.x, collision.transform.position.y);
                 collision.gameObject.GetComponent<playerHpScript>().takeDamage(playerPosition);
+                beklet();
             }
-
+            attackScript.GetComponent<attackScript>().parryable = false;
         }
+    }
+    IEnumerator beklet()
+    {
+        yield return new WaitForSeconds(10);
+        Debug.Log("parry bekletildi");
     }
 
     

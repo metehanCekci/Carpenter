@@ -7,14 +7,15 @@ public class bulletScript : MonoBehaviour
     // Start is called before the first frame update
     public float speed = 5;
     public bool goingLeft = false;
-
+    public GameObject attackScript;
     public AudioSource audioPlayer;
+    public GameObject playerHpScript;
 
 
     public playerHpScript phs;
     void Start()
     {
-        
+        attackScript = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -30,6 +31,8 @@ public class bulletScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("parry calisti");
+            attackScript.GetComponent<attackScript>().parryable = true;
             phs = other.transform.GetComponent<playerHpScript>();
             if (other.gameObject.layer == 8)
             {
@@ -38,7 +41,14 @@ public class bulletScript : MonoBehaviour
                 Destroy(gameObject);
 
             }
+            beklet();
+            attackScript.GetComponent<attackScript>().parryable = false;
 
         }
+    }
+    IEnumerator beklet()
+    {
+        yield return new WaitForSeconds(10);
+        Debug.Log("parry bekletildi");
     }
 }

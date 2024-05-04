@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class attackScript : MonoBehaviour
 {
     Animator anim;
     public GameObject attackPoint;
+    public GameObject playerHpScript;
+    public GameObject cyborgAi;
     public enemyFacing eF;
     public float radius;
     public float knockbackAmt;
@@ -14,10 +17,13 @@ public class attackScript : MonoBehaviour
     public float damage;
     public CameraShake CS;
 
+    public bool parryable=false;
     bool gamePaused = false;
     void Start()
     {
         anim = GetComponent<Animator>();
+        playerHpScript = GameObject.FindGameObjectWithTag("Player");
+        cyborgAi = GameObject.FindGameObjectWithTag("enemy");
     }
     void Update()
     {
@@ -61,5 +67,27 @@ public class attackScript : MonoBehaviour
     public void SetGamePaused(bool paused)
     {
         gamePaused = paused;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("weapon"))
+        {
+            if(Input.GetKeyDown(KeyCode.Mouse1)) 
+            {
+                if (parryable)
+                {
+                    Debug.Log("parry calisti");
+                    playerHpScript.GetComponent<playerHpScript>().takeNoDamage = true;
+                    cyborgAi.GetComponent<cyborgAi>().enabled = false;
+                    beklet();
+                    playerHpScript.GetComponent<playerHpScript>().takeNoDamage = false;
+                    cyborgAi.GetComponent<cyborgAi>().enabled = true;
+                }
+            }
+        }
+    }
+    IEnumerator beklet()
+    {
+        yield return new WaitForSeconds(10);
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - fallDetector
   - levelChanger
   - textWriter
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 3774423911
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: frontground
+    uniqueID: 1184918199
     locked: 0
