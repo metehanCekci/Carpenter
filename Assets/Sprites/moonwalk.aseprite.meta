@@ -1,0 +1,447 @@
+fileFormatVersion: 2
+guid: b616f2b4e463b96438c22d60b6edfaa7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: moonwalk_Frame_0
+    originalName: 
+    pivot: {x: 0.5185185, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 4
+      width: 27
+      height: 61
+    spriteID: 0107e765fdc6c6145a4318f3c3056841
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 4}
+  - name: moonwalk_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 4
+      width: 28
+      height: 61
+    spriteID: 864b8cbd186d2804bb0e55e1dace34a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 4}
+  - name: moonwalk_Frame_2
+    originalName: 
+    pivot: {x: 0.4516129, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 132
+      width: 31
+      height: 56
+    spriteID: 6451cb2486e412d4eb56317725a7bfe2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 132}
+  - name: moonwalk_Frame_3
+    originalName: 
+    pivot: {x: 0.46875, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 68
+      width: 32
+      height: 56
+    spriteID: 68d74861c1a4aac4d8f61637231f37ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 68}
+  - name: moonwalk_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 73
+      width: 28
+      height: 61
+    spriteID: 863c50327aac3b34db9a942116078482
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 73}
+  - name: moonwalk_Frame_5
+    originalName: 
+    pivot: {x: 0.516129, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 135
+      width: 31
+      height: 61
+    spriteID: c4848c856e6b0f045b2867e17cc12f3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 135}
+  - name: moonwalk_Frame_6
+    originalName: 
+    pivot: {x: 0.5277778, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 36
+      height: 60
+    spriteID: 8330b0858c1956142a809fd3be3e760c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: moonwalk_Frame_7
+    originalName: 
+    pivot: {x: 0.4848485, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 4
+      width: 33
+      height: 56
+    spriteID: bad06dff2dfd79f438d928a97c87777a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 4}
+  - name: moonwalk_Frame_8
+    originalName: 
+    pivot: {x: 0.47222224, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 72
+      width: 36
+      height: 55
+    spriteID: 89c5712f5325ef644ad534d068a046f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 72}
+  - name: moonwalk_Frame_9
+    originalName: 
+    pivot: {x: 0.4516129, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 48
+      y: 196
+      width: 31
+      height: 56
+    spriteID: 4b60b07fce754fb46ae293480c3fe9f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 48, y: 196}
+  - name: moonwalk_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 142
+      width: 28
+      height: 60
+    spriteID: acdd7511a8f937d4aa022439117c4b30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 142}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 2050151930
+    name: moonwalk
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: moonwalk_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 18
+        y: 0
+        width: 27
+        height: 61
+      spriteId: 0107e765fdc6c6145a4318f3c3056841
+    - name: moonwalk_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 18
+        y: 0
+        width: 28
+        height: 61
+      spriteId: 864b8cbd186d2804bb0e55e1dace34a2
+    - name: moonwalk_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 18
+        y: 0
+        width: 31
+        height: 56
+      spriteId: 6451cb2486e412d4eb56317725a7bfe2
+    - name: moonwalk_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 17
+        y: 0
+        width: 32
+        height: 56
+      spriteId: 68d74861c1a4aac4d8f61637231f37ec
+    - name: moonwalk_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 18
+        y: 0
+        width: 28
+        height: 61
+      spriteId: 863c50327aac3b34db9a942116078482
+    - name: moonwalk_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 16
+        y: 0
+        width: 31
+        height: 61
+      spriteId: c4848c856e6b0f045b2867e17cc12f3f
+    - name: moonwalk_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 13
+        y: 0
+        width: 36
+        height: 60
+      spriteId: 8330b0858c1956142a809fd3be3e760c
+    - name: moonwalk_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 16
+        y: 0
+        width: 33
+        height: 56
+      spriteId: bad06dff2dfd79f438d928a97c87777a
+    - name: moonwalk_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 15
+        y: 0
+        width: 36
+        height: 55
+      spriteId: 89c5712f5325ef644ad534d068a046f1
+    - name: moonwalk_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 18
+        y: 0
+        width: 31
+        height: 56
+      spriteId: 4b60b07fce754fb46ae293480c3fe9f1
+    - name: moonwalk_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 18
+        y: 0
+        width: 28
+        height: 60
+      spriteId: acdd7511a8f937d4aa022439117c4b30
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}
