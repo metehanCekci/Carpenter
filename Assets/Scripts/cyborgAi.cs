@@ -138,7 +138,8 @@ public class cyborgAi : MonoBehaviour
 
             if(collision.gameObject.layer == 8)
             {
-                collision.gameObject.GetComponent<playerHpScript>().takeDamageColl(collision);
+                Vector2 playerPosition = new Vector2(collision.transform.position.x, collision.transform.position.y);
+                collision.gameObject.GetComponent<playerHpScript>().takeDamage(playerPosition);
             }
 
         }

@@ -7,6 +7,7 @@ public class attackScript : MonoBehaviour
     Animator anim;
     public GameObject attackPoint;
     public float radius;
+    public SFXLoader sFX;
     public LayerMask enemies;
     public float damage;
 
@@ -28,19 +29,15 @@ public class attackScript : MonoBehaviour
     }
     public void attack()
     {
-        Debug.Log("saldýrdý!");
         if (!gamePaused)
         {
-            Debug.Log("oyun akýyor!");
             Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
             foreach (Collider2D enemyGameObject in enemy)
             {
-                Debug.Log("duþman bulundu");
-                Debug.Log("Hit enemy!");
+                sFX.playHit();
                 enemyGameObject.GetComponent<enemyHealth>().health -= damage;
                 if (enemyGameObject.GetComponent<enemyHealth>().health <= 0)
                 {
-                    Debug.Log("oldu");
                     Destroy(enemyGameObject.gameObject);
                 }
             }

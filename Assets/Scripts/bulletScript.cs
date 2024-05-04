@@ -7,12 +7,10 @@ public class bulletScript : MonoBehaviour
     // Start is called before the first frame update
     public float speed = 5;
     public bool goingLeft = false;
-    public float knockbackForce = 999;
-    public Rigidbody2D rb;
+
     public AudioSource audioPlayer;
 
-    public Vector2 direction;
-    public Vector2 knockback;
+
     public playerHpScript phs;
     void Start()
     {
@@ -35,7 +33,7 @@ public class bulletScript : MonoBehaviour
             if (other.gameObject.layer == 8)
             {
 
-                phs.takeDamage(other);
+                phs.takeDamage(transform.position);
                 Destroy(gameObject);
 
             }
