@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b616f2b4e463b96438c22d60b6edfaa7
+guid: f6d141732c63701408772b54010af77c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 27
       height: 61
-    spriteID: 0107e765fdc6c6145a4318f3c3056841
+    spriteID: a14f2d72779410a4c95d6a75c9676d9d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 28
       height: 61
-    spriteID: 864b8cbd186d2804bb0e55e1dace34a2
+    spriteID: 8c77a825ea56ab044a9470ed9d3c1824
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 132
       width: 31
       height: 56
-    spriteID: 6451cb2486e412d4eb56317725a7bfe2
+    spriteID: 73b40b7a456ba6d4da6e9d24dc360216
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 68
       width: 32
       height: 56
-    spriteID: 68d74861c1a4aac4d8f61637231f37ec
+    spriteID: 6728fef768c9d4b46a74a20eb2d33a66
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 73
       width: 28
       height: 61
-    spriteID: 863c50327aac3b34db9a942116078482
+    spriteID: 1e3b2eaba6535d940b65df9d3661d80b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 135
       width: 31
       height: 61
-    spriteID: c4848c856e6b0f045b2867e17cc12f3f
+    spriteID: ec9efc2232cd86746bbbd939d827e02d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 4
       width: 36
       height: 60
-    spriteID: 8330b0858c1956142a809fd3be3e760c
+    spriteID: 3a12536081630d341b6b2ce9b119f427
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 4
       width: 33
       height: 56
-    spriteID: bad06dff2dfd79f438d928a97c87777a
+    spriteID: ed47126f89910f443972c1d75191df05
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 72
       width: 36
       height: 55
-    spriteID: 89c5712f5325ef644ad534d068a046f1
+    spriteID: 6b321932dea4a714da1ce65d15f2bac4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 196
       width: 31
       height: 56
-    spriteID: 4b60b07fce754fb46ae293480c3fe9f1
+    spriteID: 8e7eb4f627b234240bf0e844d01015b5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 142
       width: 28
       height: 60
-    spriteID: acdd7511a8f937d4aa022439117c4b30
+    spriteID: 3302726599f0b834995a2852ee35f2ed
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -357,7 +357,7 @@ ScriptedImporter:
         y: 0
         width: 27
         height: 61
-      spriteId: 0107e765fdc6c6145a4318f3c3056841
+      spriteId: a14f2d72779410a4c95d6a75c9676d9d
     - name: moonwalk_Frame_1
       frameIndex: 1
       cellRect:
@@ -365,7 +365,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 61
-      spriteId: 864b8cbd186d2804bb0e55e1dace34a2
+      spriteId: 8c77a825ea56ab044a9470ed9d3c1824
     - name: moonwalk_Frame_2
       frameIndex: 2
       cellRect:
@@ -373,7 +373,7 @@ ScriptedImporter:
         y: 0
         width: 31
         height: 56
-      spriteId: 6451cb2486e412d4eb56317725a7bfe2
+      spriteId: 73b40b7a456ba6d4da6e9d24dc360216
     - name: moonwalk_Frame_3
       frameIndex: 3
       cellRect:
@@ -381,7 +381,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 56
-      spriteId: 68d74861c1a4aac4d8f61637231f37ec
+      spriteId: 6728fef768c9d4b46a74a20eb2d33a66
     - name: moonwalk_Frame_4
       frameIndex: 4
       cellRect:
@@ -389,7 +389,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 61
-      spriteId: 863c50327aac3b34db9a942116078482
+      spriteId: 1e3b2eaba6535d940b65df9d3661d80b
     - name: moonwalk_Frame_5
       frameIndex: 5
       cellRect:
@@ -397,7 +397,7 @@ ScriptedImporter:
         y: 0
         width: 31
         height: 61
-      spriteId: c4848c856e6b0f045b2867e17cc12f3f
+      spriteId: ec9efc2232cd86746bbbd939d827e02d
     - name: moonwalk_Frame_6
       frameIndex: 6
       cellRect:
@@ -405,7 +405,7 @@ ScriptedImporter:
         y: 0
         width: 36
         height: 60
-      spriteId: 8330b0858c1956142a809fd3be3e760c
+      spriteId: 3a12536081630d341b6b2ce9b119f427
     - name: moonwalk_Frame_7
       frameIndex: 7
       cellRect:
@@ -413,7 +413,7 @@ ScriptedImporter:
         y: 0
         width: 33
         height: 56
-      spriteId: bad06dff2dfd79f438d928a97c87777a
+      spriteId: ed47126f89910f443972c1d75191df05
     - name: moonwalk_Frame_8
       frameIndex: 8
       cellRect:
@@ -421,7 +421,7 @@ ScriptedImporter:
         y: 0
         width: 36
         height: 55
-      spriteId: 89c5712f5325ef644ad534d068a046f1
+      spriteId: 6b321932dea4a714da1ce65d15f2bac4
     - name: moonwalk_Frame_9
       frameIndex: 9
       cellRect:
@@ -429,7 +429,7 @@ ScriptedImporter:
         y: 0
         width: 31
         height: 56
-      spriteId: 4b60b07fce754fb46ae293480c3fe9f1
+      spriteId: 8e7eb4f627b234240bf0e844d01015b5
     - name: moonwalk_Frame_10
       frameIndex: 10
       cellRect:
@@ -437,7 +437,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 60
-      spriteId: acdd7511a8f937d4aa022439117c4b30
+      spriteId: 3302726599f0b834995a2852ee35f2ed
     linkedCells: []
     parentIndex: -1
   platformSettings: []
