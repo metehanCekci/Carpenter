@@ -10,6 +10,7 @@ public class attackScript : MonoBehaviour
     public SFXLoader sFX;
     public LayerMask enemies;
     public float damage;
+    public CameraShake CS;
 
     bool gamePaused = false;
     void Start()
@@ -35,6 +36,7 @@ public class attackScript : MonoBehaviour
             foreach (Collider2D enemyGameObject in enemy)
             {
                 sFX.playHit();
+                CS.ShakeIt();
                 enemyGameObject.GetComponent<enemyHealth>().health -= damage;
                 if (enemyGameObject.GetComponent<enemyHealth>().health <= 0)
                 {
