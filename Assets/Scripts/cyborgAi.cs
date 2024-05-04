@@ -14,6 +14,7 @@ public class cyborgAi : MonoBehaviour
     public float attackDelay2;
     public bool isAwake = false;
     public bool canMove = true;
+    public bool inverted = false;
 
     public bool ranged;
     public bool attackOnCooldown = false;
@@ -54,13 +55,15 @@ public class cyborgAi : MonoBehaviour
 
                 if (target.position.x < transform.position.x)
                 {
+                    if(inverted) transform.rotation = Quaternion.Euler(180, 180, 0);
                     // Hedef soldaysa sola dön
-                    transform.rotation = Quaternion.Euler(0, 180, 0); // Karakteri 180 derece döndürür (sola)
+                    else transform.rotation = Quaternion.Euler(0, 180, 0); // Karakteri 180 derece döndürür (sola)
                 }
                 else
                 {
-                    // Hedef sağdaysa sağa dön
-                    transform.rotation = Quaternion.Euler(0, 0, 0); // Karakteri orijinal dönüşüne geri getirir (sağa)
+                    if(inverted) transform.rotation = Quaternion.Euler(180, 0, 0);
+                    // Hedef soldaysa sola dön
+                    else transform.rotation = Quaternion.Euler(0, 0, 0); // Karakteri 180 derece döndürür (sola)
                 }
 
                 // Takip eden GameObject'in pozisyonunu yavaşça hedefin pozisyonuna doğru güncelle
@@ -129,6 +132,22 @@ public class cyborgAi : MonoBehaviour
         attackOnCooldown = false;
         anim.SetBool("isAttacking", false);
         canMove = true;
+
+    }
+    
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if(collision.gameObject.CompareTag("Player"))
+        {
+
+            if(collision.gameObject.layer == 8)
+            {
+            collision.gameObject.GetComponent<playerHpScript>().HP--;
+            collision.gameObject.GetComponent<playerHpScript>().iFramesFunc();
+            }
+
+        }
 
     }
 }
