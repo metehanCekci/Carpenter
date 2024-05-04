@@ -24,6 +24,7 @@ public class HurtPlayer : MonoBehaviour
         {
 
             //player take damage
+            Debug.Log("hit");
 
         }
         
