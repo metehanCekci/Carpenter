@@ -13,6 +13,8 @@ public class cyborgAi : MonoBehaviour
     public float attackDelay2;
     public bool isAwake = false;
     public bool canMove = true;
+
+    public bool ranged;
     public bool attackOnCooldown = false;
     public float speed;
     // Start is called before the first frame update
@@ -69,7 +71,10 @@ public class cyborgAi : MonoBehaviour
         {
             attackOnCooldown = true;
             anim.SetBool("isAttacking", true);
+            if(ranged==false)
             StartCoroutine(IEnuAttack());
+            else
+            StartCoroutine(IEnuRanged());
         }
 
 
@@ -83,6 +88,24 @@ public class cyborgAi : MonoBehaviour
         Debug.Log("hit");
         yield return new WaitForSeconds(0.1f);
         hurtBox.SetActive(false);
+        yield return new WaitForSeconds(attackDelay2);
+        attackOnCooldown = false;
+        anim.SetBool("isAttacking", false);
+        canMove = true;
+
+    }
+
+    IEnumerator IEnuRanged()
+    {
+
+        canMove = false;
+        yield return new WaitForSeconds(attackDelay);
+        GameObject clone = Instantiate(hurtBox);
+        clone.transform.position = hurtBox.transform.position;
+        clone.SetActive(true);
+        Destroy(clone , 5);
+        Debug.Log("hit");
+        yield return new WaitForSeconds(0.1f);
         yield return new WaitForSeconds(attackDelay2);
         attackOnCooldown = false;
         anim.SetBool("isAttacking", false);

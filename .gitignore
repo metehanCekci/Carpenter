@@ -71,3 +71,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 .vsconfig
+Assets/Sprites/foe_attack_prepare.aseprite.meta
+Assets/Sprites/foe_idle.aseprite.meta
+Assets/Sprites/fall.aseprite
+Assets/Sprites/fall.aseprite
+Assets/Sprites/jump.aseprite
