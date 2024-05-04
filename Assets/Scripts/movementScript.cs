@@ -15,39 +15,18 @@ public class movementScript : MonoBehaviour
     public float speed=3.0f;
     public float jumpingPower = 5f;
     public bool isFacingRight = true;
-    private bool isPaused = false;
+   
 
     private void Start()
     {
         animator = GetComponent<Animator>();
         rb= GetComponent<Rigidbody2D>();
     }
-    public void resume()
-    {
-        Time.timeScale = 1f;
-        isPaused = false;
-    }
-    public void pause()
-    {
-        Time.timeScale = 0f;
-        isPaused = true;
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (isPaused)
-            {
-                resume();
-            }
-            else 
-            {
-                pause();
-            }
-        }
-
+        
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
