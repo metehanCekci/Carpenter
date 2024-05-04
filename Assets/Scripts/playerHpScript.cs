@@ -52,18 +52,14 @@ public class playerHpScript : MonoBehaviour
       Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
     // Calculate knockback direction
     Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
-
-
-        
-        if (rb != null)
-        {
-            Debug.Log("Çalýþtý");
-            rb.AddForce(direction * knockbackForce * Time.fixedDeltaTime ,ForceMode2D.Force); // Yeni bir kuvvet uygula
-        }
+    Debug.Log(direction);
+    // Apply knockback force
+    rb.AddForce(direction * knockbackForce, ForceMode2D.Force);
 
         HP--;
     StartCoroutine(IFrames());
     }
+
 }
     
     
