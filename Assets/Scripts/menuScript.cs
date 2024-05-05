@@ -18,6 +18,7 @@ public class menuScript : MonoBehaviour
     }
     void Start()
     {
+        Time.timeScale = 1f;
         if (SceneManager.GetActiveScene().buildIndex!=0)
         {
             menu.SetActive(false);
