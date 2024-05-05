@@ -22,6 +22,7 @@ public class cutsceneText : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1.0f;
+        textIndex++;
         textComponent.text = "Text Component";
         bittimi = false;
         fullText = text1;
