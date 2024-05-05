@@ -146,17 +146,19 @@ public class cyborgAi : MonoBehaviour
             if(collision.gameObject.layer == 8)
             {
                 attackScript.GetComponent<attackScript>().parryable = true;
+                Debug.Log("parryable true");
                 Vector2 playerPosition = new Vector2(collision.transform.position.x, collision.transform.position.y);
                 collision.gameObject.GetComponent<playerHpScript>().takeDamage(playerPosition);
                 beklet();
             }
             attackScript.GetComponent<attackScript>().parryable = false;
+            Debug.Log("parryable false");
         }
     }
     IEnumerator beklet()
     {
-        yield return new WaitForSeconds(30);
-        Debug.Log("parry bekletildi");
+        yield return new WaitForSeconds(120);
+        
     }
 
     

@@ -52,7 +52,6 @@ public class playerHpScript : MonoBehaviour
             sfx.playHurt();
             try
             {
-                Debug.Log("hasar alma acik");
                 Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
                 // Calculate knockback direction
                 Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
@@ -66,7 +65,6 @@ public class playerHpScript : MonoBehaviour
 
         }
     }
-
 }
 
 

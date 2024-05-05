@@ -10,6 +10,8 @@ public class menuScript : MonoBehaviour
     private bool isPaused = false;
     public GameObject menu;
     public GameObject player;
+    public GameObject ayarlar;
+    public GameObject anaMenu;
     public void startGame()
     {
         SceneManager.LoadScene(1);
@@ -28,7 +30,7 @@ public class menuScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    public void mainMenu()
+    public void returnMainMenu()
     {
         SceneManager.LoadScene(0);
     }
@@ -55,7 +57,8 @@ public class menuScript : MonoBehaviour
     }
     public void settings()
     {
-
+        ayarlar.SetActive(true);
+        anaMenu.SetActive(false);
     }
     public void resume()
     {
@@ -68,6 +71,11 @@ public class menuScript : MonoBehaviour
         Time.timeScale = 0f;
         isPaused = true;
         menu.SetActive(true);
+    }
+    public void ayarCikis()
+    {
+        ayarlar.SetActive(false);
+        anaMenu.SetActive(true);
     }
 
 }

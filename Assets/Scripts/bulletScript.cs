@@ -33,10 +33,11 @@ public class bulletScript : MonoBehaviour
         {
             
             attackScript.GetComponent<attackScript>().parryable = true;
+            Debug.Log("parry true");
+            beklet();
             phs = other.transform.GetComponent<playerHpScript>();
             if (other.gameObject.layer == 8)
             {
-                beklet();
                 attackScript.GetComponent<attackScript>().parryable = false;
                 phs =other.gameObject.GetComponent<playerHpScript>();
                 phs.takeDamage(transform.position);
@@ -50,7 +51,7 @@ public class bulletScript : MonoBehaviour
     }
     IEnumerator beklet()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(120);
         Debug.Log("parry bekletildi");
     }
 }
