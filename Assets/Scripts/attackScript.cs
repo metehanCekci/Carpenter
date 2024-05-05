@@ -66,6 +66,7 @@ public class attackScript : MonoBehaviour
                     {
                         
                         enemyGameObject.gameObject.GetComponent<BossAnimAi>().BossAnim.SetBool("isDead", true);
+                        enemyGameObject.gameObject.GetComponent<BossAi>().destroyAll();
                         StartCoroutine(changeScene());
                     }}
                     catch{}
@@ -98,6 +99,7 @@ public class attackScript : MonoBehaviour
 
     IEnumerator changeScene()
     {
+
 
         yield return new WaitForSeconds(3);
         levelChanger.GetComponent<levelChangerScript>().fadeToLevel(7);

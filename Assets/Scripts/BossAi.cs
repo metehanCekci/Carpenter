@@ -122,5 +122,18 @@ public class BossAi : MonoBehaviour
 
     }
 
+    public void destroyAll()
+    {
+        Destroy(spike1);
+        Destroy(spike2);
+        Destroy(exclama);
+        Destroy(exclamaBottom);
+        Destroy(followPlayer);
+        Destroy(saw);
+        Destroy(lazerGroup);
+        Destroy(bulletSpawner);
+        Destroy(bulletSpawner2);
+    }
+
     
 }
