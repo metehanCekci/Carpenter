@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64411a8b572e37f409b1eb6da06ef437
+guid: 253c61a7156a8234fa6e679cff1d8ad9
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: carpenter
+  - name: evindex
     originalName: 
-    pivot: {x: 0.5128713, y: 0}
+    pivot: {x: 0.5, y: -0.04411765}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 505
-      height: 309
-    spriteID: 022d2caedb420314a94606461ec98c66
+      width: 131
+      height: 68
+    spriteID: 641824884a6e003449b5881de3981b03
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,24 +144,24 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2018101770
-    name: carpenter
+    guid: -1004491575
+    name: evindex
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: carpenter
+    - name: evindex
       frameIndex: 0
       cellRect:
-        x: 11
-        y: 0
-        width: 505
-        height: 309
-      spriteId: 022d2caedb420314a94606461ec98c66
+        x: 0
+        y: 3
+        width: 131
+        height: 68
+      spriteId: 641824884a6e003449b5881de3981b03
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 540, y: 360}
+  canvasSize: {x: 131, y: 71}
