@@ -16,6 +16,7 @@ public class attackScript : MonoBehaviour
     public LayerMask enemies;
     public float damage;
     public CameraShake CS;
+    public GameObject kan;
 
     public bool parryable=false;
     bool gamePaused = false;
@@ -43,15 +44,24 @@ public class attackScript : MonoBehaviour
             {
                 sFX.playHit();
                 CS.ShakeIt();
+
                 Vector2 knockback;
-                if(eF.facingRight)
-                enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt* -1, 2.0f) , ForceMode2D.Impulse);
+                if(enemyGameObject.GetComponent<enemyFacing>().facingRight)
+                {
+                enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt * -1, 2.0f) , ForceMode2D.Impulse);
+                Debug.Log("knocktoleft");
+                }
                 else
+                {
                 enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt , 2.0f) , ForceMode2D.Impulse);
-                
+                Debug.Log("knocktoright");
+                }
                 enemyGameObject.GetComponent<enemyHealth>().health -= damage;
                 if (enemyGameObject.GetComponent<enemyHealth>().health <= 0)
                 {
+                                    GameObject clone = Instantiate(kan);
+                clone.transform.position = enemyGameObject.transform.position;
+                clone.SetActive(true);
                     Destroy(enemyGameObject.gameObject);
                 }
             }

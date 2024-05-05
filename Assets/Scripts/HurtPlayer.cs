@@ -23,7 +23,7 @@ public class HurtPlayer : MonoBehaviour
 
         if(other.gameObject.CompareTag("Player"))
         {
-
+            Debug.Log("fighthit"); 
             phs.takeDamage(other.transform.position);
             
         }
@@ -35,7 +35,7 @@ public class HurtPlayer : MonoBehaviour
 
         if(other.gameObject.CompareTag("Player"))
         {
-
+            Debug.Log("fighthit");
             phs.takeDamage(other.transform.position);
             
         }
