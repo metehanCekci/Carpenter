@@ -148,7 +148,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179679144}
   m_Enabled: 1
-  m_CellSize: {x: 0.208, y: 0.208, z: 0}
+  m_CellSize: {x: 0.207, y: 0.207, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -2083,6 +2083,30 @@ PrefabInstance:
     - target: {fileID: 5360161802525484580, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898113863267299157, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898113863267299157, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898113863267299157, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898113863267299157, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898113863267299157, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898113863267299157, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 5946821459856801278, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
       propertyPath: phs
