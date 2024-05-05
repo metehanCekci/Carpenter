@@ -21,6 +21,7 @@ public class cutsceneText : MonoBehaviour
 
     void Start()
     {
+        bittimi = false;
         fullText = text1;
         StartCoroutine(ShowText());
     }

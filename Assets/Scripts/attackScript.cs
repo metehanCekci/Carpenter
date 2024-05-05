@@ -73,9 +73,9 @@ public class attackScript : MonoBehaviour
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
     }
-    public void SetGamePaused(bool paused)
+    public void SetGamePaused(bool pauseCondition)
     {
-        gamePaused = paused;
+        gamePaused = pauseCondition;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
