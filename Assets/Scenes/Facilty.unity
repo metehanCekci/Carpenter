@@ -602,6 +602,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9101268823493485560, guid: b1e5ca150295c2c40b2d5d6e5904f5f2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.18713337
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101268823493485560, guid: b1e5ca150295c2c40b2d5d6e5904f5f2, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.2930365
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1182,6 +1190,10 @@ PrefabInstance:
       propertyPath: phs
       value: 
       objectReference: {fileID: 96030876}
+    - target: {fileID: 5946821459856801278, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: attackScript
+      value: 
+      objectReference: {fileID: 96030865}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30178,7 +30190,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.31737518, y: 2.9121785}
+  m_Offset: {x: 0.31737518, y: 2.9298584}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -30189,7 +30201,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21179348, y: 2.4996843}
+  m_Size: {x: 0.21179348, y: 2.4643245}
   m_EdgeRadius: 0
 --- !u!61 &1698937457
 BoxCollider2D:
@@ -30223,7 +30235,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5161706, y: 2.9052033}
+  m_Offset: {x: -0.5161706, y: 2.9242873}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -30234,7 +30246,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19086766, y: 2.4717836}
+  m_Size: {x: 0.19086766, y: 2.4336157}
   m_EdgeRadius: 0
 --- !u!82 &1735857602 stripped
 AudioSource:
