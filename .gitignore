@@ -80,3 +80,13 @@ Assets/Animations/attackAnim.anim
 Assets/Sprites/attack.aseprite.meta
 Assets/Sprites/attack.aseprite.meta
 Assets/Sprites/yakinci_kos.aseprite.meta
+*.cs
+Assets/Scripts/bekletici.cs.meta
+Assets/Scripts/BossAi - Copy.cs.meta
+Assets/Scripts/followPlayer.cs.meta
+Assets/Scripts/HealthBar.cs.meta
+Assets/Scripts/redBarScript.cs.meta
+ProjectSettings/ProjectSettings.asset
+ProjectSettings/ProjectSettings.asset
+ProjectSettings/ProjectSettings.asset
+ProjectSettings/ProjectSettings.asset
