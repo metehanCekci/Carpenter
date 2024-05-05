@@ -124,6 +124,7 @@ ScriptedImporter:
   - name: fallgod_Frame_0
     originalName: 
     pivot: {x: 0.6052632, y: -0.21875}
+<<<<<<< HEAD
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -132,7 +133,7 @@ ScriptedImporter:
       y: 4
       width: 38
       height: 64
-    spriteID: d2f66ccad8c762446870b038905f7371
+    spriteID: 3e2a334beaf3d924cbbed5cfea77c666
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,15 +145,23 @@ ScriptedImporter:
   - name: fallgod_Frame_1
     originalName: 
     pivot: {x: 0.6774193, y: -0.1641791}
+=======
+>>>>>>> fd32bea4fbd1bcc9f92903beb51d731b163f1fac
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 50
       y: 4
+<<<<<<< HEAD
       width: 31
       height: 67
-    spriteID: c14cc78377a63544abd534d761dd341d
+    spriteID: 7818a7405c4804f44afdc254b078eae3
+=======
+      width: 38
+      height: 64
+    spriteID: d2f66ccad8c762446870b038905f7371
+>>>>>>> fd32bea4fbd1bcc9f92903beb51d731b163f1fac
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,6 +169,43 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
+<<<<<<< HEAD
+    uvTransform: {x: 50, y: 4}
+  - name: fallgod_Frame_2
+    originalName: 
+    pivot: {x: 0.67857146, y: 0}
+=======
+    uvTransform: {x: 4, y: 4}
+  - name: fallgod_Frame_1
+    originalName: 
+    pivot: {x: 0.6774193, y: -0.1641791}
+>>>>>>> fd32bea4fbd1bcc9f92903beb51d731b163f1fac
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+<<<<<<< HEAD
+      x: 89
+      y: 4
+      width: 28
+      height: 71
+    spriteID: 6e3220344b476f44a925290d66752f6d
+=======
+      x: 50
+      y: 4
+      width: 31
+      height: 67
+    spriteID: c14cc78377a63544abd534d761dd341d
+>>>>>>> fd32bea4fbd1bcc9f92903beb51d731b163f1fac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+<<<<<<< HEAD
+=======
     uvTransform: {x: 50, y: 4}
   - name: fallgod_Frame_2
     originalName: 
@@ -180,6 +226,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
+>>>>>>> fd32bea4fbd1bcc9f92903beb51d731b163f1fac
     uvTransform: {x: 89, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
@@ -197,6 +244,20 @@ ScriptedImporter:
         y: 14
         width: 38
         height: 64
+<<<<<<< HEAD
+      spriteId: 3e2a334beaf3d924cbbed5cfea77c666
+    - name: fallgod_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 11
+        y: 11
+        width: 31
+        height: 67
+      spriteId: 7818a7405c4804f44afdc254b078eae3
+    - name: fallgod_Frame_2
+      frameIndex: 2
+      cellRect:
+=======
       spriteId: d2f66ccad8c762446870b038905f7371
     - name: fallgod_Frame_1
       frameIndex: 1
@@ -209,11 +270,16 @@ ScriptedImporter:
     - name: fallgod_Frame_2
       frameIndex: 2
       cellRect:
+>>>>>>> fd32bea4fbd1bcc9f92903beb51d731b163f1fac
         x: 13
         y: 0
         width: 28
         height: 71
+<<<<<<< HEAD
+      spriteId: 6e3220344b476f44a925290d66752f6d
+=======
       spriteId: 1d2f4f0bb7fa6e440af6f402ccce89f3
+>>>>>>> fd32bea4fbd1bcc9f92903beb51d731b163f1fac
     linkedCells: []
     parentIndex: -1
   platformSettings: []
