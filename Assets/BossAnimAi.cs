@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossAnimAi : MonoBehaviour
 {
     public Animator BossAnim;
+    public BossAi bAi;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +42,9 @@ public class BossAnimAi : MonoBehaviour
     {
 
         BossAnim.SetBool("isRising" , true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(9);
         BossAnim.SetBool("isRising" , false);
+        bAi.startFight();
 
     }
 }
