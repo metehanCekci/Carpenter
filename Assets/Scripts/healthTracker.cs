@@ -18,6 +18,7 @@ public class healthTracker : MonoBehaviour
     public Sprite hp1;
     public Sprite hp0;
     public playerHpScript phs;
+    public GameObject attackScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,8 +41,8 @@ public class healthTracker : MonoBehaviour
         this.gameObject.GetComponent<Image>().sprite = hp7;
 
         if(phs.HP == 6)
-        this.gameObject.GetComponent<Image>().sprite = hp6;
-
+            this.gameObject.GetComponent<Image>().sprite = hp6;
+            
         if(phs.HP == 5)
         this.gameObject.GetComponent<Image>().sprite = hp5;
 
@@ -52,10 +53,15 @@ public class healthTracker : MonoBehaviour
         this.gameObject.GetComponent<Image>().sprite = hp3;
 
         if(phs.HP == 2)
-        this.gameObject.GetComponent<Image>().sprite = hp2;
+        {
+            this.gameObject.GetComponent<Image>().sprite = hp2;
+            attackScript.gameObject.GetComponent<attackScript>().damage = 2;
+            attackScript.gameObject.GetComponent<attackScript>().anim.SetBool("lowHp", true);
+        }
 
-        if(phs.HP == 1)
+        if (phs.HP == 1)
         this.gameObject.GetComponent<Image>().sprite = hp1;
+
         if(phs.HP == 0)
         this.gameObject.GetComponent<Image>().sprite = hp0;
     }
