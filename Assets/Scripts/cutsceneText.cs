@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using JetBrains.Annotations;
 
 public class cutsceneText : MonoBehaviour
 {
@@ -17,15 +18,16 @@ public class cutsceneText : MonoBehaviour
     public string text1;
     public string text2;
     public string text3;
-    
 
     void Start()
     {
+        
         Time.timeScale = 1.0f;
         textIndex++;
         textComponent.text = "Text Component";
         bittimi = false;
         fullText = text1;
+        
         StartCoroutine(ShowText());
     }
 
@@ -59,7 +61,7 @@ public class cutsceneText : MonoBehaviour
             }
             if (currentText == text3)
             {
-                SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(2);
             }
         }
         else
