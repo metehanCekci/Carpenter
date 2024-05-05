@@ -108335,6 +108335,10 @@ PrefabInstance:
       propertyPath: phs
       value: 
       objectReference: {fileID: 2113936807}
+    - target: {fileID: 5946821459856801278, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: attackScript
+      value: 
+      objectReference: {fileID: 2113936799}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -108491,6 +108495,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ayarCikis
       objectReference: {fileID: 0}
+    - target: {fileID: 1938041101876125774, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_text
+      value: "Men\xFC"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938041101876125774, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 1938041101876125774, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 2990885601697617771, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 2990885601697617771, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_fontStyle
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990885601697617771, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 3380769155448980617, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -108585,7 +108613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6614152059869880159, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 356.53
+      value: 1047.01
       objectReference: {fileID: 0}
     - target: {fileID: 6614152059869880159, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -108593,8 +108621,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6614152059869880159, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00043678
+      value: -4.28
       objectReference: {fileID: 0}
+    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_text
+      value: Devam Et
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_fontSize
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8826119295242403639, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_Camera
       value: 
