@@ -24,6 +24,7 @@ public class attackScript : MonoBehaviour
 
     public bool parryable = false;
     bool gamePaused = false;
+    public bool attacking;
     void Start()
     {
         levelChanger = GameObject.FindGameObjectWithTag("levelChanger");
@@ -34,11 +35,13 @@ public class attackScript : MonoBehaviour
         if (!gamePaused && Input.GetMouseButtonDown(0))
         {
             anim.SetBool("isAttacking", true);
+            attacking = true;
         }
     }
     public void endAttack()
     {
         anim.SetBool("isAttacking", false);
+        attacking=false;
     }
     public void attack()
     {
@@ -50,9 +53,9 @@ public class attackScript : MonoBehaviour
                 sFX.playHit();
                 CS.ShakeIt();
                     try
-                {
-hb.TakeDamage(damage);
-                }
+                    {
+                        hb.TakeDamage(damage);
+                    }
                 catch { }
 
                 Vector2 knockback;

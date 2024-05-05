@@ -12,6 +12,7 @@ public class movementScript : MonoBehaviour
     public GravCheck gravCheck;
     public GameObject levelChanger;
     public GameObject entranceClose;
+    public GameObject attackScript;
 
     private float horizontal;
     public float speed = 3.0f;
@@ -24,7 +25,7 @@ public class movementScript : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         levelChanger = GameObject.FindGameObjectWithTag("levelChanger");
-        
+        attackScript = GameObject.FindGameObjectWithTag("Player");
 
     }
 
@@ -45,15 +46,18 @@ public class movementScript : MonoBehaviour
         }
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-
-        if (!isFacingRight && horizontal > 0f)
+        if (attackScript.GetComponent<attackScript>().attacking == false)
         {
-            Flip();
+            if (!isFacingRight && horizontal > 0f)
+            {
+                Flip();
+            }
+            else if (isFacingRight && horizontal < 0f)
+            {
+                Flip();
+            }
         }
-        else if (isFacingRight && horizontal < 0f)
-        {
-            Flip();
-        }
+        
         animator.SetBool(name: "onAir", value: !isGrounded());
         animator.SetBool(name: "onGround", value: isGrounded());
         animator.SetBool(name: "isWalking", value: Mathf.Abs(horizontal) > 0f);
