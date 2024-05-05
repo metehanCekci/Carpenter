@@ -12,8 +12,10 @@ public class sliderScript : MonoBehaviour
     {
         get { return GetComponent<Slider>(); }
     }
-    [SerializeField]
     public AudioMixer mixer;
+
+    [SerializeField]
+    public Text volumeLabel;
     [SerializeField]
     public string volumeName;
 
@@ -28,6 +30,10 @@ public class sliderScript : MonoBehaviour
     }
     public void UpdateValueOnChange(float value)
     {
-        mixer.SetFloat(volumeName, Mathf.Log(value)* 20f);
+        if (mixer != null) 
+            mixer.SetFloat(volumeName, Mathf.Log(value)* 20f);
+
+        if (volumeLabel != null)
+            volumeLabel.text = Mathf.Round(value * 100.0f).ToString() + "%";
     }
 }
