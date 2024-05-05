@@ -10,6 +10,7 @@ public class attackScript : MonoBehaviour
     public GameObject attackPoint;
     public playerHpScript playerHpScript;
     public GameObject cyborgAi;
+    public GameObject levelChanger;
     public enemyFacing eF;
     public int killAmount = 0;
     public float radius;
@@ -25,6 +26,7 @@ public class attackScript : MonoBehaviour
     bool gamePaused = false;
     void Start()
     {
+        levelChanger = GameObject.FindGameObjectWithTag("levelChanger");
         anim = GetComponent<Animator>();
     }
     void Update()
@@ -47,7 +49,11 @@ public class attackScript : MonoBehaviour
             {
                 sFX.playHit();
                 CS.ShakeIt();
-                hb.TakeDamage(damage);
+                    try
+                {
+hb.TakeDamage(damage);
+                }
+                catch { }
 
                 Vector2 knockback;
                 if (enemyGameObject.gameObject.CompareTag("Boss"))
@@ -91,7 +97,7 @@ public class attackScript : MonoBehaviour
     {
 
         yield return new WaitForSeconds(3);
-        //buraya memo
+        levelChanger.GetComponent<levelChangerScript>().fadeToLevel(7);
 
     }
     private void OnDrawGizmos()

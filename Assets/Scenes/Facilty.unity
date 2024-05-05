@@ -846,6 +846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 195064534}
   - component: {fileID: 195064533}
+  - component: {fileID: 195064535}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -908,6 +909,21 @@ Transform:
   - {fileID: 9322075}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &195064535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195064532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa3cbbe5cdb6ff4c95bb2889d7cf7b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeMagnetude: 0.1
+  shakeTime: 0.1
+  mainCamera: {fileID: 1571067824}
 --- !u!1 &234180109 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7422987134812628306, guid: 660bedb19890b4948b588747c3e97dd8, type: 3}
@@ -89018,7 +89034,7 @@ PrefabInstance:
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: CS
       value: 
-      objectReference: {fileID: 1571067826}
+      objectReference: {fileID: 195064535}
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: eF
       value: 

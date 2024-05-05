@@ -102,7 +102,7 @@ public class movementScript : MonoBehaviour
         {
             int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
             
-            if (currentLevelIndex!=6)
+            if (currentLevelIndex!=8)
             {
                 currentLevelIndex++;
                 levelChanger.GetComponent<levelChangerScript>().fadeToLevel(currentLevelIndex);
