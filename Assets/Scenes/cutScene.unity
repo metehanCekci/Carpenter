@@ -318,31 +318,25 @@ MonoBehaviour:
   fullText: 
   delay: 0.1
   bittimi: 0
-  text1: "G\xFCne\u015F \u0131\u015F\u0131\u011F\u0131, y\xFCksek binalar\u0131n
-    camlar\u0131na yans\u0131yarak \u015Fehri ayd\u0131nlat\u0131yordu. Gelece\u011Fin
-    metropol\xFCnde, teknolojinin \u0131\u015F\u0131lt\u0131l\u0131 d\xF6nemi ya\u015Fan\u0131yordu.
-    Dijital g\xF6kdelenler, ak\u0131ll\u0131 yollar ve havada s\xFCz\xFClen ara\xE7larla
-    dolu bir d\xFCnya...  Ancak bu ileri teknoloji d\xFCnyas\u0131nda bir yer vard\u0131
-    ki, t\xFCm bu dijital karma\u015Fan\u0131n ortas\u0131nda do\u011Fal ve zarif
-    bir \u015Fekilde varl\u0131\u011F\u0131n\u0131 s\xFCrd\xFCr\xFCyordu. \"Ah\u015Fap
-    Dalgas\u0131\" ad\u0131n\u0131 verdi\u011Fi st\xFCdyosuyla tan\u0131nan marangoz,
-    \u015Fehrin kalbindeki bu dijital \xE7a\u011Fda eski ustal\u0131kl\u0131 zanaat\u0131n\u0131
-    h\xE2l\xE2 devam ettiriyordu."
-  text2: "Marangozun st\xFCdyosuna ad\u0131m att\u0131\u011F\u0131n\u0131zda, g\xF6zlerinizi
-    ah\u015Fab\u0131n s\u0131cak tonlar\u0131 kar\u015F\u0131l\u0131yordu. \u0130\xE7eri
-    girdi\u011Finizde, robotik marangozlardan daha s\u0131cak kar\u015F\u0131lan\u0131yordunuz.
-    Bu marangoz, h\u015Fab\u0131n dokusunu hissetmek i\xE7in sadece ellerini kullanm\u0131yordu,
-    ayn\u0131 zamanda ona hayat veren hikayeleri de i\u015Fliyordu."
-  text3: "St\xFCdyosunda, gelece\u011Fin teknolojisiyle i\u015Fledi\u011Fi ah\u015Fap
-    tasar\u0131mlar\u0131yla adeta bir zaman yolculu\u011Funa \xE7\u0131k\u0131yordunuz.
-    Ah\u015Fab\u0131n do\u011Fall\u0131\u011F\u0131yla, el i\u015F\xE7ili\u011Finin
-    ustal\u0131\u011F\u0131 birle\u015Fmi\u015F, ortaya \xE7\u0131kan her eser modernizmin
-    ve do\u011Fall\u0131\u011F\u0131n muhte\u015Fem bir sentezini sunuyordu."
-  text4: "Marangoz, dijital d\xFCnyan\u0131n h\u0131z\u0131na kar\u015F\u0131 duran
-    bir duru\u015Ftayd\u0131. Onun ellerinde ah\u015Fap, sadece bir malzeme de\u011Fil,
-    bir sanat ve anlat\u0131m bi\xE7imiydi. Axon'un st\xFCdyosunda, gelece\u011Fin
-    teknolojisiyle bezenmi\u015F bir ge\xE7mi\u015Fin izlerini s\xFCrebilir ve ah\u015Fab\u0131n
-    e\u015Fsiz d\xFCnyas\u0131nda yeni bir yolculu\u011Fa ad\u0131m atabilirsiniz."
+  text1: "Uzun gelecekte, beton ve neon \u0131\u015F\u0131klarla kapl\u0131 bir d\xFCnyada
+    h\xE2len marangozluk mesle\u011Fini ya\u015Fatmaya \xE7al\u0131\u015Fan bir usta
+    vard\u0131. Onun ailesi her ge\xE7en g\xFCn daha da h\u0131zl\u0131 ilerleyen
+    teknolojinin kar\u015F\u0131s\u0131nda \xE7ocuklar\u0131na marangozluk mesle\u011Fini
+    \xF6\u011Fretmi\u015F, onun \xE7ocuklar\u0131na \xF6\u011Fretmeyi de tembihlemi\u015Fti.
+    Bu usta, el i\u015F\xE7ili\u011Fini do\u011Fan\u0131n g\xFCzelli\u011Fi ile muazzam
+    bir \u015Fekilde birle\u015Ftiriyordu. \xD6yle ki, onun i\u015F\xE7ili\u011Fine
+    hayran y\xFCzlerce m\xFC\u015Fterisi vard\u0131."
+  text2: "Ama 'Geli\u015Fme ve \u0130lerleme' birli\u011Fi ise geleneklerin varl\u0131\u011F\u0131n\u0131
+    yoketmeye \xE7al\u0131\u015F\u0131yordu, \xE7\xFCnk\xFC onlar i\xE7in ilerlemek
+    ne pahas\u0131na olursa olsun devam etmeliydi. Bu birlik teker teker marangozluk
+    mesle\u011Fini yapan ustalar\u0131 buluyor, tehdit ederek i\u015Flerini b\u0131rakmalar\u0131n\u0131
+    istiyordu. Reddedenleri ve kar\u015F\u0131 gelenleri ise \xF6l\xFCm\xFCne dek
+    i\xE7eri t\u0131k\u0131yordu. Bu usta ise kararl\u0131yd\u0131. Y\xFCzy\u0131llarca
+    korunmu\u015F olan aile gelene\u011Fi ve i\u015F\xE7ili\u011Fini korumaya devam
+    edecekti. Birli\u011Fin onu bulaca\u011F\u0131 g\xFCn\xFC bekledi."
+  text3: "O g\xFCn geldi \xE7att\u0131. Marangoz, bu birli\u011Fi yerle bir etmeye
+    hedef edindi. Merkezine girecek ve b\xFCt\xFCn sistemlerini \xE7\xF6kertecekti."
+  text4: 
 --- !u!1 &697233394
 GameObject:
   m_ObjectHideFlags: 0

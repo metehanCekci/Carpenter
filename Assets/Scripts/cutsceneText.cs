@@ -17,7 +17,7 @@ public class cutsceneText : MonoBehaviour
     public string text1;
     public string text2;
     public string text3;
-    public string text4;
+    
 
     void Start()
     {
@@ -49,10 +49,6 @@ public class cutsceneText : MonoBehaviour
                         delay = 0.1f;
                         fullText = text3;
                         break;
-                    case 3:
-                        delay = 0.1f;
-                        fullText = text4;
-                        break;
                     default:
                         // Tüm metinler gösterildiyse burada baþka bir iþlem yapýlabilir
                         break;
@@ -60,7 +56,7 @@ public class cutsceneText : MonoBehaviour
                 textIndex++; // textIndex'i arttýrýn
                 StartCoroutine(ShowText()); // Coroutine'u baþlatýn
             }
-            if (currentText == text4)
+            if (currentText == text3)
             {
                 SceneManager.LoadScene(2);
             }

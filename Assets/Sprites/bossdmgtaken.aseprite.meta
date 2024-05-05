@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3cee7fdbdd18d4a4193d8fd8da6c2594
+guid: 1f96192dd6c03df459b6c855e3092c1a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,138 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: attackgodmode_Frame_0
+  - name: bossdmgtaken_Frame_0
     originalName: 
-    pivot: {x: 1.117647, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 160
-      width: 51
-      height: 85
-    spriteID: 90cbb05a9d783f44f9163a7063c35ad1
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 160}
-  - name: attackgodmode_Frame_1
-    originalName: 
-    pivot: {x: 0.9322034, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 76
-      width: 59
-      height: 76
-    spriteID: c5fa2db2408471b44af5ec6887fd664f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 76}
-  - name: attackgodmode_Frame_2
-    originalName: 
-    pivot: {x: 1.1020408, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 63
-      y: 160
-      width: 49
-      height: 62
-    spriteID: 7ce807d944a0f7148a2c0bd68e5b3922
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 63, y: 160}
-  - name: attackgodmode_Frame_3
-    originalName: 
-    pivot: {x: 1.0172414, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 71
-      y: 76
-      width: 58
-      height: 60
-    spriteID: c82c89ab40b39e14887bef5bdccb5152
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 71, y: 76}
-  - name: attackgodmode_Frame_4
-    originalName: 
-    pivot: {x: 1.0185186, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 137
-      y: 76
-      width: 54
-      height: 62
-    spriteID: 7ac8c1a2cf7eda043a0120dadeb455b6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 137, y: 76}
-  - name: attackgodmode_Frame_5
-    originalName: 
-    pivot: {x: 1.0196079, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 199
-      y: 76
-      width: 51
-      height: 61
-    spriteID: 4399cd6f85bdfb146adb022ad21e3fd7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 199, y: 76}
-  - name: attackgodmode_Frame_6
-    originalName: 
-    pivot: {x: 0.5641026, y: 0}
+    pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 78
-      height: 64
-    spriteID: d59bb874f06c0ec4eb14133a2c1817dd
+      width: 168
+      height: 177
+    spriteID: 7bd655476de76e743b2d4c9165652a51
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -261,18 +141,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: attackgodmode_Frame_7
+  - name: bossdmgtaken_Frame_1
     originalName: 
-    pivot: {x: 0.5405406, y: 0}
+    pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 90
-      y: 4
-      width: 74
-      height: 64
-    spriteID: fb82257c1f6c0e84f99ca2e5bc860891
+      x: 4
+      y: 189
+      width: 168
+      height: 177
+    spriteID: 00ec6ed730eeb854697247f68d2b3235
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,19 +160,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 90, y: 4}
-  - name: attackgodmode_Frame_8
+    uvTransform: {x: 4, y: 189}
+  - name: bossdmgtaken_Frame_2
     originalName: 
-    pivot: {x: 0.5405406, y: 0}
+    pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 172
-      y: 4
-      width: 74
-      height: 64
-    spriteID: 6601ea35c76f95549ad0c5360c310db7
+      x: 4
+      y: 374
+      width: 168
+      height: 177
+    spriteID: d38d7dbd33617674b9d0d4a434272940
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -300,92 +180,128 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 172, y: 4}
+    uvTransform: {x: 4, y: 374}
+  - name: bossdmgtaken_Frame_3
+    originalName: 
+    pivot: {x: 0.50595236, y: -0.4463277}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 559
+      width: 168
+      height: 177
+    spriteID: bb9953eb31c7c2c42a31e42337b9d984
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 559}
+  - name: bossdmgtaken_Frame_4
+    originalName: 
+    pivot: {x: 0.50595236, y: -0.4463277}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 744
+      width: 168
+      height: 177
+    spriteID: fdab5ab8e2a7a96459d40cf60ce34f46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 744}
+  - name: bossdmgtaken_Frame_5
+    originalName: 
+    pivot: {x: 0.50595236, y: -0.4463277}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 4
+      width: 168
+      height: 177
+    spriteID: 3e8156b4b208d8d4eaf326233eadac89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -363561393
-    name: attackgodmode
+    guid: -748913636
+    name: bossdmgtaken
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: attackgodmode_Frame_0
+    - name: bossdmgtaken_Frame_0
       frameIndex: 0
       cellRect:
-        x: 7
-        y: 0
-        width: 51
-        height: 85
-      spriteId: 90cbb05a9d783f44f9163a7063c35ad1
-    - name: attackgodmode_Frame_1
+        x: 50
+        y: 79
+        width: 168
+        height: 177
+      spriteId: 7bd655476de76e743b2d4c9165652a51
+    - name: bossdmgtaken_Frame_1
       frameIndex: 1
       cellRect:
-        x: 9
-        y: 0
-        width: 59
-        height: 76
-      spriteId: c5fa2db2408471b44af5ec6887fd664f
-    - name: attackgodmode_Frame_2
+        x: 50
+        y: 79
+        width: 168
+        height: 177
+      spriteId: 00ec6ed730eeb854697247f68d2b3235
+    - name: bossdmgtaken_Frame_2
       frameIndex: 2
       cellRect:
-        x: 10
-        y: 0
-        width: 49
-        height: 62
-      spriteId: 7ce807d944a0f7148a2c0bd68e5b3922
-    - name: attackgodmode_Frame_3
+        x: 50
+        y: 79
+        width: 168
+        height: 177
+      spriteId: d38d7dbd33617674b9d0d4a434272940
+    - name: bossdmgtaken_Frame_3
       frameIndex: 3
       cellRect:
-        x: 5
-        y: 0
-        width: 58
-        height: 60
-      spriteId: c82c89ab40b39e14887bef5bdccb5152
-    - name: attackgodmode_Frame_4
+        x: 50
+        y: 79
+        width: 168
+        height: 177
+      spriteId: bb9953eb31c7c2c42a31e42337b9d984
+    - name: bossdmgtaken_Frame_4
       frameIndex: 4
       cellRect:
-        x: 9
-        y: 0
-        width: 54
-        height: 62
-      spriteId: 7ac8c1a2cf7eda043a0120dadeb455b6
-    - name: attackgodmode_Frame_5
+        x: 50
+        y: 79
+        width: 168
+        height: 177
+      spriteId: fdab5ab8e2a7a96459d40cf60ce34f46
+    - name: bossdmgtaken_Frame_5
       frameIndex: 5
       cellRect:
-        x: 12
-        y: 0
-        width: 51
-        height: 61
-      spriteId: 4399cd6f85bdfb146adb022ad21e3fd7
-    - name: attackgodmode_Frame_6
-      frameIndex: 6
-      cellRect:
-        x: 20
-        y: 0
-        width: 78
-        height: 64
-      spriteId: d59bb874f06c0ec4eb14133a2c1817dd
-    - name: attackgodmode_Frame_7
-      frameIndex: 7
-      cellRect:
-        x: 24
-        y: 0
-        width: 74
-        height: 64
-      spriteId: fb82257c1f6c0e84f99ca2e5bc860891
-    - name: attackgodmode_Frame_8
-      frameIndex: 8
-      cellRect:
-        x: 24
-        y: 0
-        width: 74
-        height: 64
-      spriteId: 6601ea35c76f95549ad0c5360c310db7
+        x: 50
+        y: 79
+        width: 168
+        height: 177
+      spriteId: 3e8156b4b208d8d4eaf326233eadac89
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 270, y: 270}
