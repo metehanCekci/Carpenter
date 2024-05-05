@@ -6,6 +6,7 @@ public class BossAnimAi : MonoBehaviour
 {
     public Animator BossAnim;
     public BossAi bAi;
+    public GameObject Audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,8 +53,10 @@ public class BossAnimAi : MonoBehaviour
     {
 
         BossAnim.SetBool("isRising" , true);
+                Audio.SetActive(true);
         yield return new WaitForSeconds(9);
         BossAnim.SetBool("isRising" , false);
+
         bAi.startFight();
 
 
