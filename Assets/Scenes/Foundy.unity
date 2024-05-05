@@ -107246,8 +107246,8 @@ Transform:
   m_GameObject: {fileID: 1651308251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.144, y: -2.519, z: 0}
-  m_LocalScale: {x: 0.16654697, y: 0.16237666, z: 1}
+  m_LocalPosition: {x: -0.7146, y: -2.1265, z: 0}
+  m_LocalScale: {x: 0.047264565, y: 0.053054314, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -108611,42 +108611,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8706261897309324485}
-    - target: {fileID: 1082310754343155204, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: settings
-      objectReference: {fileID: 0}
     - target: {fileID: 1427113254294497543, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8706261897309324485}
-    - target: {fileID: 1427113254294497543, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ayarCikis
-      objectReference: {fileID: 0}
-    - target: {fileID: 1938041101876125774, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_text
-      value: "Men\xFC"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1938041101876125774, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 1938041101876125774, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2990885601697617771, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 2990885601697617771, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_fontStyle
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2990885601697617771, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 3380769155448980617, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -108735,58 +108703,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: menu
       objectReference: {fileID: 0}
-    - target: {fileID: 5086996078897271888, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6614152059869880159, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1047.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 6614152059869880159, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.000011185
-      objectReference: {fileID: 0}
-    - target: {fileID: 6614152059869880159, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -4.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_text
-      value: Devam Et
-      objectReference: {fileID: 0}
-    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_fontSize
-      value: 46
-      objectReference: {fileID: 0}
-    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 46
-      objectReference: {fileID: 0}
-    - target: {fileID: 8763003104912059113, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 8826119295242403639, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2047072306}
-    - target: {fileID: 8826119295242403639, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1184918199
-      objectReference: {fileID: 0}
     - target: {fileID: 8913709642669733795, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8706261897309324485}
-    - target: {fileID: 8913709642669733795, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: returnMainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 9186030517599023314, guid: 34416bc0c0d2f864aaeb79913be3b693, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

@@ -32638,6 +32638,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1196124753}
+    - target: {fileID: 8817342054438364040, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: m_SortingOrder
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -32955,7 +32959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &880111695
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32970,10 +32974,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 617826260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.04442978, y: -320.9169}
-  m_SizeDelta: {x: 801.8347, y: 206.0508}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 61.149994}
+  m_SizeDelta: {x: 673.9, y: 176.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &880111696
 MonoBehaviour:
@@ -33031,7 +33035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &890301459
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33046,10 +33050,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 617826260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.28105164, y: -344.52426}
-  m_SizeDelta: {x: 718.2705, y: 64.4011}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 43}
+  m_SizeDelta: {x: 603.7, y: 55.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890301460
 MonoBehaviour:
@@ -33479,6 +33483,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: levelChanger
       objectReference: {fileID: 0}
+    - target: {fileID: 7737363509892317055, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1196124753}
+    - target: {fileID: 7737363509892317055, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737363509892317055, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_SortingOrder
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737363509892317055, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1184918199
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33878,6 +33898,14 @@ PrefabInstance:
       propertyPath: levelChanger
       value: 
       objectReference: {fileID: 1933271043}
+    - target: {fileID: 8869550438665976046, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869550438665976046, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37266,6 +37294,7 @@ SceneRoots:
   - {fileID: 650330279}
   - {fileID: 1513821266}
   - {fileID: 1621182012}
+  - {fileID: 1741415998}
   - {fileID: 1323514563}
   - {fileID: 1817522222}
   - {fileID: 1659400363}
@@ -37278,4 +37307,3 @@ SceneRoots:
   - {fileID: 1312594690}
   - {fileID: 675331674}
   - {fileID: 674025859}
-  - {fileID: 1741415998}
