@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class attackScript : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class attackScript : MonoBehaviour
     public float damage;
     public CameraShake CS;
     public GameObject kan;
+    public HealthBar hb;
 
     public bool parryable = false;
     bool gamePaused = false;
@@ -45,12 +47,20 @@ public class attackScript : MonoBehaviour
             {
                 sFX.playHit();
                 CS.ShakeIt();
+                hb.TakeDamage(damage);
 
                 Vector2 knockback;
                 if (enemyGameObject.gameObject.CompareTag("Boss"))
                 {
-                    try{enemyGameObject.GetComponent<BossAnimAi>().TakeDamage();}
+                    try{enemyGameObject.GetComponent<BossAnimAi>().TakeDamage();
+                    if(enemyGameObject.gameObject.GetComponent<enemyHealth>().health <= 0)
+                    {
+                        
+                        enemyGameObject.gameObject.GetComponent<BossAnimAi>().BossAnim.SetBool("isDead", true);
+                        StartCoroutine(changeScene());
+                    }}
                     catch{}
+                    
                 }
                 else
                 {
@@ -74,6 +84,14 @@ public class attackScript : MonoBehaviour
                 }
             }
         }
+
+    }
+
+    IEnumerator changeScene()
+    {
+
+        yield return new WaitForSeconds(3);
+        //buraya memo
 
     }
     private void OnDrawGizmos()

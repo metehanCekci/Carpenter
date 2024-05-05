@@ -128,7 +128,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 180
+      x: 181
       y: 4
       width: 168
       height: 177
@@ -140,7 +140,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 180, y: 4}
+    uvTransform: {x: 181, y: 4}
   - name: bossidle_Frame_1
     originalName: 
     pivot: {x: 0.50595236, y: -0.37356323}
@@ -163,14 +163,14 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 190}
   - name: bossidle_Frame_2
     originalName: 
-    pivot: {x: 0.50595236, y: -0.3483146}
+    pivot: {x: 0.5088757, y: -0.3483146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 168
+      width: 169
       height: 178
     spriteID: 91c75358e85f3e34f9e57fa540644543
     spriteBone: []
@@ -209,9 +209,9 @@ ScriptedImporter:
     - name: bossidle_Frame_2
       frameIndex: 2
       cellRect:
-        x: 50
+        x: 49
         y: 62
-        width: 168
+        width: 169
         height: 178
       spriteId: 91c75358e85f3e34f9e57fa540644543
     linkedCells: []
