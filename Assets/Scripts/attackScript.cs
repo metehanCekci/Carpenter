@@ -49,8 +49,7 @@ public class attackScript : MonoBehaviour
                 Vector2 knockback;
                 if (enemyGameObject.gameObject.CompareTag("Boss"))
                 {
-                    try{enemyGameObject.GetComponent<BossAnimAi>().TakeDamage();}
-                    catch{}
+
                 }
                 else
                 {
