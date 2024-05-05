@@ -18,6 +18,7 @@ public class cyborgAi : MonoBehaviour
     public float knockbackForce;
     public Vector2 knockback;
     public Vector2 direction;
+    public bool isAttack = true;
     public bool isAwake = false;
     public bool canMove = true;
     public bool inverted = false;
@@ -51,7 +52,20 @@ public class cyborgAi : MonoBehaviour
                  targetPosition.z = transform.position.z;
                
 
-                if (target.position.x < transform.position.x)
+                
+
+                // Takip eden GameObject'in pozisyonunu yavaşça hedefin pozisyonuna doğru güncelle
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
+
+            }
+            else
+            {
+
+                anim.SetBool("isRunning" , false);
+
+            }
+
+            if (target.position.x < transform.position.x)
                 {
                     
                     if(inverted) {transform.rotation = Quaternion.Euler(180, 180, 0);}
@@ -69,17 +83,6 @@ public class cyborgAi : MonoBehaviour
                     eF.facingRight = true;
                 }
 
-                // Takip eden GameObject'in pozisyonunu yavaşça hedefin pozisyonuna doğru güncelle
-                transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
-
-            }
-            else
-            {
-
-                anim.SetBool("isRunning" , false);
-
-            }
-
         }
     }
 
@@ -87,6 +90,7 @@ public class cyborgAi : MonoBehaviour
     {
         if (attackOnCooldown == false)
         {
+            if(isAttack)
             attackOnCooldown = true;
             anim.SetBool("isAttacking", true);
             if(ranged==false)
@@ -146,13 +150,13 @@ public class cyborgAi : MonoBehaviour
             if(collision.gameObject.layer == 8)
             {
                 attackScript.GetComponent<attackScript>().parryable = true;
-                Debug.Log("parryable true");
+
                 Vector2 playerPosition = new Vector2(collision.transform.position.x, collision.transform.position.y);
                 collision.gameObject.GetComponent<playerHpScript>().takeDamage(playerPosition);
                 beklet();
             }
             attackScript.GetComponent<attackScript>().parryable = false;
-            Debug.Log("parryable false");
+
         }
     }
     IEnumerator beklet()

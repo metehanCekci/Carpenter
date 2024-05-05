@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1269557248065205087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.008, y: -0.513, z: 0}
+  m_LocalPosition: {x: -1.1, y: -0.57, z: 0}
   m_LocalScale: {x: 0.54425853, y: 0.510655, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8440219296627558205, guid: 82cce5b45f027cc47836dceb87ecad24, type: 3}
+  m_Sprite: {fileID: 4121309162979242777, guid: 19b680e1804bd5a45aed40c310148e81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_Size: {x: 0.9, y: 1.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &4069871338718337737
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   hurtBox: {fileID: 2641427014926866111}
+  attackScript: {fileID: 0}
   target: {fileID: 0}
   anim: {fileID: 1535246884227810650}
   eF: {fileID: 6036014798942895760}
@@ -159,6 +160,7 @@ MonoBehaviour:
   knockbackForce: 1000
   knockback: {x: 0, y: 0}
   direction: {x: 0, y: 0}
+  isAttack: 0
   isAwake: 1
   canMove: 1
   inverted: 0
@@ -337,7 +339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5154672590560849014
 Transform:
   m_ObjectHideFlags: 0
