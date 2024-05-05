@@ -7,7 +7,7 @@ public class attackScript : MonoBehaviour
 {
     Animator anim;
     public GameObject attackPoint;
-    public GameObject playerHpScript;
+    public playerHpScript playerHpScript;
     public GameObject cyborgAi;
     public enemyFacing eF;
     public float radius;
@@ -22,8 +22,6 @@ public class attackScript : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        playerHpScript = GameObject.FindGameObjectWithTag("Player");
-        cyborgAi = GameObject.FindGameObjectWithTag("enemy");
     }
     void Update()
     {
@@ -72,8 +70,11 @@ public class attackScript : MonoBehaviour
     {
         if (collision.CompareTag("weapon"))
         {
+            Debug.Log("silah algilandi");
                 if (parryable)
                 {
+                Debug.Log("Parrylenebilir");
+                beklet();
                     if (Input.GetKey(KeyCode.Mouse1))
                     {
                         Debug.Log("parry calisti");
@@ -89,6 +90,6 @@ public class attackScript : MonoBehaviour
     }
     IEnumerator beklet()
     {
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(120);
     }
 }

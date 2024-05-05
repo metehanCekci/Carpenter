@@ -9,6 +9,8 @@ TagManager:
   - levelChanger
   - textWriter
   - enemy
+  - bullet
+  - weapon
   layers:
   - Default
   - TransparentFX
