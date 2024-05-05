@@ -89,7 +89,9 @@ public class BossAi : MonoBehaviour
         exclama.SetActive(false);
         spike1.SetActive(true);
         spike2.SetActive(true);
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(10);
+        spike1.SetActive(false);
+        spike2.SetActive(false);
 
     }
 
