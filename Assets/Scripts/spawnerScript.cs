@@ -28,7 +28,7 @@ public class spawnerScript : MonoBehaviour
     {
         if (currentIndex >= spawnableObjects.Length)
         {
-            currentIndex = 0;
+            Destroy(this.gameObject);
         }
 
         GameObject spawnableObject = spawnableObjects[currentIndex];

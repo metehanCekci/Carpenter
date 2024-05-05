@@ -46,6 +46,7 @@ public class attackScript : MonoBehaviour
                 CS.ShakeIt();
 
                 Vector2 knockback;
+                
                 if(enemyGameObject.GetComponent<enemyFacing>().facingRight)
                 {
                 enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt * -1, 2.0f) , ForceMode2D.Impulse);
