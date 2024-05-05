@@ -2088,6 +2088,10 @@ PrefabInstance:
       propertyPath: phs
       value: 
       objectReference: {fileID: 1162089674}
+    - target: {fileID: 5946821459856801278, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: attackScript
+      value: 
+      objectReference: {fileID: 1162089672}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
