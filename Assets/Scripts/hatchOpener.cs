@@ -7,6 +7,7 @@ public class hatchOpener : MonoBehaviour
 {
     public GameObject hatch;
     public attackScript aS;
+    public bool enable = false;
     public int enemyAmt;
     // Start is called before the first frame update
     void Start()
@@ -27,11 +28,11 @@ public class hatchOpener : MonoBehaviour
 
                 {
 
-                    Debug.Log("enenymenemen");               
-
+                    if(enable)
+                    StartCoroutine(setActive());
+                    else
                     StartCoroutine(openHatch());
 
-                    Debug.Log("opennu");
 
                     }
 
@@ -47,6 +48,14 @@ public class hatchOpener : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
         Destroy(hatch);
+
+    }
+
+    IEnumerator setActive()
+    {
+
+        yield return new WaitForSeconds(2f);
+        hatch.SetActive(true);
 
     }
 
