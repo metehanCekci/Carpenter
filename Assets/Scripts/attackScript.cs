@@ -19,7 +19,7 @@ public class attackScript : MonoBehaviour
     public CameraShake CS;
     public GameObject kan;
 
-    public bool parryable=false;
+    public bool parryable = false;
     bool gamePaused = false;
     void Start()
     {
@@ -47,27 +47,33 @@ public class attackScript : MonoBehaviour
                 CS.ShakeIt();
 
                 Vector2 knockback;
-                
-                if(enemyGameObject.GetComponent<enemyFacing>().facingRight)
+                if (enemyGameObject.gameObject.CompareTag("Boss"))
                 {
-                enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt * -1, 2.0f) , ForceMode2D.Impulse);
+
                 }
                 else
                 {
-                enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt , 2.0f) , ForceMode2D.Impulse);
+                    if (enemyGameObject.GetComponent<enemyFacing>().facingRight)
+                    {
+                        enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt * -1, 2.0f), ForceMode2D.Impulse);
+                    }
+                    else
+                    {
+                        enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt, 2.0f), ForceMode2D.Impulse);
+                    }
                 }
                 enemyGameObject.GetComponent<enemyHealth>().health -= damage;
                 if (enemyGameObject.GetComponent<enemyHealth>().health <= 0)
                 {
                     killAmount++;
-                                    GameObject clone = Instantiate(kan);
-                clone.transform.position = enemyGameObject.transform.position;
-                clone.SetActive(true);
+                    GameObject clone = Instantiate(kan);
+                    clone.transform.position = enemyGameObject.transform.position;
+                    clone.SetActive(true);
                     Destroy(enemyGameObject.gameObject);
                 }
             }
         }
-        
+
     }
     private void OnDrawGizmos()
     {
@@ -82,21 +88,21 @@ public class attackScript : MonoBehaviour
         if (collision.CompareTag("weapon"))
         {
             Debug.Log("silah algilandi");
-                if (parryable)
-                {
+            if (parryable)
+            {
                 Debug.Log("Parrylenebilir");
                 beklet();
-                    if (Input.GetKey(KeyCode.Mouse1))
-                    {
-                        Debug.Log("parry calisti");
-                        playerHpScript.GetComponent<playerHpScript>().takeNoDamage = true;
+                if (Input.GetKey(KeyCode.Mouse1))
+                {
+                    Debug.Log("parry calisti");
+                    playerHpScript.GetComponent<playerHpScript>().takeNoDamage = true;
                     cyborgAi.GetComponent<cyborgAi>().enabled = false;
-                        beklet();
-                        playerHpScript.GetComponent<playerHpScript>().takeNoDamage = false;
-                        cyborgAi.GetComponent<cyborgAi>().enabled = true;
-                    }
+                    beklet();
+                    playerHpScript.GetComponent<playerHpScript>().takeNoDamage = false;
+                    cyborgAi.GetComponent<cyborgAi>().enabled = true;
                 }
-            
+            }
+
         }
     }
     IEnumerator beklet()
