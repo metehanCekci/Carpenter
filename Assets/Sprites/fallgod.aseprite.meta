@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e7f4aa960999ddb4e858160319571666
+guid: 01c2dbb8a61a5a246a50f0a89d6fd409
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 38
       height: 64
-    spriteID: 3e2a334beaf3d924cbbed5cfea77c666
+    spriteID: d2f66ccad8c762446870b038905f7371
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 31
       height: 67
-    spriteID: 7818a7405c4804f44afdc254b078eae3
+    spriteID: c14cc78377a63544abd534d761dd341d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 28
       height: 71
-    spriteID: 6e3220344b476f44a925290d66752f6d
+    spriteID: 1d2f4f0bb7fa6e440af6f402ccce89f3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -197,7 +197,7 @@ ScriptedImporter:
         y: 14
         width: 38
         height: 64
-      spriteId: 3e2a334beaf3d924cbbed5cfea77c666
+      spriteId: d2f66ccad8c762446870b038905f7371
     - name: fallgod_Frame_1
       frameIndex: 1
       cellRect:
@@ -205,7 +205,7 @@ ScriptedImporter:
         y: 11
         width: 31
         height: 67
-      spriteId: 7818a7405c4804f44afdc254b078eae3
+      spriteId: c14cc78377a63544abd534d761dd341d
     - name: fallgod_Frame_2
       frameIndex: 2
       cellRect:
@@ -213,7 +213,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 71
-      spriteId: 6e3220344b476f44a925290d66752f6d
+      spriteId: 1d2f4f0bb7fa6e440af6f402ccce89f3
     linkedCells: []
     parentIndex: -1
   platformSettings: []

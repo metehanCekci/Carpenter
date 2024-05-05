@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d63465890bb318847873f00d1439f850
+guid: fdfef98e89d33bf42a80949090076895
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 168
       height: 177
-    spriteID: 7c96928cbf83bea4888acf53adfbfeb7
+    spriteID: 06a202656061b5e4984331548589494c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 190
       width: 168
       height: 174
-    spriteID: f1791520a590be842ae632812baeb243
+    spriteID: 5664a124834e4454081e53b908af1fc7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 168
       height: 178
-    spriteID: 528b6e2f242d2c74baca9b3072b297df
+    spriteID: 91c75358e85f3e34f9e57fa540644543
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -197,7 +197,7 @@ ScriptedImporter:
         y: 65
         width: 168
         height: 177
-      spriteId: 7c96928cbf83bea4888acf53adfbfeb7
+      spriteId: 06a202656061b5e4984331548589494c
     - name: bossidle_Frame_1
       frameIndex: 1
       cellRect:
@@ -205,7 +205,7 @@ ScriptedImporter:
         y: 65
         width: 168
         height: 174
-      spriteId: f1791520a590be842ae632812baeb243
+      spriteId: 5664a124834e4454081e53b908af1fc7
     - name: bossidle_Frame_2
       frameIndex: 2
       cellRect:
@@ -213,7 +213,7 @@ ScriptedImporter:
         y: 62
         width: 168
         height: 178
-      spriteId: 528b6e2f242d2c74baca9b3072b297df
+      spriteId: 91c75358e85f3e34f9e57fa540644543
     linkedCells: []
     parentIndex: -1
   platformSettings: []
