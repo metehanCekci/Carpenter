@@ -318,18 +318,25 @@ MonoBehaviour:
   fullText: 
   delay: 0.1
   bittimi: 0
-  text1: "Bu oyun, maceran\u0131n doruklar\u0131nda sizi bekleyen bir yolculu\u011Fa
-    davet ediyor. Tehlikeli engelleri a\u015F\u0131n, gizemli labirentlerde kaybolun
-    ve s\u0131rad\u0131\u015F\u0131 bir maceraya at\u0131l\u0131n!"
-  text2: "Heyecan verici bulmacalar\u0131, zorlu d\xFC\u015Fmanlar\u0131 ve nefes
-    kesen aksiyon sahneleriyle dolu bu oyun, sizi ekran ba\u015F\u0131na kilitleyecek.
-    Haz\u0131r m\u0131s\u0131n\u0131z? Macera ba\u015Flas\u0131n!"
-  text3: "E\u015Fsiz grafikleri ve atmosferiyle, Carpenter size unutulmaz bir deneyim
-    sunuyor. Her bir ad\u0131m\u0131n\u0131zda, gizemli bir d\xFCnyay\u0131 ke\u015Ffedecek
-    ve s\u0131rlar\u0131 a\xE7\u0131\u011Fa \xE7\u0131karacaks\u0131n\u0131z."
-  text4: "Karakterinizi ustal\u0131kla y\xF6nlendirin, yeteneklerinizi sergileyin
-    ve maceran\u0131n kahraman\u0131 olun. Carpenter, sizi bekleyen zorlu m\xFCcadelelerle
-    dolu bir d\xFCnyaya g\xF6t\xFCr\xFCyor."
+  text1: "Uzun gelecekte, beton ve neon \u0131\u015F\u0131klarla kapl\u0131 bir d\xFCnyada
+    h\xE2len marangozluk mesle\u011Fini ya\u015Fatmaya \xE7al\u0131\u015Fan bir usta
+    vard\u0131. Onun ailesi her ge\xE7en g\xFCn daha da h\u0131zl\u0131 ilerleyen
+    teknolojinin kar\u015F\u0131s\u0131nda \xE7ocuklar\u0131na marangozluk mesle\u011Fini
+    \xF6\u011Fretmi\u015F, onun \xE7ocuklar\u0131na \xF6\u011Fretmeyi de tembihlemi\u015Fti.
+    Bu usta, el i\u015F\xE7ili\u011Fini do\u011Fan\u0131n g\xFCzelli\u011Fi ile muazzam
+    bir \u015Fekilde birle\u015Ftiriyordu. \xD6yle ki, onun i\u015F\xE7ili\u011Fine
+    hayran y\xFCzlerce m\xFC\u015Fterisi vard\u0131."
+  text2: "Ama 'Geli\u015Fme ve \u0130lerleme' birli\u011Fi ise geleneklerin varl\u0131\u011F\u0131n\u0131
+    yoketmeye \xE7al\u0131\u015F\u0131yordu, \xE7\xFCnk\xFC onlar i\xE7in ilerlemek
+    ne pahas\u0131na olursa olsun devam etmeliydi. Bu birlik teker teker marangozluk
+    mesle\u011Fini yapan ustalar\u0131 buluyor, tehdit ederek i\u015Flerini b\u0131rakmalar\u0131n\u0131
+    istiyordu. Reddedenleri ve kar\u015F\u0131 gelenleri ise \xF6l\xFCm\xFCne dek
+    i\xE7eri t\u0131k\u0131yordu. Bu usta ise kararl\u0131yd\u0131. Y\xFCzy\u0131llarca
+    korunmu\u015F olan aile gelene\u011Fi ve i\u015F\xE7ili\u011Fini korumaya devam
+    edecekti. Birli\u011Fin onu bulaca\u011F\u0131 g\xFCn\xFC bekledi."
+  text3: "O g\xFCn geldi \xE7att\u0131. Marangoz, bu birli\u011Fi yerle bir etmeye
+    hedef edindi. Merkezine girecek ve b\xFCt\xFCn sistemlerini \xE7\xF6kertecekti."
+  text4: 
 --- !u!1 &697233394
 GameObject:
   m_ObjectHideFlags: 0
