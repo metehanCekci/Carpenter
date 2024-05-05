@@ -128,7 +128,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 128
+      x: 129
       y: 148
       width: 27
       height: 64
@@ -140,7 +140,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 128, y: 148}
+    uvTransform: {x: 129, y: 148}
   - name: godwalk_Frame_1
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -148,8 +148,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 48
-      y: 144
+      x: 89
+      y: 142
       width: 28
       height: 64
     spriteID: 3bb30d5ded127a0468ae97cabbfcbee1
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 144}
+    uvTransform: {x: 89, y: 142}
   - name: godwalk_Frame_2
     originalName: 
     pivot: {x: 0.4516129, y: 0}
@@ -168,10 +168,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 87
-      y: 140
+      x: 89
+      y: 73
       width: 31
-      height: 60
+      height: 61
     spriteID: 745918ae46270e94789c3174497a3128
     spriteBone: []
     spriteOutline: []
@@ -180,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 87, y: 140}
+    uvTransform: {x: 89, y: 73}
   - name: godwalk_Frame_3
     originalName: 
     pivot: {x: 0.46875, y: 0}
@@ -188,10 +188,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 87
-      y: 72
+      x: 89
+      y: 4
       width: 32
-      height: 60
+      height: 61
     spriteID: 921ed4d95057fbb499cb19d81b96922c
     spriteBone: []
     spriteOutline: []
@@ -200,7 +200,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 87, y: 72}
+    uvTransform: {x: 89, y: 4}
   - name: godwalk_Frame_4
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -208,7 +208,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 128
+      x: 129
       y: 4
       width: 28
       height: 64
@@ -220,7 +220,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 128, y: 4}
+    uvTransform: {x: 129, y: 4}
   - name: godwalk_Frame_5
     originalName: 
     pivot: {x: 0.516129, y: 0}
@@ -229,7 +229,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 48
-      y: 4
+      y: 75
       width: 31
       height: 64
     spriteID: 80ddb081c16f98d47bf8f71753cdcb23
@@ -240,7 +240,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 4}
+    uvTransform: {x: 48, y: 75}
   - name: godwalk_Frame_6
     originalName: 
     pivot: {x: 0.5277778, y: 0}
@@ -268,10 +268,10 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 87
+      x: 48
       y: 4
       width: 33
-      height: 60
+      height: 63
     spriteID: 31ebc130d1e137c4185b73ae056e0bfc
     spriteBone: []
     spriteOutline: []
@@ -280,7 +280,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 87, y: 4}
+    uvTransform: {x: 48, y: 4}
   - name: godwalk_Frame_8
     originalName: 
     pivot: {x: 0.47222224, y: 0}
@@ -289,9 +289,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 76
+      y: 146
       width: 36
-      height: 59
+      height: 61
     spriteID: 497ee572b9e19764e97aed27ad032897
     spriteBone: []
     spriteOutline: []
@@ -300,7 +300,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 76}
+    uvTransform: {x: 4, y: 146}
   - name: godwalk_Frame_9
     originalName: 
     pivot: {x: 0.47222224, y: 0}
@@ -309,9 +309,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 143
+      y: 76
       width: 36
-      height: 59
+      height: 62
     spriteID: 5db0f29aed92d244f96d977545344ed3
     spriteBone: []
     spriteOutline: []
@@ -320,7 +320,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 143}
+    uvTransform: {x: 4, y: 76}
   - name: godwalk_Frame_10
     originalName: 
     pivot: {x: 0.4516129, y: 0}
@@ -329,9 +329,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 48
-      y: 76
+      y: 147
       width: 31
-      height: 60
+      height: 63
     spriteID: 9b0b86bb7d6e0294c9a0463013ab30fd
     spriteBone: []
     spriteOutline: []
@@ -340,7 +340,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 48, y: 76}
+    uvTransform: {x: 48, y: 147}
   - name: godwalk_Frame_11
     originalName: 
     pivot: {x: 0.5, y: 0}
@@ -348,7 +348,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 128
+      x: 129
       y: 76
       width: 28
       height: 64
@@ -360,7 +360,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 128, y: 76}
+    uvTransform: {x: 129, y: 76}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -392,7 +392,7 @@ ScriptedImporter:
         x: 18
         y: 0
         width: 31
-        height: 60
+        height: 61
       spriteId: 745918ae46270e94789c3174497a3128
     - name: godwalk_Frame_3
       frameIndex: 3
@@ -400,7 +400,7 @@ ScriptedImporter:
         x: 17
         y: 0
         width: 32
-        height: 60
+        height: 61
       spriteId: 921ed4d95057fbb499cb19d81b96922c
     - name: godwalk_Frame_4
       frameIndex: 4
@@ -432,7 +432,7 @@ ScriptedImporter:
         x: 16
         y: 0
         width: 33
-        height: 60
+        height: 63
       spriteId: 31ebc130d1e137c4185b73ae056e0bfc
     - name: godwalk_Frame_8
       frameIndex: 8
@@ -440,7 +440,7 @@ ScriptedImporter:
         x: 15
         y: 0
         width: 36
-        height: 59
+        height: 61
       spriteId: 497ee572b9e19764e97aed27ad032897
     - name: godwalk_Frame_9
       frameIndex: 9
@@ -448,7 +448,7 @@ ScriptedImporter:
         x: 15
         y: 0
         width: 36
-        height: 59
+        height: 62
       spriteId: 5db0f29aed92d244f96d977545344ed3
     - name: godwalk_Frame_10
       frameIndex: 10
@@ -456,7 +456,7 @@ ScriptedImporter:
         x: 18
         y: 0
         width: 31
-        height: 60
+        height: 63
       spriteId: 9b0b86bb7d6e0294c9a0463013ab30fd
     - name: godwalk_Frame_11
       frameIndex: 11

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64411a8b572e37f409b1eb6da06ef437
+guid: 2693a68ce2aded242aeef31d11793009
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: carpenter
+  - name: cybercitygiris
     originalName: 
-    pivot: {x: 0.5128713, y: 0}
+    pivot: {x: 0.4939759, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 505
-      height: 309
-    spriteID: 022d2caedb420314a94606461ec98c66
+      width: 83
+      height: 74
+    spriteID: 4df19782e92295c42afc6052ee6ef246
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,24 +144,24 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2018101770
-    name: carpenter
+    guid: -967924362
+    name: cybercitygiris
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: carpenter
+    - name: cybercitygiris
       frameIndex: 0
       cellRect:
-        x: 11
+        x: 1
         y: 0
-        width: 505
-        height: 309
-      spriteId: 022d2caedb420314a94606461ec98c66
+        width: 83
+        height: 74
+      spriteId: 4df19782e92295c42afc6052ee6ef246
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 540, y: 360}
+  canvasSize: {x: 84, y: 75}
