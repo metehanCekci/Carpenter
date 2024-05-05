@@ -15,16 +15,20 @@ public class bekletici : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+    void calistir()
+    {
         int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
 
-        if (currentLevelIndex != 7)
+        if (currentLevelIndex != 8)
         {
             currentLevelIndex++;
             levelChanger.GetComponent<levelChangerScript>().fadeToLevel(currentLevelIndex);
         }
         else
         {
-            //levelChanger.GetComponent<levelChangerScript>().fadeToLevel(0);
+            levelChanger.GetComponent<levelChangerScript>().fadeToLevel(0);
         }
     }
 }
