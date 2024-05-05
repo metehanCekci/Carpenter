@@ -21,6 +21,7 @@ public class bekletici : MonoBehaviour
     {
         int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
 
+        
         if (currentLevelIndex != 8)
         {
             currentLevelIndex++;
