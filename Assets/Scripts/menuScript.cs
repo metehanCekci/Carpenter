@@ -7,10 +7,12 @@ using UnityEngine.UIElements.Experimental;
 public class menuScript : MonoBehaviour
 {
     private bool isPaused = false;
+
     public GameObject menu;
     public GameObject player;
     public GameObject ayarlar;
     public GameObject anaMenu;
+    public GameObject easterEgg;
     public void startGame()
     {
         SceneManager.LoadScene(1);
@@ -79,5 +81,14 @@ public class menuScript : MonoBehaviour
         ayarlar.SetActive(false);
         anaMenu.SetActive(true);
     }
-
+    public void eggCikar()
+    {
+        anaMenu.SetActive(false);
+        easterEgg.SetActive(true);   
+    }
+    public void eggKapa()
+    {
+        anaMenu.SetActive(true);
+        easterEgg.SetActive(false);
+    }
 }
