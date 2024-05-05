@@ -9,6 +9,10 @@ public class levelChangerScript : MonoBehaviour
 
     private int levelToLoad;
     // Update is called once per frame
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+    }
     void Update()
     {
         

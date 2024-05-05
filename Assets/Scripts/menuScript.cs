@@ -19,6 +19,7 @@ public class menuScript : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+        isPaused = false;
         if (SceneManager.GetActiveScene().buildIndex!=0)
         {
             menu.SetActive(false);
@@ -29,7 +30,8 @@ public class menuScript : MonoBehaviour
     }
     public void Reset()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale=1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void returnMainMenu()
     {
