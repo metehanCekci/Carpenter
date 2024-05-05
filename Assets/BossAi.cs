@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BossAi : MonoBehaviour
 {
+    public GameObject lazerGroup;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,15 @@ public class BossAi : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void randomizeAttack()
+    {}
+
+    public void lazerAttack()
+    {
+
+        lazerGroup.SetActive(true);
+
     }
 }
