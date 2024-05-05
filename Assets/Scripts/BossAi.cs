@@ -10,6 +10,12 @@ public class BossAi : MonoBehaviour
     public GameObject spike1;
     public GameObject spike2;
     public GameObject exclama;
+    public GameObject exclamaBottom;
+    public GameObject homingExclama;
+
+    public GameObject followPlayer;
+    public GameObject saw;
+    public GameObject source;
 
     // Start is called before the first frame update
     void Start()
@@ -39,11 +45,13 @@ public class BossAi : MonoBehaviour
     public void randomizeAttack()
     {
 
-        int randomNumber = Random.Range(0, 5);
+        int randomNumber = Random.Range(1, 7);
 
         if(randomNumber == 1) lazerAttack();
         else if(randomNumber == 2 || randomNumber == 3) StartCoroutine(mermiAttack());
         else if (randomNumber == 4) StartCoroutine(dikenAttack());
+        else if (randomNumber == 5) StartCoroutine(sawAttack());
+        else if (randomNumber == 6) followingBullet();
 
         
     }
@@ -84,4 +92,33 @@ public class BossAi : MonoBehaviour
         yield return new WaitForSeconds(15);
 
     }
+
+    IEnumerator sawAttack()
+    {
+
+        saw.SetActive(true);
+        yield return new WaitForSeconds(10);
+        saw.SetActive(false);
+
+    }
+
+    IEnumerator horizontalLazer()
+    {
+
+        yield return new WaitForSeconds(1);
+        
+
+    }
+
+    public void followingBullet()
+    {
+
+        
+        GameObject clone = Instantiate(followPlayer);
+        clone.SetActive(true);
+        clone.transform.position = source.transform.position;
+
+    }
+
+    
 }
