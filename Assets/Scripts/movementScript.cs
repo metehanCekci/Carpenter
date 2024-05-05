@@ -34,7 +34,7 @@ public class movementScript : MonoBehaviour
 
         if (rb.velocity.y < 0)
         {
-            //Aþaðý yonlu hareket
+            //Aï¿½aï¿½ï¿½ yonlu hareket
             animator.SetBool(name: "isFalling", value: true);
             animator.SetBool(name: "isJumping", value: false);
         }
@@ -62,7 +62,7 @@ public class movementScript : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f);
         if (hit.collider != null && hit.collider.CompareTag("enemy"))
         {
-            // Karakterin yüksekliðini ayarlayarak düþmanýn içinden geçmesini saðlayýn
+            // Karakterin yï¿½ksekliï¿½ini ayarlayarak dï¿½ï¿½manï¿½n iï¿½inden geï¿½mesini saï¿½layï¿½n
             transform.position = new Vector3(transform.position.x, hit.collider.transform.position.y + 0.5f, transform.position.z);
         }
     }
@@ -118,7 +118,10 @@ public class movementScript : MonoBehaviour
     {
         if (collision.gameObject.layer == 6)
         {
+            try{
             entranceClose.SetActive(true);
+            }
+            catch{}
         }
     }
 

@@ -10,6 +10,7 @@ public class attackScript : MonoBehaviour
     public playerHpScript playerHpScript;
     public GameObject cyborgAi;
     public enemyFacing eF;
+    public int killAmount = 0;
     public float radius;
     public float knockbackAmt;
     public SFXLoader sFX;
@@ -50,16 +51,15 @@ public class attackScript : MonoBehaviour
                 if(enemyGameObject.GetComponent<enemyFacing>().facingRight)
                 {
                 enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt * -1, 2.0f) , ForceMode2D.Impulse);
-                Debug.Log("knocktoleft");
                 }
                 else
                 {
                 enemyGameObject.GetComponent<Rigidbody2D>().AddForce(knockback = new Vector2(knockbackAmt , 2.0f) , ForceMode2D.Impulse);
-                Debug.Log("knocktoright");
                 }
                 enemyGameObject.GetComponent<enemyHealth>().health -= damage;
                 if (enemyGameObject.GetComponent<enemyHealth>().health <= 0)
                 {
+                    killAmount++;
                                     GameObject clone = Instantiate(kan);
                 clone.transform.position = enemyGameObject.transform.position;
                 clone.SetActive(true);

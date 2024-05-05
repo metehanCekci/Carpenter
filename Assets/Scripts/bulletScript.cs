@@ -48,7 +48,19 @@ public class bulletScript : MonoBehaviour
             
 
         }
+                else if(other.gameObject.layer == 6)
+        {
+            Destroy(this.gameObject);
+        }
     }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.gameObject.layer == 6)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    
     IEnumerator beklet()
     {
         yield return new WaitForSeconds(120);
