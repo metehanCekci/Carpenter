@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class attackScript : MonoBehaviour
 {
-    Animator anim;
+    public Animator anim;
     public GameObject attackPoint;
     public playerHpScript playerHpScript;
     public GameObject cyborgAi;
