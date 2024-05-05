@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 040cb4f84abe5d64ebd5329e51073e98
+guid: 77ed9d1dd6d803049bb63ae8f07680d3
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: godidle_Frame_0
+  - name: bossdeath_Frame_0
     originalName: 
-    pivot: {x: 0.5357143, y: 0}
+    pivot: {x: 0.50595236, y: -0.36723167}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 762
+      width: 168
+      height: 177
+    spriteID: 0ee2211e22878af428159525527aa94d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 762}
+  - name: bossdeath_Frame_1
+    originalName: 
+    pivot: {x: 0.5257143, y: -0.34444445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 574
+      width: 175
+      height: 180
+    spriteID: 7760b8bec7bb6d24ba67f623d4212733
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 574}
+  - name: bossdeath_Frame_2
+    originalName: 
+    pivot: {x: 0.5388889, y: -0.32967034}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 28
-      height: 64
-    spriteID: 2aa3a370f83d8e4489c8ecba11e373ed
+      width: 180
+      height: 182
+    spriteID: 06f08f5c114398d4e83fba8b43d00886
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,18 +181,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: godidle_Frame_1
+  - name: bossdeath_Frame_3
     originalName: 
-    pivot: {x: 0.5357143, y: 0}
+    pivot: {x: 0.5388889, y: -0.32967034}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 76
-      width: 28
-      height: 64
-    spriteID: df47b194c14697d43ada9eb0fdd27c8e
+      y: 194
+      width: 180
+      height: 182
+    spriteID: d465319c2544d5146b3bd6c74d9d1ed7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,19 +200,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 76}
-  - name: godidle_Frame_2
+    uvTransform: {x: 4, y: 194}
+  - name: bossdeath_Frame_4
     originalName: 
-    pivot: {x: 0.5357143, y: 0}
+    pivot: {x: 0.5388889, y: -0.32967034}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 148
-      width: 28
-      height: 64
-    spriteID: 45cec01d9fcbd5e4b91318f5a3568b9c
+      y: 384
+      width: 180
+      height: 182
+    spriteID: 955db205e66c1bc4aa277f585a5c5bcf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,72 +220,60 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 148}
-  - name: godidle_Frame_3
-    originalName: 
-    pivot: {x: 0.5357143, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 40
-      y: 4
-      width: 28
-      height: 64
-    spriteID: bdc6dc86fead9e7409ee0d9bb7aead13
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 40, y: 4}
+    uvTransform: {x: 4, y: 384}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 952843082
-    name: godidle
+    guid: 1482000077
+    name: bossdeath
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: godidle_Frame_0
+    - name: bossdeath_Frame_0
       frameIndex: 0
       cellRect:
-        x: 17
-        y: 0
-        width: 28
-        height: 64
-      spriteId: 2aa3a370f83d8e4489c8ecba11e373ed
-    - name: godidle_Frame_1
+        x: 50
+        y: 65
+        width: 168
+        height: 177
+      spriteId: 0ee2211e22878af428159525527aa94d
+    - name: bossdeath_Frame_1
       frameIndex: 1
       cellRect:
-        x: 17
-        y: 0
-        width: 28
-        height: 64
-      spriteId: df47b194c14697d43ada9eb0fdd27c8e
-    - name: godidle_Frame_2
+        x: 43
+        y: 62
+        width: 175
+        height: 180
+      spriteId: 7760b8bec7bb6d24ba67f623d4212733
+    - name: bossdeath_Frame_2
       frameIndex: 2
       cellRect:
-        x: 17
-        y: 0
-        width: 28
-        height: 64
-      spriteId: 45cec01d9fcbd5e4b91318f5a3568b9c
-    - name: godidle_Frame_3
+        x: 38
+        y: 60
+        width: 180
+        height: 182
+      spriteId: 06f08f5c114398d4e83fba8b43d00886
+    - name: bossdeath_Frame_3
       frameIndex: 3
       cellRect:
-        x: 17
-        y: 0
-        width: 28
-        height: 64
-      spriteId: bdc6dc86fead9e7409ee0d9bb7aead13
+        x: 38
+        y: 60
+        width: 180
+        height: 182
+      spriteId: d465319c2544d5146b3bd6c74d9d1ed7
+    - name: bossdeath_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 38
+        y: 60
+        width: 180
+        height: 182
+      spriteId: 955db205e66c1bc4aa277f585a5c5bcf
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
+  canvasSize: {x: 270, y: 270}

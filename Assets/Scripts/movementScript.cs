@@ -32,7 +32,7 @@ public class movementScript : MonoBehaviour
     void Update()
     {
 
-        if (rb.velocity.y < 0)
+        if (rb.velocity.y <= 0)
         {
             //A�a�� yonlu hareket
             animator.SetBool(name: "isFalling", value: true);
