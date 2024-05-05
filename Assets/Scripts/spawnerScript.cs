@@ -42,7 +42,7 @@ public class spawnerScript : MonoBehaviour
         newObject.SetActive(true);
         
         }
-        if(currentIndex>spawnableObjects.Length)
+
         currentIndex++;
     }
 }

@@ -7,6 +7,7 @@ public class droneAi : MonoBehaviour
     public Transform target; // The target GameObject to follow
     public float followSpeed = 5f; // Speed at which the GameObject follows the target
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
+    public bool isBoss;
 
     void Start()
     {
@@ -38,6 +39,14 @@ public class droneAi : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.CompareTag("Player"))
+        {
+
+            other.gameObject.GetComponent<playerHpScript>().takeDamage(other.transform.position);
+
+        }
+    }
+        private void OnTriggerStay2D(Collider2D other) {
         if(other.gameObject.CompareTag("Player"))
         {
 
