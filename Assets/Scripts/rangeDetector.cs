@@ -37,6 +37,7 @@ public class rangeDetector : MonoBehaviour
             this.transform.parent.GetComponent<cyborgAi>().Attack();
 
         }
+
         
     }
 }

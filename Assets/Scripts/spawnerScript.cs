@@ -9,11 +9,15 @@ public class spawnerScript : MonoBehaviour
     [SerializeField]
     public float spawnInterval = 0.5f; // Saniyeler cinsinden
 
+
     private float timer = 0f;
-    private int currentIndex = 0;
+    public int currentIndex = 0;
 
     private void Update()
     {
+
+        
+
         timer += Time.deltaTime;
 
         if (timer >= spawnInterval)
@@ -28,13 +32,17 @@ public class spawnerScript : MonoBehaviour
     {
         if (currentIndex >= spawnableObjects.Length)
         {
-            Destroy(this.gameObject);
+            this.GetComponent<SpriteRenderer>().enabled = false;
         }
+        else{
 
         GameObject spawnableObject = spawnableObjects[currentIndex];
         GameObject newObject = Instantiate(spawnableObject);
         newObject.transform.position = this.gameObject.transform.position;
         newObject.SetActive(true);
+        
+        }
+        if(currentIndex>spawnableObjects.Length)
         currentIndex++;
     }
 }
