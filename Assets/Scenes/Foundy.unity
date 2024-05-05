@@ -513,6 +513,10 @@ PrefabInstance:
       propertyPath: hatch
       value: 
       objectReference: {fileID: 1713023136}
+    - target: {fileID: 6571919577694584953, guid: 660bedb19890b4948b588747c3e97dd8, type: 3}
+      propertyPath: enemyAmt
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6980145237322509280, guid: 660bedb19890b4948b588747c3e97dd8, type: 3}
       propertyPath: spawnableObjects.Array.data[0]
       value: 
