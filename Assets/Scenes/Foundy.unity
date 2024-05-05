@@ -537,6 +537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7422987134812628306, guid: 660bedb19890b4948b588747c3e97dd8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -105697,6 +105701,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6980145237322509280, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
+      propertyPath: spawnableObjects.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980145237322509280, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: spawnableObjects.Array.data[0]
       value: 
       objectReference: {fileID: 1048224161}
@@ -105715,6 +105723,10 @@ PrefabInstance:
     - target: {fileID: 7422987134812628306, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: m_Name
       value: Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422987134812628306, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -106781,6 +106793,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6980145237322509280, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
+      propertyPath: spawnableObjects.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980145237322509280, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: spawnableObjects.Array.data[0]
       value: 
       objectReference: {fileID: 1048224161}
@@ -106795,7 +106811,7 @@ PrefabInstance:
     - target: {fileID: 6980145237322509280, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: spawnableObjects.Array.data[3]
       value: 
-      objectReference: {fileID: 15918772}
+      objectReference: {fileID: 1048224161}
     - target: {fileID: 6980145237322509280, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: spawnableObjects.Array.data[4]
       value: 
@@ -106803,6 +106819,10 @@ PrefabInstance:
     - target: {fileID: 7422987134812628306, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
       propertyPath: m_Name
       value: Spawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7422987134812628306, guid: 6de869c715fb9be44b50ed584d363588, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -108443,6 +108463,10 @@ PrefabInstance:
       propertyPath: attackScript
       value: 
       objectReference: {fileID: 2113936799}
+    - target: {fileID: 8817342054438364040, guid: 5ee4a24c41e0a964bb05d933d7ffdacf, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2047072306}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
