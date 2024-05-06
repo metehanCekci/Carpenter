@@ -113,7 +113,7 @@ public class movementScript : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
         transform.localScale = localScale;
-        
+
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -177,25 +177,58 @@ public class movementScript : MonoBehaviour
 
             if (isInverted == false)
             {
+                // Calculate the target position for dashing
+                Vector3 targetPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
 
+                // Perform the dash with physics
                 rb.velocity = new Vector2(transform.localScale.x * Dashpower, 0f);
-                Vector3 newPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
-                while (Vector3.Distance(transform.position, newPosition) > 0.1f)
+
+                // Use a RaycastHit2D to check for collisions during the dash
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, Vector3.Distance(transform.position, targetPosition), LayerMask.GetMask("ObstacleLayer"));
+
+                if (hit.collider != null)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, newPosition, DashSpeed * Time.deltaTime);
+                    // If the character hits an obstacle during the dash, adjust the target position to the point of collision
+                    targetPosition = (Vector3)hit.point - (targetPosition - transform.position).normalized * 0.1f; // Convert hit.point to Vector3
+                }
+
+                float timer = 0;
+                // Move the character towards the target position
+                while (Vector3.Distance(transform.position, targetPosition) > 0.1f && timer < 0.1)
+                {
+                    Debug.Log(timer);
+                    timer += Time.deltaTime;
+                    transform.position = Vector3.MoveTowards(transform.position, targetPosition, DashSpeed * Time.deltaTime);
                     yield return null;
                 }
             }
             else
             {
-                rb.velocity = new Vector2(-transform.localScale.x * Dashpower*2, 0f);
-                Vector3 newPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
-                while (Vector3.Distance(transform.position, newPosition) < 0.1f)
+                // Calculate the target position for dashing
+                Vector3 targetPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
+
+                // Perform the dash with physics (negating x component for inverted dash)
+                rb.velocity = new Vector2(-transform.localScale.x * Dashpower * 2, 0f);
+
+                // Use a RaycastHit2D to check for collisions during the dash
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, Vector3.Distance(transform.position, targetPosition), LayerMask.GetMask("ObstacleLayer"));
+
+                if (hit.collider != null)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position,newPosition, DashSpeed * Time.deltaTime);
+                    // If the character hits an obstacle during the dash, adjust the target position to the point of collision
+                    targetPosition = (Vector3)hit.point - (targetPosition - transform.position).normalized * 0.1f; // Convert hit.point to Vector3
+                }
+                float timer = 0;
+                // Move the character towards the target position
+                while (Vector3.Distance(transform.position, targetPosition) > 0.1f && timer < 0.1)
+                {
+                    Debug.Log(timer);
+                    timer += Time.deltaTime;
+                    transform.position = Vector3.MoveTowards(transform.position, targetPosition, DashSpeed * Time.deltaTime);
                     yield return null;
                 }
             }
+
             yield return new WaitForSeconds(dashingTime);
 
             Physics2D.IgnoreLayerCollision(playerCollider.gameObject.layer, LayerMask.NameToLayer("Enemy"), false);
