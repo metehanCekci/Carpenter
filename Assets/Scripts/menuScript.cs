@@ -14,6 +14,12 @@ public class menuScript : MonoBehaviour
     public GameObject ayarlar;
     public GameObject anaMenu;
     public GameObject easterEgg;
+
+    public GameObject button1;
+    public GameObject button2;
+    public GameObject button3;
+    public GameObject button4;
+    public GameObject button5;
     public void startGame()
     {
         SceneManager.LoadScene(1);
@@ -22,7 +28,7 @@ public class menuScript : MonoBehaviour
     {
         Time.timeScale = 1f;
         isPaused = false;
-        if (SceneManager.GetActiveScene().buildIndex!=0)
+        if (SceneManager.GetActiveScene().buildIndex != 0)
         {
             menu.SetActive(false);
             Time.timeScale = 1f;
@@ -32,7 +38,7 @@ public class menuScript : MonoBehaviour
     }
     public void Reset()
     {
-        Time.timeScale=1f;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void returnMainMenu()
@@ -85,7 +91,7 @@ public class menuScript : MonoBehaviour
     public void eggCikar()
     {
         anaMenu.SetActive(false);
-        easterEgg.SetActive(true);   
+        easterEgg.SetActive(true);
     }
     public void eggKapa()
     {
@@ -114,5 +120,42 @@ public class menuScript : MonoBehaviour
         bittimi = true;
         SceneManager.LoadScene("Start");
     }
+    
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            SceneManager.LoadScene("Start");
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            SceneManager.LoadScene("Foundy");
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            SceneManager.LoadScene("ChinaTowny");
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad4))
+        {
+            SceneManager.LoadScene("Facilty");
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad5))
+        {
+            SceneManager.LoadScene("Boss");
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            SceneManager.LoadScene("mainMenu");
+        }
+    }
+    public void restart()
+    {
+        button1.SetActive(true);
+        button2.SetActive(PlayerPrefs.GetInt("level2") == 0);
+        button3.SetActive(PlayerPrefs.GetInt("level3") == 0);
+        button4.SetActive(PlayerPrefs.GetInt("level4") == 0);
+        button5.SetActive(PlayerPrefs.GetInt("level5") == 0);
+
+    }
 }

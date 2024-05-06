@@ -58,8 +58,5 @@ public class cutsceneText : MonoBehaviour
         }
         bittimi = true;
     }
-    public void SetBittimiTrue()
-    {
-        bittimi = true;
-    }
+    
 }

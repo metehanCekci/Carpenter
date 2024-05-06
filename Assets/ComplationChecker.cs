@@ -22,7 +22,10 @@ public class ComplationChecker : MonoBehaviour
         button4.SetActive(true);
         if(PlayerPrefs.GetInt("level5")==1)
         button5.SetActive(true);
+
     }
+
+    
 
     // Update is called once per frame
     void Update()
