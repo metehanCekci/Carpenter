@@ -105836,7 +105836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2392025518851102505, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: Dashpower
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2392025518851102505, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: levelChanger
