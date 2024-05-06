@@ -114,6 +114,11 @@ public class menuScript : MonoBehaviour
     {
         SceneManager.LoadScene("Boss");
     }
+    public void SkipCongrats()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+    
 
     public void SetBittimiTrue()
     {
