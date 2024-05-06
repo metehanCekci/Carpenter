@@ -255,14 +255,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<align=center><size=100>CARPENTER</size></align>\n<align=center><size=70>Yap\u0131mc\u0131lar</size></align>\n-
-    Ahmet Abdullah Be\u015Fer\n- Metehan \xC7ek\xE7i\n- Kaan Aksoy\n- Ozan K\u0131l\u0131n\xE7arslan\n-
-    Deniz Acar\n\r\n<align=center><size=70>Geli\u015Ftiriciler</size></align>\n-
-    Ahmet Abdullah Be\u015Fer\n- Metehan \xC7ek\xE7i\n- Kaan Aksoy\n\r\n<align=center><size=70>Sanat</size>\r</align>\n-
-    Ozan K\u0131l\u0131n\xE7arslan\n- Deniz Acar\n\r\n<align=center><size=70>M\xFCzik
-    ve Ses Efektleri</size></align>\n- Ahmet Abdullah Be\u015Fer\n\r\n<align=center><size=70>Test
-    Ediciler</size></align>\n- Metehan \xC7ek\xE7i\n- Ahmet Abdullah Be\u015Fer\n-
-    Kaan Aksoy\n- Maya(Kedi)\n\r\n<align=center><size=70>Te\u015Fekk\xFCrler!</size></align>\n-
+  m_text: "<align=center><size=100>CARPENTER</size></align>\n<align=center><size=70>-
+    Yap\u0131mc\u0131lar -</size></align>\n- Ahmet Abdullah Be\u015Fer\n- Metehan
+    \xC7ek\xE7i\n- Kaan Aksoy\n- Ozan K\u0131l\u0131n\xE7arslan\n- Deniz Acar\n\r\n<align=center><size=70>-
+    Geli\u015Ftiriciler -</size></align>\n- Ahmet Abdullah Be\u015Fer\n- Metehan
+    \xC7ek\xE7i\n- Kaan Aksoy\n\r\n<align=center><size=70>- Sanat -</size>\r</align>\n-
+    Ozan K\u0131l\u0131n\xE7arslan\n- Deniz Acar\n\r\n<align=center><size=70>- M\xFCzik
+    ve Ses Efektleri -</size></align>\n- Ahmet Abdullah Be\u015Fer\n\r\n<align=center><size=70>-
+    Test Ediciler -</size></align>\n- Metehan \xC7ek\xE7i\n- Ahmet Abdullah Be\u015Fer\n-
+    Kaan Aksoy\n- Maya(Kedi)\n\r\n<align=center><size=70>- Te\u015Fekk\xFCrler! -</size></align>\n-
     Ailelerimiz ve Arkada\u015Flar\u0131m\u0131z\r\n- \xD6\u011Fretmenlerimize\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c50723586e5dd644785930759d4f97c6, type: 2}
