@@ -9,7 +9,7 @@ public class followPlayer : MonoBehaviour
     void Awake()
     {
 
-        Destroy(this.gameObject , 15);
+        Destroy(this.gameObject , 10);
 
     }
 

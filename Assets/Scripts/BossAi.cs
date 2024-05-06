@@ -10,6 +10,7 @@ public class BossAi : MonoBehaviour
     public GameObject spike1;
     public GameObject spike2;
     public GameObject exclama;
+    public GameObject exclama2;
     public GameObject exclamaBottom;
     public GameObject homingExclama;
 
@@ -36,7 +37,7 @@ public class BossAi : MonoBehaviour
 
     IEnumerator startAttack()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(4);
         randomizeAttack();
         StartCoroutine(startAttack());
 
@@ -48,10 +49,10 @@ public class BossAi : MonoBehaviour
         int randomNumber = Random.Range(1, 7);
 
         if(randomNumber == 1) lazerAttack();
-        else if(randomNumber == 2 || randomNumber == 3) StartCoroutine(mermiAttack());
-        else if (randomNumber == 4) StartCoroutine(dikenAttack());
-        else if (randomNumber == 5) StartCoroutine(sawAttack());
-        else if (randomNumber == 6) followingBullet();
+        else if(randomNumber == 2) StartCoroutine(mermiAttack());
+        else if (randomNumber == 3) StartCoroutine(dikenAttack());
+        else if (randomNumber == 4) StartCoroutine(sawAttack());
+        else if (randomNumber == 5) followingBullet();
 
         
     }
@@ -66,7 +67,9 @@ public class BossAi : MonoBehaviour
 
     IEnumerator mermiAttack()
     {
-
+        exclama2.SetActive(true);
+        yield return new WaitForSeconds(2);
+        exclama2.SetActive(false);
         bulletSpawner.spawnBullet();
         bulletSpawner2.spawnBullet();
         yield return new WaitForSeconds(1);
@@ -97,9 +100,12 @@ public class BossAi : MonoBehaviour
 
     IEnumerator sawAttack()
     {
+        exclamaBottom.SetActive(true);
+        yield return new WaitForSeconds(2);
+        exclamaBottom.SetActive(false);
 
         saw.SetActive(true);
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(14);
         saw.SetActive(false);
 
     }

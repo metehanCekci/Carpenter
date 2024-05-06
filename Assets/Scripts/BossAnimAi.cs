@@ -58,10 +58,12 @@ public class BossAnimAi : MonoBehaviour
         g2.SetActive(true);
         BossAnim.SetBool("isRising" , true);
                 Audio.SetActive(true);
-        yield return new WaitForSeconds(9);
+        yield return new WaitForSeconds(4);
+        bAi.startFight();
+        yield return new WaitForSeconds(5);
         BossAnim.SetBool("isRising" , false);
 
-        bAi.startFight();
+        
 
 
     }
