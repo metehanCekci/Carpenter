@@ -204,7 +204,6 @@ public class movementScript : MonoBehaviour
                 // Move the character towards the target position
                 while (Vector3.Distance(transform.position, targetPosition) > 0.1f && timer < 0.1)
                 {
-                    Debug.Log(timer);
                     timer += Time.deltaTime;
                     transform.position = Vector3.MoveTowards(transform.position, targetPosition, DashSpeed * Time.deltaTime);
                     yield return null;
