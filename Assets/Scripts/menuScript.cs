@@ -7,7 +7,7 @@ using UnityEngine.UIElements.Experimental;
 public class menuScript : MonoBehaviour
 {
     private bool isPaused = false;
-
+    //amo
     public GameObject menu;
     public GameObject player;
     public GameObject ayarlar;
