@@ -5,6 +5,7 @@ using UnityEngine;
 public class GravCheck : MonoBehaviour
 {
     [HideInInspector] public bool GravChanged = false;
+    public movementScript mv;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,30 +19,38 @@ public class GravCheck : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("GravCollider"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(GravChange());
+            StartCoroutine(GravChange(collision));
         }
 
     }
 
-    IEnumerator GravChange()
+    IEnumerator GravChange(Collider2D collision)
     {
         
-        GetComponent<Rigidbody2D>().gravityScale *= -1f;
-        yield return new WaitForSeconds(.5f);
+        collision.gameObject.GetComponent<Rigidbody2D>().gravityScale *= -1f;
+        yield return new WaitForSeconds(0);
+        mv.isInverted = !mv.isInverted;
+        
         if (!GravChanged)
         {
-            transform.rotation = Quaternion.Euler(0f, 0f, 180f);
-
+            collision.transform.rotation = Quaternion.Euler(0f, 0f, 180f);
+            collision.transform.position = new Vector2(collision.transform.position.x , collision.transform.position.y / 2);
+            if(!mv.isFacingRight)
+            mv.Flip();
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            collision.transform.position = new Vector2(collision.transform.position.x , collision.transform.position.y / 2);
+            
+            collision.transform.rotation = Quaternion.Euler(0, 0, 0);
+            if(mv.isFacingRight)
+            mv.Flip();
         }
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
-        transform.localScale = localScale;
+        collision.transform.localScale = localScale;
         GravChanged = !GravChanged;
     }
 }

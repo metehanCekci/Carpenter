@@ -58,6 +58,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Dash",
+                    "type": "Button",
+                    "id": "d8c70e4d-33dd-4a16-a1f5-0bae952b45b7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -283,19 +292,19 @@
                 },
                 {
                     "name": "",
-                    "id": "b76409b1-76f8-4287-a251-9856cb830900",
-                    "path": "<Keyboard>/w",
+                    "id": "f7b98f9d-b26a-49b8-8d03-0cdb7917d9de",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
+                    "groups": "",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "f7b98f9d-b26a-49b8-8d03-0cdb7917d9de",
-                    "path": "",
+                    "id": "da79735d-ecc4-4c24-b327-a414901fdf4e",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -344,6 +353,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "058d8350-9165-4ad3-a60a-0492a9b53ae0",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
