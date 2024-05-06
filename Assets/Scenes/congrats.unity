@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -103.9, y: 41.4}
+  m_AnchoredPosition: {x: -103.899994, y: 41.399994}
   m_SizeDelta: {x: 86.26, y: 53.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &17408800
@@ -205,13 +205,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1858260589}
+        m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
+        m_MethodName: SkipCongrats
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1332,7 +1332,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1858260588}
-  - component: {fileID: 1858260587}
+  - component: {fileID: 1858260589}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -1340,18 +1340,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1858260587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858260586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75417eb7cc39f6c43a9e767556b5e823, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1858260588
 Transform:
   m_ObjectHideFlags: 0
@@ -1367,6 +1355,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1858260589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858260586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9f2beb7c32bd8a40a757738253d4631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 1227835861}
+  player: {fileID: 1227835861}
+  ayarlar: {fileID: 1227835861}
+  anaMenu: {fileID: 1227835861}
+  easterEgg: {fileID: 1227835861}
+  button1: {fileID: 1227835861}
+  button2: {fileID: 1227835861}
+  button3: {fileID: 1227835861}
+  button4: {fileID: 1227835861}
+  button5: {fileID: 1227835861}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
