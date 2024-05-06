@@ -132488,7 +132488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2392025518851102505, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: Dashpower
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2392025518851102505, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: levelChanger
@@ -139696,6 +139696,14 @@ PrefabInstance:
     - target: {fileID: 1269557248065205087, guid: 556032712c8424642b96356b7fd38556, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Size.x
+      value: 0.4441729
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.053292498
       objectReference: {fileID: 0}
     - target: {fileID: 6281129189054009969, guid: 556032712c8424642b96356b7fd38556, type: 3}
       propertyPath: Player

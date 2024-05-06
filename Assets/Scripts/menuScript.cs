@@ -127,6 +127,7 @@ public class menuScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
             SceneManager.LoadScene("Start");
+            Debug.Log("sjdahfuý");
         }
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
@@ -151,11 +152,21 @@ public class menuScript : MonoBehaviour
     }
     public void restart()
     {
-        button1.SetActive(true);
-        button2.SetActive(PlayerPrefs.GetInt("level2") == 0);
-        button3.SetActive(PlayerPrefs.GetInt("level3") == 0);
-        button4.SetActive(PlayerPrefs.GetInt("level4") == 0);
-        button5.SetActive(PlayerPrefs.GetInt("level5") == 0);
+
+
+        PlayerPrefs.SetInt("level2", 0);
+
+        PlayerPrefs.SetInt("level3", 0);
+
+        PlayerPrefs.SetInt("level4", 0);
+
+        PlayerPrefs.SetInt("level5", 0);
+
+        button2.SetActive(false);
+        button3.SetActive(false);
+        button4.SetActive(false);
+        button5.SetActive(false);
 
     }
+
 }
