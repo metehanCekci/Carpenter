@@ -7,22 +7,17 @@ using UnityEngine.SceneManagement;
 public class cutsceneText : MonoBehaviour
 {
     public Text textComponent;
-    public string fullText;
-    public float delay = 0.1f;
-    public bool bittimi = false; // Baþlangýçta false olmalý
-    private int textIndex = 0;
-
-    private string currentText = "";
-
     public string text1;
     public string text2;
     public string text3;
-    
+    private string fullText;
+    public float delay = 0.1f;
+    private bool bittimi = false; // Baþlangýçta false olmalý
+    private int textIndex = 0;
 
     void Start()
     {
         Time.timeScale = 1.0f;
-        textIndex++;
         textComponent.text = "Text Component";
         bittimi = false;
         fullText = text1;
@@ -31,44 +26,24 @@ public class cutsceneText : MonoBehaviour
 
     void Update()
     {
-        if (bittimi)
+        if (bittimi && Input.GetKeyDown(KeyCode.Space)) // Bittimi kontrolü ve Space tuþu kontrolü tek satýrda
         {
-            if (Input.GetKeyDown(KeyCode.Space)) // GetKey yerine GetKeyDown kullanmalýsýnýz
+            textIndex++; // textIndex'i arttýrýn
+            switch (textIndex)
             {
-                // Metinler arasýnda geçiþ yapmak için textIndex'i kontrol edin
-                switch (textIndex)
-                {
-                    case 0:
-                        delay = 0.1f;
-                        fullText = text1;
-                        break;
-                    case 1:
-                        delay = 0.1f;
-                        fullText = text2;
-                        break;
-                    case 2:
-                        delay = 0.1f;
-                        fullText = text3;
-                        break;
-                    default:
-                        // Tüm metinler gösterildiyse burada baþka bir iþlem yapýlabilir
-                        break;
-                }
-                textIndex++; // textIndex'i arttýrýn
-                StartCoroutine(ShowText()); // Coroutine'u baþlatýn
+                case 1:
+                    delay = 0.1f;
+                    fullText = text2;
+                    break;
+                case 2:
+                    delay = 0.1f;
+                    fullText = text3;
+                    break;
+                default:
+                    SceneManager.LoadScene(2); // Tüm metinler gösterildiyse belirtilen sahneye geç
+                    break;
             }
-            if (currentText == text3)
-            {
-                SceneManager.LoadScene(2);
-            }
-        }
-        else
-        {
-            bekle();
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                delay = 0;
-            }
+            StartCoroutine(ShowText()); // Coroutine'u baþlatýn
         }
     }
 
@@ -76,15 +51,15 @@ public class cutsceneText : MonoBehaviour
     {
         bittimi = false;
         for (int i = 0; i <= fullText.Length; i++)
-        {         
-            currentText = fullText.Substring(0, i);
+        {
+            string currentText = fullText.Substring(0, i);
             textComponent.text = currentText;
             yield return new WaitForSeconds(delay);
         }
         bittimi = true;
     }
-    IEnumerator bekle()
+    public void SetBittimiTrue()
     {
-        yield return new WaitForSeconds(2);
+        bittimi = true;
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine.UIElements.Experimental;
 public class menuScript : MonoBehaviour
 {
     private bool isPaused = false;
+    private bool bittimi = false;
     //amo
     public GameObject menu;
     public GameObject player;
@@ -108,6 +109,10 @@ public class menuScript : MonoBehaviour
         SceneManager.LoadScene("Boss");
     }
 
-    
+    public void SetBittimiTrue()
+    {
+        bittimi = true;
+        SceneManager.LoadScene("Start");
+    }
 
 }
