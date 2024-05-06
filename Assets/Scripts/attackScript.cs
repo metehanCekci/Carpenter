@@ -43,7 +43,7 @@ public class attackScript : MonoBehaviour
 
         if (!gamePaused && Input.GetMouseButtonDown(1) && parryable && !parryActive)
         {
-            StartCoroutine(Parry());
+            StartCoroutine(Parry()); //a
         }
     }
 
