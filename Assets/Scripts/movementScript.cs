@@ -20,11 +20,14 @@ public class movementScript : MonoBehaviour
     public float speed = 3.0f;
     public float jumpingPower = 5f;
     public bool isFacingRight = true;
-    private bool cDash = true;
+    private bool cDash = false;
     private bool isDash;
-    private float Dashpower = 20f;
+    public float Dashpower = 20f;
+    public float DashSpeed = 20f;
+
+    public bool isInverted = false;
     private float dashingTime = 0.2f;
-    private float dashingCooldown = 0.5f;
+    public float dashingCooldown = 0.5f;
 
     private Collider2D playerCollider;
 
@@ -36,7 +39,7 @@ public class movementScript : MonoBehaviour
         levelChanger = GameObject.FindGameObjectWithTag("levelChanger");
         attackScript = GameObject.FindGameObjectWithTag("Player");
 
-        
+
         playerCollider = GetComponent<Collider2D>();
     }
 
@@ -47,10 +50,7 @@ public class movementScript : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && cDash)
-        {
-            StartCoroutine(Dash());
-        }
+
 
         if (rb.velocity.y <= 0)
         {
@@ -113,11 +113,22 @@ public class movementScript : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
         transform.localScale = localScale;
+        
     }
 
     public void Move(InputAction.CallbackContext context)
     {
         horizontal = context.ReadValue<Vector2>().x;
+    }
+
+    public void Dash(InputAction.CallbackContext context)
+    {
+
+        if (context.started)
+        {
+            StartCoroutine(Dash());
+        }
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -152,32 +163,53 @@ public class movementScript : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        cDash = false;
-        isDash = true;
 
-        Physics2D.IgnoreLayerCollision(playerCollider.gameObject.layer, LayerMask.NameToLayer("Enemy"), true);
 
-        float originalGravity = rb.gravityScale;
-        rb.gravityScale = 0f;
 
-        rb.velocity = new Vector2(transform.localScale.x * Dashpower, 0f);
-        Vector3 newPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
-        while (Vector3.Distance(transform.position, newPosition) > 0.1f)
+        if (cDash == false)
         {
-            transform.position = Vector3.MoveTowards(transform.position, newPosition, Dashpower * Time.deltaTime);
-            yield return null;
+            isDash = true;
+            cDash = true;
+            Physics2D.IgnoreLayerCollision(playerCollider.gameObject.layer, LayerMask.NameToLayer("Enemy"), true);
+
+            float originalGravity = rb.gravityScale;
+            rb.gravityScale = 0f;
+
+            if (isInverted == false)
+            {
+
+                rb.velocity = new Vector2(transform.localScale.x * Dashpower, 0f);
+                Vector3 newPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
+                while (Vector3.Distance(transform.position, newPosition) > 0.1f)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, newPosition, DashSpeed * Time.deltaTime);
+                    yield return null;
+                }
+            }
+            else
+            {
+                rb.velocity = new Vector2(-transform.localScale.x * Dashpower*2, 0f);
+                Vector3 newPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
+                while (Vector3.Distance(transform.position, newPosition) < 0.1f)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position,newPosition, DashSpeed * Time.deltaTime);
+                    yield return null;
+                }
+            }
+            yield return new WaitForSeconds(dashingTime);
+
+            Physics2D.IgnoreLayerCollision(playerCollider.gameObject.layer, LayerMask.NameToLayer("Enemy"), false);
+
+            rb.gravityScale = originalGravity;
+            isDash = false;
+
+            rb.velocity = new Vector2(0f, rb.velocity.y);
+
+            yield return new WaitForSeconds(dashingCooldown);
+            cDash = false;
+
+
         }
-        yield return new WaitForSeconds(dashingTime);
-
-        Physics2D.IgnoreLayerCollision(playerCollider.gameObject.layer, LayerMask.NameToLayer("Enemy"), false);
-
-        rb.gravityScale = originalGravity;
-        isDash = false;
-
-        rb.velocity = new Vector2(0f, rb.velocity.y);
-
-        yield return new WaitForSeconds(dashingCooldown);
-        cDash = true;
 
         Debug.Log("Dash bitti");
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GravCheck : MonoBehaviour
 {
     [HideInInspector] public bool GravChanged = false;
+    public movementScript mv;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class GravCheck : MonoBehaviour
         
         GetComponent<Rigidbody2D>().gravityScale *= -1f;
         yield return new WaitForSeconds(.5f);
+        mv.isInverted = !mv.isInverted;
         if (!GravChanged)
         {
             transform.rotation = Quaternion.Euler(0f, 0f, 180f);
@@ -37,6 +39,7 @@ public class GravCheck : MonoBehaviour
         }
         else
         {
+            
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         Vector3 localScale = transform.localScale;
