@@ -20,7 +20,7 @@ public class movementScript : MonoBehaviour
     public float speed = 3.0f;
     public float jumpingPower = 5f;
     public bool isFacingRight = true;
-    private bool cDash = false;
+    public bool cDash = false;
     private bool isDash;
     public float Dashpower = 20f;
     public float DashSpeed = 20f;
@@ -63,7 +63,12 @@ public class movementScript : MonoBehaviour
             animator.SetBool("isJumping", true);
         }
 
-        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+        
+
         if (attackScript.GetComponent<attackScript>().attacking == false)
         {
             if (!isFacingRight && horizontal > 0f)
@@ -107,7 +112,7 @@ public class movementScript : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-    private void Flip()
+    public void Flip()
     {
         isFacingRight = !isFacingRight;
         Vector3 localScale = transform.localScale;
@@ -171,12 +176,15 @@ public class movementScript : MonoBehaviour
             isDash = true;
             cDash = true;
             Physics2D.IgnoreLayerCollision(playerCollider.gameObject.layer, LayerMask.NameToLayer("Enemy"), true);
-
+            this.gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255 , 0.5f);
+            
             float originalGravity = rb.gravityScale;
-            rb.gravityScale = 0f;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+            
 
             if (isInverted == false)
             {
+
                 // Calculate the target position for dashing
                 Vector3 targetPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
 
@@ -204,37 +212,43 @@ public class movementScript : MonoBehaviour
             }
             else
             {
+                                
                 // Calculate the target position for dashing
                 Vector3 targetPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
 
                 // Perform the dash with physics (negating x component for inverted dash)
-                rb.velocity = new Vector2(-transform.localScale.x * Dashpower * 2, 0f);
+                rb.velocity = new Vector2(transform.localScale.x * -Dashpower * 2, 0f);
 
                 // Use a RaycastHit2D to check for collisions during the dash
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, Vector3.Distance(transform.position, targetPosition), LayerMask.GetMask("ObstacleLayer"));
 
                 if (hit.collider != null)
                 {
+                    
                     // If the character hits an obstacle during the dash, adjust the target position to the point of collision
                     targetPosition = (Vector3)hit.point - (targetPosition - transform.position).normalized * 0.1f; // Convert hit.point to Vector3
                 }
-                float timer = 0;
+                float timer = 0.03f;
                 // Move the character towards the target position
-                while (Vector3.Distance(transform.position, targetPosition) > 0.1f && timer < 0.1)
+                while (Vector3.Distance(transform.position, new Vector3(-targetPosition.x /2 ,targetPosition.y,targetPosition.z)) > 0.1f && timer < 0.1)
                 {
                     Debug.Log(timer);
                     timer += Time.deltaTime;
-                    transform.position = Vector3.MoveTowards(transform.position, targetPosition, DashSpeed * Time.deltaTime);
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(-targetPosition.x ,targetPosition.y,targetPosition.z), DashSpeed * Time.deltaTime);
+
                     yield return null;
                 }
             }
-
+            this.gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255 , 1);
+            Physics2D.IgnoreLayerCollision(playerCollider.gameObject.layer, LayerMask.NameToLayer("Enemy"), false);
+                        isDash=false;
+            rb.constraints = RigidbodyConstraints2D.None;
+            rb.freezeRotation = true;
             yield return new WaitForSeconds(dashingTime);
 
-            Physics2D.IgnoreLayerCollision(playerCollider.gameObject.layer, LayerMask.NameToLayer("Enemy"), false);
+            
 
-            rb.gravityScale = originalGravity;
-            isDash = false;
+
 
             rb.velocity = new Vector2(0f, rb.velocity.y);
 
