@@ -88408,6 +88408,22 @@ PrefabInstance:
       propertyPath: m_GravityScale
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6962434
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4097074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.33108884
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.66473097
+      objectReference: {fileID: 0}
     - target: {fileID: 5821909199219015115, guid: 556032712c8424642b96356b7fd38556, type: 3}
       propertyPath: phs
       value: 
@@ -90171,6 +90187,22 @@ PrefabInstance:
     - target: {fileID: 1269557248065205087, guid: 556032712c8424642b96356b7fd38556, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Size.x
+      value: 0.72442937
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4597754
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.29820502
+      objectReference: {fileID: 0}
+    - target: {fileID: 4069871338718337737, guid: 556032712c8424642b96356b7fd38556, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.6697378
       objectReference: {fileID: 0}
     - target: {fileID: 5821909199219015115, guid: 556032712c8424642b96356b7fd38556, type: 3}
       propertyPath: phs
