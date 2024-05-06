@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class attackScript : MonoBehaviour
 {
@@ -25,11 +22,17 @@ public class attackScript : MonoBehaviour
     public bool parryable = false;
     bool gamePaused = false;
     public bool attacking;
+
+    
+    public float parryDuration = 1.0f;
+    private bool parryActive = false;
+
     void Start()
     {
         levelChanger = GameObject.FindGameObjectWithTag("levelChanger");
         anim = GetComponent<Animator>();
     }
+
     void Update()
     {
         if (!gamePaused && Input.GetMouseButtonDown(0))
@@ -37,12 +40,34 @@ public class attackScript : MonoBehaviour
             anim.SetBool("isAttacking", true);
             attacking = true;
         }
+
+        if (!gamePaused && Input.GetMouseButtonDown(1) && parryable && !parryActive)
+        {
+            StartCoroutine(Parry());
+        }
     }
+
+
+    IEnumerator Parry()
+    {
+        Debug.Log("Parry baþladý");
+
+        
+        playerHpScript.takeNoDamage = true;
+        parryActive = true;
+        yield return new WaitForSeconds(parryDuration);   
+        playerHpScript.takeNoDamage = false;
+        parryActive = false;
+
+        Debug.Log("Parry bitti");
+    }
+
     public void endAttack()
     {
         anim.SetBool("isAttacking", false);
-        attacking=false;
+        attacking = false;
     }
+
     public void attack()
     {
         if (!gamePaused)
@@ -52,25 +77,27 @@ public class attackScript : MonoBehaviour
             {
                 sFX.playHit();
                 CS.ShakeIt();
-                    try
-                    {
-                        hb.TakeDamage(damage);
-                    }
+                try
+                {
+                    hb.TakeDamage(damage);
+                }
                 catch { }
 
                 Vector2 knockback;
                 if (enemyGameObject.gameObject.CompareTag("Boss"))
                 {
-                    try{enemyGameObject.GetComponent<BossAnimAi>().TakeDamage();
-                    if(enemyGameObject.gameObject.GetComponent<enemyHealth>().health <= 0)
+                    try
                     {
-                        
-                        enemyGameObject.gameObject.GetComponent<BossAnimAi>().BossAnim.SetBool("isDead", true);
-                        enemyGameObject.gameObject.GetComponent<BossAi>().destroyAll();
-                        StartCoroutine(changeScene());
-                    }}
-                    catch{}
-                    
+                        enemyGameObject.GetComponent<BossAnimAi>().TakeDamage();
+                        if (enemyGameObject.gameObject.GetComponent<enemyHealth>().health <= 0)
+                        {
+                            enemyGameObject.gameObject.GetComponent<BossAnimAi>().BossAnim.SetBool("isDead", true);
+                            enemyGameObject.gameObject.GetComponent<BossAi>().destroyAll();
+                            StartCoroutine(changeScene());
+                        }
+                    }
+                    catch { }
+
                 }
                 else
                 {
@@ -99,20 +126,20 @@ public class attackScript : MonoBehaviour
 
     IEnumerator changeScene()
     {
-
-
         yield return new WaitForSeconds(3);
         levelChanger.GetComponent<levelChangerScript>().fadeToLevel(7);
-
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
     }
+
     public void SetGamePaused(bool pauseCondition)
     {
         gamePaused = pauseCondition;
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("weapon"))
@@ -121,20 +148,11 @@ public class attackScript : MonoBehaviour
             if (parryable)
             {
                 Debug.Log("Parrylenebilir");
-                beklet();
-                if (Input.GetKey(KeyCode.Mouse1))
-                {
-                    Debug.Log("parry calisti");
-                    playerHpScript.GetComponent<playerHpScript>().takeNoDamage = true;
-                    cyborgAi.GetComponent<cyborgAi>().enabled = false;
-                    beklet();
-                    playerHpScript.GetComponent<playerHpScript>().takeNoDamage = false;
-                    cyborgAi.GetComponent<cyborgAi>().enabled = true;
-                }
+                StartCoroutine(Parry());
             }
-
         }
     }
+
     IEnumerator beklet()
     {
         yield return new WaitForSeconds(120);

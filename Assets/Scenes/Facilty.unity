@@ -89554,7 +89554,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.2158237, y: 0.4195885}
+  m_Offset: {x: -3.5372803, y: 0.41958857}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -89565,7 +89565,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19145012, y: 2.8804908}
+  m_Size: {x: 0.83436346, y: 2.8804908}
   m_EdgeRadius: 0
 --- !u!61 &1698937455
 BoxCollider2D:
@@ -89599,7 +89599,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.2209523, y: 0.41565204}
+  m_Offset: {x: 3.5375595, y: 0.41565204}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -89610,7 +89610,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18912172, y: 2.8908935}
+  m_Size: {x: 0.82233644, y: 2.8908935}
   m_EdgeRadius: 0
 --- !u!61 &1698937456
 BoxCollider2D:
@@ -89644,7 +89644,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.31737518, y: 6.93089}
+  m_Offset: {x: 0.7279005, y: 6.93089}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -89655,7 +89655,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21179348, y: 10.451323}
+  m_Size: {x: 1.0328441, y: 10.451323}
   m_EdgeRadius: 0
 --- !u!61 &1698937457
 BoxCollider2D:
@@ -89689,7 +89689,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5161706, y: 7.037387}
+  m_Offset: {x: -0.9401242, y: 7.037387}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -89700,7 +89700,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19086766, y: 10.672747}
+  m_Size: {x: 1.0387748, y: 10.672747}
   m_EdgeRadius: 0
 --- !u!82 &1735857602 stripped
 AudioSource:
