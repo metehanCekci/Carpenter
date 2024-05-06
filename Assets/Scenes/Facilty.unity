@@ -1418,6 +1418,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 302664304863554760, guid: 125625fb735937343b4ed3cf9651f040, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1870221739002533918, guid: 125625fb735937343b4ed3cf9651f040, type: 3}
       propertyPath: m_GravityScale
       value: -1
@@ -88223,6 +88227,10 @@ PrefabInstance:
     - target: {fileID: 205530271976328638, guid: 125625fb735937343b4ed3cf9651f040, type: 3}
       propertyPath: m_Name
       value: Foe
+      objectReference: {fileID: 0}
+    - target: {fileID: 302664304863554760, guid: 125625fb735937343b4ed3cf9651f040, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2625685941934867545, guid: 125625fb735937343b4ed3cf9651f040, type: 3}
       propertyPath: phs
