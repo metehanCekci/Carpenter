@@ -52,6 +52,10 @@ public class cutsceneText : MonoBehaviour
         bittimi = false;
         for (int i = 0; i <= fullText.Length; i++)
         {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                delay = 0;
+            }
             string currentText = fullText.Substring(0, i);
             textComponent.text = currentText;
             yield return new WaitForSeconds(delay);
