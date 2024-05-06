@@ -22,7 +22,7 @@ public class hatchOpener : MonoBehaviour
         {
             if (this.gameObject.GetComponent<spawnerScript>().currentIndex > this.gameObject.GetComponent<spawnerScript>().spawnableObjects.Length)
             {
-                Debug.Log("metehandebugdedi");
+                
 
                 if (aS.killAmount == enemyAmt)
 
