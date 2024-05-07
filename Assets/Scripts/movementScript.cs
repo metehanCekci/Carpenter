@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class movementScript : MonoBehaviour
 {
     public playerHpScript playerHpScript;
+    public SFXLoader sfx;
 
     public Rigidbody2D rb;
     public Transform groundCheck;
@@ -173,6 +174,7 @@ public class movementScript : MonoBehaviour
 
         if (cDash == false)
         {
+            sfx.playDash();
             isDash = true;
             cDash = true;
             Physics2D.IgnoreLayerCollision(playerCollider.gameObject.layer, LayerMask.NameToLayer("Enemy"), true);

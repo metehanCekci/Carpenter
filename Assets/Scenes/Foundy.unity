@@ -1884,6 +1884,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4140185628398289342, guid: 62a0d43a22b6ecc499d075f44dcb418d, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 25334f357a4661b46b6ed9f4d9623ddc, type: 3}
+    - target: {fileID: 4140185628398289342, guid: 62a0d43a22b6ecc499d075f44dcb418d, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: -5853123340925333259, guid: 9331a4b506b30214b8005a7bc1c48d40, type: 2}
@@ -105830,6 +105834,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2392025518851102505, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 1057488260}
     - target: {fileID: 2392025518851102505, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: DashSpeed
       value: 8

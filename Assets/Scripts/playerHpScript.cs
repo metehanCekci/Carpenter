@@ -35,7 +35,7 @@ public class playerHpScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             takeNoDamage = true;
-            Debug.Log("dsufgsý");
+            Debug.Log("dsufgsï¿½");
         }
         else if (Input.GetKeyDown(KeyCode.RightControl))
         {
@@ -47,9 +47,11 @@ public class playerHpScript : MonoBehaviour
     IEnumerator IFrames()
     {
         this.gameObject.layer = 9;
+        Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("Enemy"), true);
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 0, 0);
         yield return new WaitForSeconds(IFrameDuration);
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255);
+        Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("Enemy"), false);
         this.gameObject.layer = 8;
     }
 
@@ -63,15 +65,7 @@ public class playerHpScript : MonoBehaviour
         if (this.gameObject.layer == 8 && !takeNoDamage)
         {
             sfx.playHurt();
-            try
-            {
-                Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
-                // Calculate knockback direction
-                Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
-                // Apply knockback force
-                rb.AddForce(direction * knockbackForce, ForceMode2D.Force);
-            }
-            catch { }
+            
             HP--;
             StartCoroutine(IFrames());
         }

@@ -36,11 +36,11 @@ public class ComplationChecker : MonoBehaviour
         if(PlayerPrefs.GetInt("level7")==1)
         button7.SetActive(true);
         if(PlayerPrefs.GetInt("level8")==1)
-        button7.SetActive(true);
+        button8.SetActive(true);
         if(PlayerPrefs.GetInt("level9")==1)
-        button7.SetActive(true);
+        button9.SetActive(true);
         if(PlayerPrefs.GetInt("level10")==1)
-        button7.SetActive(true);
+        button10.SetActive(true);
 
         
 

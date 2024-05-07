@@ -1354,6 +1354,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a5efbec65b1554989dc28dff3374db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletTimer: 1
+  dikenTimer: 10
+  sawTimer: 14
+  hardmode: 0
   lazerGroup: {fileID: 1174074471}
   bulletSpawner: {fileID: 1470930221}
   bulletSpawner2: {fileID: 305990406}
@@ -33942,6 +33946,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2392025518851102505, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 1565835582}
+    - target: {fileID: 2392025518851102505, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: speed
       value: 1.7
       objectReference: {fileID: 0}
@@ -35880,6 +35888,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 279425531182420595, guid: 62a0d43a22b6ecc499d075f44dcb418d, type: 3}
+      propertyPath: dash
+      value: 
+      objectReference: {fileID: 8300000, guid: 25334f357a4661b46b6ed9f4d9623ddc, type: 3}
     - target: {fileID: 3300542065731166260, guid: 62a0d43a22b6ecc499d075f44dcb418d, type: 3}
       propertyPath: m_Name
       value: SFX
