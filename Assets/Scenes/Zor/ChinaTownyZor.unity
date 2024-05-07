@@ -132393,7 +132393,7 @@ PrefabInstance:
       objectReference: {fileID: 281039235}
     - target: {fileID: 6571919577694584953, guid: 660bedb19890b4948b588747c3e97dd8, type: 3}
       propertyPath: enemyAmt
-      value: 16
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6980145237322509280, guid: 660bedb19890b4948b588747c3e97dd8, type: 3}
       propertyPath: m_Enabled
