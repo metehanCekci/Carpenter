@@ -10,7 +10,7 @@ public class BossAi : MonoBehaviour
 
     public bool hardmode = false;
 
-
+    //deniz amk
     public GameObject lazerGroup;
     public bulletSpawner bulletSpawner;
     public bulletSpawner bulletSpawner2;
