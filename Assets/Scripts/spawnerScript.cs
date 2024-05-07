@@ -7,7 +7,7 @@ public class spawnerScript : MonoBehaviour
     [SerializeField]
     public GameObject[] spawnableObjects;
     [SerializeField]
-    public float spawnInterval = 0.5f; // Saniyeler cinsinden
+    public float spawnInterval = 1.0f; // Saniyeler cinsinden
 
 
     private float timer = 0f;

@@ -106,6 +106,10 @@ public class menuScript : MonoBehaviour
     {
         SceneManager.LoadScene("ChinaTowny");
     }
+    public void StartZor()
+    {
+        SceneManager.LoadScene("StartZor");
+    }
     public void loadFaciltyScene()
     {
         SceneManager.LoadScene("Facilty");

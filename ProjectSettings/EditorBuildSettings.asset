@@ -32,5 +32,29 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 6eaf2772a3cc4384d9aab7eb681a1dcf
+  - enabled: 1
+    path: Assets/Scenes/Zor/cutSceneZor.unity
+    guid: 09f8cf355833c2f4eb0c7954b278eea2
+  - enabled: 1
+    path: Assets/Scenes/Zor/StartZor.unity
+    guid: 979a614d66a6f9943b075903637e3958
+  - enabled: 1
+    path: Assets/Scenes/Zor/FoundyZor.unity
+    guid: 9abfd5d688c91d84e807f9dd02d5d185
+  - enabled: 1
+    path: Assets/Scenes/Zor/ChinaTownyZor.unity
+    guid: 4970f7cc52ad2684b88fb3cb9cc70c88
+  - enabled: 1
+    path: Assets/Scenes/Zor/FaciltyZor.unity
+    guid: 1dc76be01598cae4c9e44256b5723cd0
+  - enabled: 1
+    path: Assets/Scenes/Zor/BossZor.unity
+    guid: 9b9fecc9f71e77743b0edca3991c7a9c
+  - enabled: 1
+    path: Assets/Scenes/Zor/congratsZor.unity
+    guid: 2685bd2d9db95eb42b799d9143be1174
+  - enabled: 1
+    path: Assets/Scenes/Zor/CreditsZor.unity
+    guid: 9938864c01e801046b2cd69049ea2ffa
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6e2a86c6f2ff88d48a01d7a60631476d, type: 2}

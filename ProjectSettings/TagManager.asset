@@ -12,6 +12,7 @@ TagManager:
   - bullet
   - weapon
   - Boss
+  - bitis
   layers:
   - Default
   - TransparentFX
