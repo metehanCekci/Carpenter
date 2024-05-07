@@ -137,7 +137,9 @@ public class attackScript : MonoBehaviour
     IEnumerator changeScene()
     {
         yield return new WaitForSeconds(3);
+        PlayerPrefs.SetInt("isGameFinished",1);
         levelChanger.GetComponent<levelChangerScript>().fadeToLevel(7);
+
     }
 
     private void OnDrawGizmos()

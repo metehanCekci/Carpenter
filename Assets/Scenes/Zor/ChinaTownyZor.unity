@@ -133823,7 +133823,7 @@ GameObject:
   - component: {fileID: 857457798}
   - component: {fileID: 857457797}
   m_Layer: 0
-  m_Name: scene3
+  m_Name: level8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133841,7 +133841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb2646e91df9dd40b1aed735b27a05e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPref: level3
+  playerPref: level8
 --- !u!4 &857457798
 Transform:
   m_ObjectHideFlags: 0

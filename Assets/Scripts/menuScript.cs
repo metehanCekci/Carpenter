@@ -7,13 +7,14 @@ using UnityEngine.UIElements.Experimental;
 public class menuScript : MonoBehaviour
 {
     private bool isPaused = false;
-    private bool bittimi = false;
+
     //amo
     public GameObject menu;
     public GameObject player;
     public GameObject ayarlar;
     public GameObject anaMenu;
     public GameObject easterEgg;
+    public GameObject hardLevelSelect;
 
     public GameObject button1;
     public GameObject button2;
@@ -21,6 +22,10 @@ public class menuScript : MonoBehaviour
     public GameObject button4;
     public GameObject button5;
     public GameObject button6;
+    public GameObject button7;
+    public GameObject button8;
+    public GameObject button9;
+    public GameObject button10;
     public void startGame()
     {
         SceneManager.LoadScene(1);
@@ -107,10 +112,7 @@ public class menuScript : MonoBehaviour
     {
         SceneManager.LoadScene("ChinaTowny");
     }
-    public void StartZor()
-    {
-        SceneManager.LoadScene("StartZor");
-    }
+
     public void loadFaciltyScene()
     {
         SceneManager.LoadScene("Facilty");
@@ -119,17 +121,41 @@ public class menuScript : MonoBehaviour
     {
         SceneManager.LoadScene("Boss");
     }
+
+    
+    public void levelSelectHard()
+    {
+        if(PlayerPrefs.GetInt("isGameFinished") == 1)
+        hardLevelSelect.SetActive(true);
+    }
+    public void loadStartZor()
+    {
+        SceneManager.LoadScene("StartZor");
+    }
+        public void loadFoundyZor()
+    {
+        SceneManager.LoadScene("FoundyZor");
+    }
+        public void loadChinatownZor()
+    {
+        SceneManager.LoadScene("ChinatownyZor");
+    }
+        public void loadFaciltyZor()
+    {
+        SceneManager.LoadScene("FaciltyZor");
+    }
+        public void loadBossZor()
+    {
+        SceneManager.LoadScene("BossZor");
+    }
+
     public void SkipCongrats()
     {
         SceneManager.LoadScene("Credits");
     }
     
 
-    public void SetBittimiTrue()
-    {
-        bittimi = true;
-        SceneManager.LoadScene("Start");
-    }
+
     public void Oyna1BtnClicked()
     {
         button6.SetActive(false);
@@ -143,7 +169,7 @@ public class menuScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
             SceneManager.LoadScene("Start");
-            Debug.Log("sjdahfuý");
+            Debug.Log("sjdahfuï¿½");
         }
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
@@ -183,6 +209,28 @@ public class menuScript : MonoBehaviour
         button4.SetActive(false);
         button5.SetActive(false);
         button6.SetActive(false);
+
+    }
+
+    public void restartZor()
+    {
+
+        PlayerPrefs.SetInt("level7", 0);
+
+        PlayerPrefs.SetInt("level8", 0);
+
+        PlayerPrefs.SetInt("level9", 0);
+
+        PlayerPrefs.SetInt("level10", 0);
+
+        button7.SetActive(false);
+
+        button8.SetActive(false);
+
+        button9.SetActive(false);
+
+        button10.SetActive(false);        
+
 
     }
 
