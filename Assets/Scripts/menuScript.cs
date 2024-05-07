@@ -7,7 +7,7 @@ using UnityEngine.UIElements.Experimental;
 public class menuScript : MonoBehaviour
 {
     private bool isPaused = false;
-
+    private bool bittimi = false;
     //amo
     public GameObject menu;
     public GameObject player;
@@ -112,6 +112,11 @@ public class menuScript : MonoBehaviour
     {
         SceneManager.LoadScene("ChinaTowny");
     }
+    public void skipscene()
+    {
+        SceneManager.LoadScene("Start");
+        
+    }
 
     public void loadFaciltyScene()
     {
@@ -169,7 +174,6 @@ public class menuScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
             SceneManager.LoadScene("Start");
-            Debug.Log("sjdahfu�");
         }
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {

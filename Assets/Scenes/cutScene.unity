@@ -275,7 +275,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1491494036}
         m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
-        m_MethodName: SetBittimiTrue
+        m_MethodName: skipscene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -853,11 +853,17 @@ MonoBehaviour:
   ayarlar: {fileID: 1219876179}
   anaMenu: {fileID: 1219876179}
   easterEgg: {fileID: 1219876179}
+  hardLevelSelect: {fileID: 0}
   button1: {fileID: 1219876179}
   button2: {fileID: 1219876179}
   button3: {fileID: 1219876179}
   button4: {fileID: 1219876179}
   button5: {fileID: 1219876179}
+  button6: {fileID: 0}
+  button7: {fileID: 0}
+  button8: {fileID: 0}
+  button9: {fileID: 0}
+  button10: {fileID: 0}
 --- !u!4 &1491494037
 Transform:
   m_ObjectHideFlags: 0
