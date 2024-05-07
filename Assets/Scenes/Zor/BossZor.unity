@@ -273,7 +273,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5273193552545727232, guid: fd711c12dcc01fb499c7bd9650b24dbe, type: 3}
   m_PrefabInstance: {fileID: 97927120}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &39289422
+--- !u!114 &39289424 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 503609001158894566, guid: fd711c12dcc01fb499c7bd9650b24dbe, type: 3}
+  m_PrefabInstance: {fileID: 97927120}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39289417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &39289426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -282,11 +293,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 39289417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f483ba8e2563201469f50fc72d0956f3, type: 3}
+  m_Script: {fileID: 11500000, guid: fc7930db18eef37498fbc888ca50ed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 39289424}
   healthAmount: 220
+  healthAmountStart: 220
 --- !u!1001 &97927120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -398,7 +410,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5273193552545727232, guid: fd711c12dcc01fb499c7bd9650b24dbe, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 39289422}
+      addedObject: {fileID: 39289426}
   m_SourcePrefab: {fileID: 100100000, guid: fd711c12dcc01fb499c7bd9650b24dbe, type: 3}
 --- !u!1 &112846626
 GameObject:
@@ -34901,7 +34913,7 @@ PrefabInstance:
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: hb
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 39289426}
     - target: {fileID: 6663401506134712396, guid: 9fa28fb483acf6f4a99f9028ccc7b04b, type: 3}
       propertyPath: sFX
       value: 
