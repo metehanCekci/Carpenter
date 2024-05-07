@@ -9,6 +9,7 @@ public class ComplationChecker : MonoBehaviour
     public GameObject button3;
     public GameObject button4;
     public GameObject button5;
+    public GameObject button6;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class ComplationChecker : MonoBehaviour
         button4.SetActive(true);
         if(PlayerPrefs.GetInt("level5")==1)
         button5.SetActive(true);
+        button6.SetActive(true);
 
     }
 

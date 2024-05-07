@@ -20,6 +20,7 @@ public class menuScript : MonoBehaviour
     public GameObject button3;
     public GameObject button4;
     public GameObject button5;
+    public GameObject button6;
     public void startGame()
     {
         SceneManager.LoadScene(1);
@@ -129,10 +130,16 @@ public class menuScript : MonoBehaviour
         bittimi = true;
         SceneManager.LoadScene("Start");
     }
-    
+    public void Oyna1BtnClicked()
+    {
+        button6.SetActive(false);
+    }
+
+
 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
             SceneManager.LoadScene("Start");
@@ -175,6 +182,7 @@ public class menuScript : MonoBehaviour
         button3.SetActive(false);
         button4.SetActive(false);
         button5.SetActive(false);
+        button6.SetActive(false);
 
     }
 

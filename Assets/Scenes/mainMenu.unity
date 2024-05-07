@@ -377,6 +377,7 @@ MonoBehaviour:
   button3: {fileID: 191626826}
   button4: {fileID: 15853389}
   button5: {fileID: 1867351113}
+  button6: {fileID: 1339172902}
 --- !u!1 &67834507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,7 +2190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1339172903
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4380,6 +4381,7 @@ MonoBehaviour:
   button3: {fileID: 191626826}
   button4: {fileID: 15853389}
   button5: {fileID: 1867351113}
+  button6: {fileID: 1339172902}
 --- !u!4 &2116314734
 Transform:
   m_ObjectHideFlags: 0
