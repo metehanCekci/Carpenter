@@ -226,7 +226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -92.28998, y: 69.965}
+  m_AnchoredPosition: {x: -54.210022, y: 39.964996}
   m_SizeDelta: {x: 83.58002, y: 50.149994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &392438001
@@ -275,7 +275,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1491494036}
         m_TargetAssemblyTypeName: menuScript, Assembly-CSharp
-        m_MethodName: SetBittimiTrue
+        m_MethodName: skipscene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -788,6 +788,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866756563}
   m_CullTransparentMesh: 1
+--- !u!1 &1219876179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219876180}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1219876180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219876179}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.49664247, y: -0.20826942, z: -9.958024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1491494035
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,11 +848,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f2beb7c32bd8a40a757738253d4631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 0}
-  player: {fileID: 0}
-  ayarlar: {fileID: 0}
-  anaMenu: {fileID: 0}
-  easterEgg: {fileID: 0}
+  menu: {fileID: 1219876179}
+  player: {fileID: 1219876179}
+  ayarlar: {fileID: 1219876179}
+  anaMenu: {fileID: 1219876179}
+  easterEgg: {fileID: 1219876179}
+  hardLevelSelect: {fileID: 0}
+  button1: {fileID: 1219876179}
+  button2: {fileID: 1219876179}
+  button3: {fileID: 1219876179}
+  button4: {fileID: 1219876179}
+  button5: {fileID: 1219876179}
+  button6: {fileID: 0}
+  button7: {fileID: 0}
+  button8: {fileID: 0}
+  button9: {fileID: 0}
+  button10: {fileID: 0}
 --- !u!4 &1491494037
 Transform:
   m_ObjectHideFlags: 0
@@ -1024,7 +1066,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 697233397}
-  - {fileID: 1905750926}
   - {fileID: 289822734}
-  - {fileID: 501151070}
+  - {fileID: 1905750926}
   - {fileID: 1491494037}
+  - {fileID: 1219876180}
+  - {fileID: 501151070}

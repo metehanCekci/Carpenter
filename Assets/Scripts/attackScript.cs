@@ -35,23 +35,23 @@ public class attackScript : MonoBehaviour
 
     void Update()
     {
-        if (!gamePaused && Input.GetMouseButtonDown(0))
+        /**if (!gamePaused && Input.GetMouseButtonDown(0))
         {
             anim.SetBool("isAttacking", true);
             attacking = true;
-        }
+        }**/
 
-        if (!gamePaused && Input.GetMouseButtonDown(1) && parryable && !parryActive)
+        /**if (!gamePaused && Input.GetMouseButtonDown(1) && parryable && !parryActive)
         {
             Debug.Log("Naber");
             StartCoroutine(Parry()); //a
-        }
+        }**/
     }
 
 
     IEnumerator Parry()
     {
-        Debug.Log("Parry baþladý");
+        Debug.Log("Parry baï¿½ladï¿½");
 
         
         playerHpScript.takeNoDamage = true;
@@ -67,6 +67,15 @@ public class attackScript : MonoBehaviour
     {
         anim.SetBool("isAttacking", false);
         attacking = false;
+    }
+
+    public void attackInput()
+    {
+                if (!gamePaused)
+        {
+            anim.SetBool("isAttacking", true);
+            attacking = true;
+        }
     }
 
     public void attack()
@@ -128,7 +137,9 @@ public class attackScript : MonoBehaviour
     IEnumerator changeScene()
     {
         yield return new WaitForSeconds(3);
+        PlayerPrefs.SetInt("isGameFinished",1);
         levelChanger.GetComponent<levelChangerScript>().fadeToLevel(7);
+
     }
 
     private void OnDrawGizmos()

@@ -14,12 +14,18 @@ public class menuScript : MonoBehaviour
     public GameObject ayarlar;
     public GameObject anaMenu;
     public GameObject easterEgg;
+    public GameObject hardLevelSelect;
 
     public GameObject button1;
     public GameObject button2;
     public GameObject button3;
     public GameObject button4;
     public GameObject button5;
+    public GameObject button6;
+    public GameObject button7;
+    public GameObject button8;
+    public GameObject button9;
+    public GameObject button10;
     public void startGame()
     {
         SceneManager.LoadScene(1);
@@ -106,6 +112,12 @@ public class menuScript : MonoBehaviour
     {
         SceneManager.LoadScene("ChinaTowny");
     }
+    public void skipscene()
+    {
+        SceneManager.LoadScene("Start");
+        
+    }
+
     public void loadFaciltyScene()
     {
         SceneManager.LoadScene("Facilty");
@@ -115,15 +127,50 @@ public class menuScript : MonoBehaviour
         SceneManager.LoadScene("Boss");
     }
 
-    public void SetBittimiTrue()
+    
+    public void levelSelectHard()
     {
-        bittimi = true;
-        SceneManager.LoadScene("Start");
+        if(PlayerPrefs.GetInt("isGameFinished") == 1)
+        hardLevelSelect.SetActive(true);
+    }
+    public void loadStartZor()
+    {
+        SceneManager.LoadScene("StartZor");
+    }
+        public void loadFoundyZor()
+    {
+        SceneManager.LoadScene("FoundyZor");
+    }
+        public void loadChinatownZor()
+    {
+        SceneManager.LoadScene("ChinatownyZor");
+    }
+        public void loadFaciltyZor()
+    {
+        SceneManager.LoadScene("FaciltyZor");
+    }
+        public void loadBossZor()
+    {
+        SceneManager.LoadScene("BossZor");
+    }
+
+    public void SkipCongrats()
+    {
+        SceneManager.LoadScene("Credits");
     }
     
 
+
+    public void Oyna1BtnClicked()
+    {
+        button6.SetActive(false);
+    }
+
+
+
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
             SceneManager.LoadScene("Start");
@@ -151,11 +198,44 @@ public class menuScript : MonoBehaviour
     }
     public void restart()
     {
-        button1.SetActive(true);
-        button2.SetActive(PlayerPrefs.GetInt("level2") == 0);
-        button3.SetActive(PlayerPrefs.GetInt("level3") == 0);
-        button4.SetActive(PlayerPrefs.GetInt("level4") == 0);
-        button5.SetActive(PlayerPrefs.GetInt("level5") == 0);
+
+
+        PlayerPrefs.SetInt("level2", 0);
+
+        PlayerPrefs.SetInt("level3", 0);
+
+        PlayerPrefs.SetInt("level4", 0);
+
+        PlayerPrefs.SetInt("level5", 0);
+
+        button2.SetActive(false);
+        button3.SetActive(false);
+        button4.SetActive(false);
+        button5.SetActive(false);
+        button6.SetActive(false);
 
     }
+
+    public void restartZor()
+    {
+
+        PlayerPrefs.SetInt("level7", 0);
+
+        PlayerPrefs.SetInt("level8", 0);
+
+        PlayerPrefs.SetInt("level9", 0);
+
+        PlayerPrefs.SetInt("level10", 0);
+
+        button7.SetActive(false);
+
+        button8.SetActive(false);
+
+        button9.SetActive(false);
+
+        button10.SetActive(false);        
+
+
+    }
+
 }

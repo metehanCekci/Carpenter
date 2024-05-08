@@ -8,7 +8,8 @@ using UnityEngine.UIElements;
 public class HealthBar : MonoBehaviour
 {
     public UnityEngine.UI.Image healthBar;
-    public float healthAmount = 100f;
+    public float healthAmount = 120f;
+    public float healthAmountStart = 120;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,6 @@ public class HealthBar : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthAmount-=damage;
-        healthBar.fillAmount = healthAmount / 120;
+        healthBar.fillAmount = healthAmount / healthAmountStart;
     }
 }

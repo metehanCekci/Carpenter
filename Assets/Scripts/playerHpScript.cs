@@ -1,12 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class playerHpScript : MonoBehaviour
 {
     public int maxHP = 10;
-    public int HP = 10;
+    public int HP;
     public SFXLoader sfx;
     public float IFrameDuration = 0.5f;
     public GameObject died;
@@ -21,7 +19,8 @@ public class playerHpScript : MonoBehaviour
     void Start()
     {
         died.SetActive(false);
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>(); // Assigning the Rigidbody2D component
+        SetHP();
     }
 
     // Update is called once per frame
@@ -32,40 +31,43 @@ public class playerHpScript : MonoBehaviour
             Time.timeScale = 0.0f;
             died.SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            takeNoDamage = true;
+            Debug.Log("dsufgs�");
+        }
+        else if (Input.GetKeyDown(KeyCode.RightControl))
+        {
+            takeNoDamage = false;
+            Debug.Log("124324");
+        }
     }
 
     IEnumerator IFrames()
     {
-
         this.gameObject.layer = 9;
+        Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("Enemy"), true);
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 0, 0);
         yield return new WaitForSeconds(IFrameDuration);
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255);
+        Physics2D.IgnoreLayerCollision(this.gameObject.layer, LayerMask.NameToLayer("Enemy"), false);
         this.gameObject.layer = 8;
+    }
 
+    public void SetHP()
+    {
+        HP = maxHP;
     }
 
     public void takeDamage(Vector2 bulletPosition)
     {
-        if (this.gameObject.layer == 8 && takeNoDamage==false)
+        if (this.gameObject.layer == 8 && !takeNoDamage)
         {
             sfx.playHurt();
-            try
-            {
-                Vector3 bulletPosition3D = new Vector3(bulletPosition.x, bulletPosition.y);
-                // Calculate knockback direction
-                Vector2 direction = ((Vector2)transform.position - bulletPosition).normalized;
-                // Apply knockback force
-                rb.AddForce(direction * knockbackForce, ForceMode2D.Force);
-            }
-
-            catch { }
+            
             HP--;
             StartCoroutine(IFrames());
-
         }
     }
 }
-
-
-

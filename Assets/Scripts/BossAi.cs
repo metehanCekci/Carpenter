@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class BossAi : MonoBehaviour
 {
+    public float bulletTimer = 1;
+    public float dikenTimer = 10;
+    public float sawTimer = 14;
+
+    public bool hardmode = false;
+
+    //deniz amk
     public GameObject lazerGroup;
     public bulletSpawner bulletSpawner;
     public bulletSpawner bulletSpawner2;
@@ -21,13 +28,13 @@ public class BossAi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void startFight()
@@ -48,13 +55,13 @@ public class BossAi : MonoBehaviour
 
         int randomNumber = Random.Range(1, 7);
 
-        if(randomNumber == 1) lazerAttack();
-        else if(randomNumber == 2) StartCoroutine(mermiAttack());
+        if (randomNumber == 1) lazerAttack();
+        else if (randomNumber == 2) StartCoroutine(mermiAttack());
         else if (randomNumber == 3) StartCoroutine(dikenAttack());
         else if (randomNumber == 4) StartCoroutine(sawAttack());
         else if (randomNumber == 5) followingBullet();
 
-        
+
     }
 
     public void lazerAttack()
@@ -72,16 +79,31 @@ public class BossAi : MonoBehaviour
         exclama2.SetActive(false);
         bulletSpawner.spawnBullet();
         bulletSpawner2.spawnBullet();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(bulletTimer);
         bulletSpawner.spawnBullet();
         bulletSpawner2.spawnBullet();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(bulletTimer);
         bulletSpawner.spawnBullet();
         bulletSpawner2.spawnBullet();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(bulletTimer);
         bulletSpawner.spawnBullet();
         bulletSpawner2.spawnBullet();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(bulletTimer);
+        if (hardmode)
+        {
+            bulletSpawner.spawnBullet();
+            bulletSpawner2.spawnBullet();
+            yield return new WaitForSeconds(bulletTimer);
+            bulletSpawner.spawnBullet();
+            bulletSpawner2.spawnBullet();
+            yield return new WaitForSeconds(bulletTimer);
+            bulletSpawner.spawnBullet();
+            bulletSpawner2.spawnBullet();
+            yield return new WaitForSeconds(bulletTimer);
+            bulletSpawner.spawnBullet();
+            bulletSpawner2.spawnBullet();
+            yield return new WaitForSeconds(bulletTimer);
+        }
 
     }
 
@@ -92,7 +114,7 @@ public class BossAi : MonoBehaviour
         exclama.SetActive(false);
         spike1.SetActive(true);
         spike2.SetActive(true);
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(dikenTimer);
         spike1.SetActive(false);
         spike2.SetActive(false);
 
@@ -105,7 +127,7 @@ public class BossAi : MonoBehaviour
         exclamaBottom.SetActive(false);
 
         saw.SetActive(true);
-        yield return new WaitForSeconds(14);
+        yield return new WaitForSeconds(sawTimer);
         saw.SetActive(false);
 
     }
@@ -114,14 +136,14 @@ public class BossAi : MonoBehaviour
     {
 
         yield return new WaitForSeconds(1);
-        
+
 
     }
 
     public void followingBullet()
     {
 
-        
+
         GameObject clone = Instantiate(followPlayer);
         clone.SetActive(true);
         clone.transform.position = source.transform.position;
@@ -141,5 +163,5 @@ public class BossAi : MonoBehaviour
         Destroy(bulletSpawner2);
     }
 
-    
+
 }

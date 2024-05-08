@@ -129,7 +129,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 394
       width: 168
       height: 177
     spriteID: a1f9775f17ed6e94fb49bbfd45364aae
@@ -140,7 +140,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 394}
   - name: bossdmgtaken_Frame_1
     originalName: 
     pivot: {x: 0.50595236, y: -0.4463277}
@@ -149,7 +149,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 189
+      y: 579
       width: 168
       height: 177
     spriteID: 530d485af22242547819e5cc196cfe5e
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 189}
+    uvTransform: {x: 4, y: 579}
   - name: bossdmgtaken_Frame_2
     originalName: 
     pivot: {x: 0.50595236, y: -0.4463277}
@@ -169,7 +169,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 374
+      y: 764
       width: 168
       height: 177
     spriteID: 489772cbcba01834cb2b9b109ee87e08
@@ -180,18 +180,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 374}
+    uvTransform: {x: 4, y: 764}
   - name: bossdmgtaken_Frame_3
     originalName: 
-    pivot: {x: 0.50595236, y: -0.4463277}
+    pivot: {x: 0.50595236, y: -0.431694}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 559
+      y: 203
       width: 168
-      height: 177
+      height: 183
     spriteID: 84547b609c5b9574a8911fcbe893eac6
     spriteBone: []
     spriteOutline: []
@@ -200,18 +200,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 559}
+    uvTransform: {x: 4, y: 203}
   - name: bossdmgtaken_Frame_4
     originalName: 
-    pivot: {x: 0.50595236, y: -0.4463277}
+    pivot: {x: 0.50595236, y: -0.41361257}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 744
+      y: 4
       width: 168
-      height: 177
+      height: 191
     spriteID: ff03cf17b34cc3544b1c193f6c003ba9
     spriteBone: []
     spriteOutline: []
@@ -220,7 +220,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 744}
+    uvTransform: {x: 4, y: 4}
   - name: bossdmgtaken_Frame_5
     originalName: 
     pivot: {x: 0.50595236, y: -0.4463277}
@@ -280,7 +280,7 @@ ScriptedImporter:
         x: 50
         y: 79
         width: 168
-        height: 177
+        height: 183
       spriteId: 84547b609c5b9574a8911fcbe893eac6
     - name: bossdmgtaken_Frame_4
       frameIndex: 4
@@ -288,7 +288,7 @@ ScriptedImporter:
         x: 50
         y: 79
         width: 168
-        height: 177
+        height: 191
       spriteId: ff03cf17b34cc3544b1c193f6c003ba9
     - name: bossdmgtaken_Frame_5
       frameIndex: 5
