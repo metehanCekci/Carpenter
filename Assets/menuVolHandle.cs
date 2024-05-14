@@ -18,7 +18,7 @@ public class menuVolHandle : MonoBehaviour
         if (mixer != null)
             foreach(string name in mixnames)
             {
-                float savedValue = PlayerPrefs.GetFloat(name);
+                float savedValue = PlayerPrefs.GetFloat(name,100f);
                 mixer.SetFloat(name, Mathf.Log(savedValue) * 20f);
                 Debug.Log("Volume Set");
             }

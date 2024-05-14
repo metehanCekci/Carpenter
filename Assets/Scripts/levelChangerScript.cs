@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class levelChangerScript : MonoBehaviour
 {
     public Animator animator;
-
+    
     private int levelToLoad;
     private void Start()
     {
@@ -25,6 +25,7 @@ public class levelChangerScript : MonoBehaviour
     }
     public void onFadeComplete()
     {
+
         SceneManager.LoadScene(levelToLoad);
     }
 }

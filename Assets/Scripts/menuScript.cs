@@ -8,7 +8,7 @@ public class menuScript : MonoBehaviour
 {
     private bool isPaused = false;
     private bool bittimi = false;
-    //amo
+    //amo { apo >:(( }
     public GameObject menu;
     public GameObject player;
     public GameObject ayarlar;
@@ -37,8 +37,8 @@ public class menuScript : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex != 0)
         {
             menu.SetActive(false);
-            Time.timeScale = 1f;
-            isPaused = false;
+            
+            
             player = GameObject.FindGameObjectWithTag("Player");
         }
     }
@@ -53,6 +53,8 @@ public class menuScript : MonoBehaviour
     }
     public void escape()
     {
+        
+        
         if (isPaused)
         {
             resume();
@@ -171,31 +173,36 @@ public class menuScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Keypad1))
+        switch (Input.inputString)
         {
-            SceneManager.LoadScene("Start");
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad2))
-        {
-            SceneManager.LoadScene("Foundy");
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad3))
-        {
-            SceneManager.LoadScene("ChinaTowny");
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad4))
-        {
-            SceneManager.LoadScene("Facilty");
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad5))
-        {
-            SceneManager.LoadScene("Boss");
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad0))
-        {
-            SceneManager.LoadScene("mainMenu");
+            case "1":
+                LoadScene("Start");
+                break;
+            case "2":
+                LoadScene("Foundy");
+                break;
+            case "3":
+                LoadScene("ChinaTowny");
+                break;
+            case "4":
+                LoadScene("Facilty");
+                break;
+            case "5":
+                LoadScene("Boss");
+                break;
+            case "0":
+                LoadScene("mainMenu");
+                break;
+            default:
+                break;
         }
     }
+
+    void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
     public void restart()
     {
 
