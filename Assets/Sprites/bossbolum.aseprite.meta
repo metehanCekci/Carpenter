@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bdb966284d3c914c9575889691fa30b
+guid: 55c97361fe9694a4cb52b6e4e97ef6da
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: icon_Frame_0
+  - name: bossbolum
     originalName: 
-    pivot: {x: 0.516129, y: 0}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 124
-      height: 119
-    spriteID: 9ba9262948b17b544995661d9cea2330
+      width: 153
+      height: 180
+    spriteID: 84dc90dd9d557444393beb22b112d514
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,24 +144,24 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1091637551
-    name: icon
+    guid: -121065874
+    name: bossbolum
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: icon
+    - name: bossbolum
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 124
-        height: 119
-      spriteId: 9ba9262948b17b544995661d9cea2330
+        width: 153
+        height: 180
+      spriteId: 84dc90dd9d557444393beb22b112d514
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 153, y: 180}
