@@ -24,10 +24,9 @@ public class sliderScript : MonoBehaviour
     {
         // Load the saved slider value from PlayerPrefs
         float savedValue = PlayerPrefs.GetFloat(volumeName, defaultValue);
-        volumeLabel.text = Mathf.Round(savedValue * 100.0f).ToString() + "%";
         slider.value = savedValue;
-        
 
+        UpdateValueOnChange(slider.value);
         // Add listener to the slider value change event
         slider.onValueChanged.AddListener(delegate
         {
