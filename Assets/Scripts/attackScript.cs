@@ -35,17 +35,19 @@ public class attackScript : MonoBehaviour
 
     void Update()
     {
-        /**if (!gamePaused && Input.GetMouseButtonDown(0))
+        /*
+        if (!gamePaused && Input.GetMouseButtonDown(0))
         {
             anim.SetBool("isAttacking", true);
             attacking = true;
-        }**/
+        }
 
-        /**if (!gamePaused && Input.GetMouseButtonDown(1) && parryable && !parryActive)
+        if (!gamePaused && Input.GetMouseButtonDown(1) && parryable && !parryActive)
         {
             Debug.Log("Naber");
             StartCoroutine(Parry()); //a
-        }**/
+        }
+        */
     }
 
 
@@ -72,10 +74,10 @@ public class attackScript : MonoBehaviour
     public void attackInput()
     {
                 if (!gamePaused)
-        {
-            anim.SetBool("isAttacking", true);
-            attacking = true;
-        }
+                {
+                    anim.SetBool("isAttacking", true);
+                    attacking = true;
+                }
     }
 
     public void attack()

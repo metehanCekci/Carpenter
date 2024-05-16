@@ -39,14 +39,14 @@ public class BossAi : MonoBehaviour
 
     public void startFight()
     {
-        StartCoroutine(startAttack());
+        StartCoroutine(startAttack()); // nabuyo bu adam
     }
 
     IEnumerator startAttack()
     {
         yield return new WaitForSeconds(4);
         randomizeAttack();
-        StartCoroutine(startAttack());
+        //StartCoroutine(startAttack()); --------------> dafuk?
 
     }
 
@@ -54,13 +54,32 @@ public class BossAi : MonoBehaviour
     {
 
         int randomNumber = Random.Range(1, 7);
-
+        /*
         if (randomNumber == 1) lazerAttack();
         else if (randomNumber == 2) StartCoroutine(mermiAttack());
         else if (randomNumber == 3) StartCoroutine(dikenAttack());
         else if (randomNumber == 4) StartCoroutine(sawAttack());
         else if (randomNumber == 5) followingBullet();
+        switch case ile halledilir*/
 
+        switch (randomNumber)
+        {
+            case 1:
+                lazerAttack();
+                break;
+            case 2:
+                StartCoroutine(mermiAttack());
+                break;
+            case 3:
+                StartCoroutine(dikenAttack());
+                break;
+            case 4:
+                StartCoroutine(sawAttack());
+                break;
+            case 5:
+                followingBullet();
+                break;
+        }
 
     }
 
@@ -77,19 +96,16 @@ public class BossAi : MonoBehaviour
         exclama2.SetActive(true);
         yield return new WaitForSeconds(2);
         exclama2.SetActive(false);
-        bulletSpawner.spawnBullet();
-        bulletSpawner2.spawnBullet();
-        yield return new WaitForSeconds(bulletTimer);
-        bulletSpawner.spawnBullet();
-        bulletSpawner2.spawnBullet();
-        yield return new WaitForSeconds(bulletTimer);
-        bulletSpawner.spawnBullet();
-        bulletSpawner2.spawnBullet();
-        yield return new WaitForSeconds(bulletTimer);
-        bulletSpawner.spawnBullet();
-        bulletSpawner2.spawnBullet();
-        yield return new WaitForSeconds(bulletTimer);
-        if (hardmode)
+        for(int i = 0; i<=4; i++)
+        {
+            Debug.Log(i);
+            bulletSpawner.spawnBullet();
+            bulletSpawner2.spawnBullet();
+            yield return new WaitForSeconds(bulletTimer);
+        }        
+       
+        /* Yukarýdaki ile ayný iþlev?
+        if (hardmode) 
         {
             bulletSpawner.spawnBullet();
             bulletSpawner2.spawnBullet();
@@ -104,6 +120,7 @@ public class BossAi : MonoBehaviour
             bulletSpawner2.spawnBullet();
             yield return new WaitForSeconds(bulletTimer);
         }
+        */
 
     }
 
