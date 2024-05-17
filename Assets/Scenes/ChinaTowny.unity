@@ -134575,6 +134575,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 598377730459791573, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3803120995913780079, guid: 6931ce2858bd25943907e43f34469040, type: 3}
       propertyPath: m_LocalPosition.x
       value: 563.02783
@@ -134620,8 +134624,32 @@ PrefabInstance:
       value: levelChanger
       objectReference: {fileID: 0}
     - target: {fileID: 5421066351707349700, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421066351707349700, guid: 6931ce2858bd25943907e43f34469040, type: 3}
       propertyPath: m_TagString
       value: levelChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5645920703731925771, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737363509892317055, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 71260693}
+    - target: {fileID: 7737363509892317055, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737363509892317055, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1184918199
+      objectReference: {fileID: 0}
+    - target: {fileID: 7737363509892317055, guid: 6931ce2858bd25943907e43f34469040, type: 3}
+      propertyPath: m_UpdateRectTransformForStandalone
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -7,7 +7,7 @@ using UnityEngine.UIElements.Experimental;
 public class menuScript : MonoBehaviour
 {
     private bool isPaused = false;
-    private bool bittimi = false;
+   // private bool bittimi = false;
     //amo { apo >:(( }
     public GameObject menu;
     public GameObject player;
