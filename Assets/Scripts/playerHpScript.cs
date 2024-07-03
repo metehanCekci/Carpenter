@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class playerHpScript : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class playerHpScript : MonoBehaviour
     public SFXLoader sfx;
     public float IFrameDuration = 0.5f;
     public GameObject died;
+    public GameObject diedSelected;
     public Rigidbody2D rb;
 
     public bool takeNoDamage = false;
@@ -30,6 +32,7 @@ public class playerHpScript : MonoBehaviour
         {
             Time.timeScale = 0.0f;
             died.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(diedSelected);
         }
 
         if (Input.GetKeyDown(KeyCode.Backspace))

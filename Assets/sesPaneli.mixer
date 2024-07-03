@@ -14,6 +14,7 @@ AudioMixerGroupController:
   m_Pitch: 12b13a9ccce46a846a0aefb30470b3f6
   m_Send: 00000000000000000000000000000000
   m_Effects:
+  - {fileID: -4577315228987263864}
   - {fileID: 7816721338609237480}
   m_UserColorIndex: 0
   m_Mute: 0
@@ -38,6 +39,26 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-4577315228987263864
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: b80e888ff411ea64baae0ec3f87a8333
+  m_EffectName: ParamEQ
+  m_MixLevel: 14bfa6a88450be5478f6369f2e9d6f68
+  m_Parameters:
+  - m_ParameterName: Center freq
+    m_GUID: ab4e73f26ee40a04ca303bbbfbb5d24a
+  - m_ParameterName: Octave range
+    m_GUID: dc64d63d4bb920c4dbcd79b926593aba
+  - m_ParameterName: Frequency gain
+    m_GUID: 7619edf7ee852b94b9b1680690d92825
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &-3758356059789958347
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -74,6 +95,8 @@ AudioMixerController:
     name: Master
   - guid: 0d911c6b197c8814dbc560f61f8a80b7
     name: Muzik
+  - guid: 12b13a9ccce46a846a0aefb30470b3f6
+    name: muzikPitch
   m_AudioMixerGroupViews:
   - guids:
     - be6135e40323acf42bc003c95ec2647f
@@ -126,7 +149,9 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 74328fcf078255f4da79d68e9772a7d8
-  m_FloatValues: {}
+  m_FloatValues:
+    0d911c6b197c8814dbc560f61f8a80b7: 0
+    12b13a9ccce46a846a0aefb30470b3f6: 1
   m_TransitionOverrides: {}
 --- !u!244 &7816721338609237480
 AudioMixerEffectController:

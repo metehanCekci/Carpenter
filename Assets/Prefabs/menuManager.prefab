@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5310038595308711411
 Transform:
   m_ObjectHideFlags: 0
@@ -46,3 +46,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 0}
   player: {fileID: 0}
+  ayarlar: {fileID: 0}
+  anaMenu: {fileID: 0}
+  easterEgg: {fileID: 0}
+  hardLevelSelect: {fileID: 0}
+  mainMenuSelected: {fileID: 0}
+  pauseMenuSelected: {fileID: 0}
+  diedMenuSelected: {fileID: 0}
+  settingsMenuSelected: {fileID: 0}
+  button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
+  button4: {fileID: 0}
+  button5: {fileID: 0}
+  button6: {fileID: 0}
+  button7: {fileID: 0}
+  button8: {fileID: 0}
+  button9: {fileID: 0}
+  button10: {fileID: 0}

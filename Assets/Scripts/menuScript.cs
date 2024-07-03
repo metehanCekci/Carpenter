@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements.Experimental;
 
@@ -15,6 +16,10 @@ public class menuScript : MonoBehaviour
     public GameObject anaMenu;
     public GameObject easterEgg;
     public GameObject hardLevelSelect;
+
+    public GameObject mainMenuSelected;
+    public GameObject pauseMenuSelected;
+    public GameObject settingsMenuSelected;
 
     public GameObject button1;
     public GameObject button2;
@@ -53,8 +58,6 @@ public class menuScript : MonoBehaviour
     }
     public void escape()
     {
-        
-        
         if (isPaused)
         {
             resume();
@@ -64,6 +67,7 @@ public class menuScript : MonoBehaviour
         {
             pause();
             player.GetComponent<attackScript>().SetGamePaused(true);
+            EventSystem.current.SetSelectedGameObject(pauseMenuSelected);
         }
     }
     public void quitGame()
@@ -78,6 +82,7 @@ public class menuScript : MonoBehaviour
     {
         ayarlar.SetActive(true);
         anaMenu.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(settingsMenuSelected);
     }
     public void resume()
     {
@@ -95,6 +100,7 @@ public class menuScript : MonoBehaviour
     {
         ayarlar.SetActive(false);
         anaMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(pauseMenuSelected);
     }
     public void eggCikar()
     {

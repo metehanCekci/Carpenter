@@ -31,10 +31,7 @@ public class bulletScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            
-            attackScript.GetComponent<attackScript>().parryable = true;
-            Debug.Log("parry true");
-            beklet();
+     
             phs = other.transform.GetComponent<playerHpScript>();
             if (other.gameObject.layer == 8)
             {
@@ -44,9 +41,7 @@ public class bulletScript : MonoBehaviour
                 Destroy(gameObject);
                 
 
-            }
-            
-
+            }         
         }
                 else if(other.gameObject.layer == 6)
         {
@@ -59,11 +54,5 @@ public class bulletScript : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-    }
-    
-    IEnumerator beklet()
-    {
-        yield return new WaitForSeconds(120);
-        Debug.Log("parry bekletildi");
     }
 }
