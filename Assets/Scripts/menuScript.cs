@@ -8,7 +8,7 @@ using UnityEngine.UIElements.Experimental;
 public class menuScript : MonoBehaviour
 {
     private bool isPaused = false;
-    private bool bittimi = false;
+   // private bool bittimi = false;
     //amo { apo >:(( }
     public GameObject menu;
     public GameObject player;
@@ -54,7 +54,9 @@ public class menuScript : MonoBehaviour
     }
     public void returnMainMenu()
     {
-        SceneManager.LoadScene(0);
+        if(SceneManager.GetActiveScene().buildIndex == 0) hardLevelSelect.SetActive(false);
+        else SceneManager.LoadScene(0);
+            
     }
     public void escape()
     {
