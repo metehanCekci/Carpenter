@@ -105,6 +105,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +127,7 @@ ScriptedImporter:
     pivot: {x: 0.51724136, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 89
@@ -146,6 +148,7 @@ ScriptedImporter:
     pivot: {x: 0.5185185, y: -0.21739131}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 89
@@ -166,6 +169,7 @@ ScriptedImporter:
     pivot: {x: 0.54838705, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -186,6 +190,7 @@ ScriptedImporter:
     pivot: {x: 0.5666667, y: -0.29545456}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -206,6 +211,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.26666668}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -226,6 +232,7 @@ ScriptedImporter:
     pivot: {x: 0.46875, y: -0.29545456}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -246,6 +253,7 @@ ScriptedImporter:
     pivot: {x: 0.54838705, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -266,6 +274,7 @@ ScriptedImporter:
     pivot: {x: 0.5185185, y: -0.22222222}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 89
@@ -286,6 +295,7 @@ ScriptedImporter:
     pivot: {x: 0.4848485, y: -0.22222222}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -306,6 +316,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.25}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -326,6 +337,7 @@ ScriptedImporter:
     pivot: {x: 0.51428574, y: -0.30952382}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -350,88 +362,99 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: foe_walk_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 17
         y: 11
         width: 29
         height: 45
       spriteId: dcc6d1c1bec02f248b516e82562e5237
-    - name: foe_walk_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 18
         y: 10
         width: 27
         height: 46
       spriteId: 0b346a1ec5bdf1245b1a1f4376655e90
-    - name: foe_walk_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 31
         height: 45
       spriteId: 19495c992136b1d499cd0c30858fd46b
-    - name: foe_walk_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 13
         width: 30
         height: 44
       spriteId: 26a561358a2fb554e8c4d6a6a9ef5e67
-    - name: foe_walk_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 12
         width: 34
         height: 45
       spriteId: d3dd78b2e1c51e3488bd65e7908f26b6
-    - name: foe_walk_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 17
         y: 13
         width: 32
         height: 44
       spriteId: 8ad87f0da5fe7cd4da8a5b42b0cb3e90
-    - name: foe_walk_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 31
         height: 45
       spriteId: f18ee5dc13791e945b2e7ee46f032423
-    - name: foe_walk_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 18
         y: 10
         width: 27
         height: 45
       spriteId: 39599e5702e77cd478864d64d7c54212
-    - name: foe_walk_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 10
         width: 33
         height: 45
       spriteId: a1fbc804460dd3143bc8c3387fe8762a
-    - name: foe_walk_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 44
       spriteId: b4a61e183ab276a4cb39aaa6e528a559
-    - name: foe_walk_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 14
         y: 13

@@ -105,6 +105,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +127,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.23913044}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -146,6 +148,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.23913044}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -166,6 +169,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.23913044}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -186,6 +190,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.23913044}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -206,6 +211,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.23913044}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -226,6 +232,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -246,6 +253,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -266,6 +274,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -286,6 +295,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 88
@@ -306,6 +316,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.24444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 88
@@ -330,80 +341,90 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: foe_idle_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 46
       spriteId: c1ac20fbedf79c943900d05a4bd004cf
-    - name: foe_idle_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 46
       spriteId: 3566af04e3b73a240ada38edeec8608a
-    - name: foe_idle_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 46
       spriteId: d162b9e18ff0d3a4fa88405eb0df9a1b
-    - name: foe_idle_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 46
       spriteId: 7c2615b405e2efc428c6edb21515a5b2
-    - name: foe_idle_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 46
       spriteId: 5fb515b9bd3001b4b855ba0cb89ea566
-    - name: foe_idle_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 45
       spriteId: 667a857be8cf15945ad60748c6fe4c5a
-    - name: foe_idle_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 45
       spriteId: f5f1cabfcdf563d46bf52ab5397ece95
-    - name: foe_idle_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 45
       spriteId: fbff6bbbd402e4040a45dca1218809d8
-    - name: foe_idle_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11
         width: 34
         height: 45
       spriteId: 091af185981537041b74a8df51b075d3
-    - name: foe_idle_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 11

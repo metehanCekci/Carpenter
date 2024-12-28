@@ -105,6 +105,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -123,15 +124,16 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: parry_Frame_0
     originalName: 
-    pivot: {x: 0.94117653, y: 0}
+    pivot: {x: 0.5357143, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 85
-      width: 51
-      height: 83
+      y: 4
+      width: 28
+      height: 55
     spriteID: 9c3be7536b2aee34b8ef92cde456371d
     spriteBone: []
     spriteOutline: []
@@ -140,18 +142,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 85}
+    uvTransform: {x: 4, y: 4}
   - name: parry_Frame_1
     originalName: 
-    pivot: {x: 0.779661, y: 0}
+    pivot: {x: 0.51724136, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
-      width: 59
-      height: 73
+      y: 67
+      width: 29
+      height: 53
     spriteID: dd9c9fb70665a324eac234af395dd211
     spriteBone: []
     spriteOutline: []
@@ -160,67 +163,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
-  - name: parry_Frame_2
-    originalName: 
-    pivot: {x: 0.9183673, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 176
-      width: 49
-      height: 58
-    spriteID: 00008a4fab51fea499010929f442c849
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 176}
-  - name: parry_Frame_3
-    originalName: 
-    pivot: {x: 0.8378379, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 71
-      y: 94
-      width: 37
-      height: 67
-    spriteID: acfc332a8fdbbd64a9aad6753d5660f2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 71, y: 94}
-  - name: parry_Frame_4
-    originalName: 
-    pivot: {x: 0.6888889, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 71
-      y: 4
-      width: 45
-      height: 82
-    spriteID: d95185e971e991a488ba6bd50585a831
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 71, y: 4}
+    uvTransform: {x: 4, y: 67}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -230,50 +173,28 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: parry_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
-        x: 16
+        x: 17
         y: 0
-        width: 51
-        height: 83
+        width: 28
+        height: 55
       spriteId: 9c3be7536b2aee34b8ef92cde456371d
-    - name: parry_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
-        x: 18
+        x: 17
         y: 0
-        width: 59
-        height: 73
+        width: 29
+        height: 53
       spriteId: dd9c9fb70665a324eac234af395dd211
-    - name: parry_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 19
-        y: 0
-        width: 49
-        height: 58
-      spriteId: 00008a4fab51fea499010929f442c849
-    - name: parry_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 33
-        y: 0
-        width: 37
-        height: 67
-      spriteId: acfc332a8fdbbd64a9aad6753d5660f2
-    - name: parry_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 33
-        y: 0
-        width: 45
-        height: 82
-      spriteId: d95185e971e991a488ba6bd50585a831
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 64, y: 64}

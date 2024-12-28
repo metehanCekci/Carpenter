@@ -105,6 +105,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +127,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 196
@@ -146,6 +148,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4293478}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -166,6 +169,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 196
@@ -186,6 +190,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 196
@@ -206,6 +211,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 196
@@ -226,6 +232,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 196
@@ -246,6 +253,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 372
@@ -266,6 +274,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 372
@@ -286,6 +295,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.42702702}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -306,6 +316,7 @@ ScriptedImporter:
     pivot: {x: 0.54347825, y: -0.41361257}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -326,6 +337,7 @@ ScriptedImporter:
     pivot: {x: 0.54347825, y: -0.41361257}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -346,6 +358,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.42702702}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -366,6 +379,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 372
@@ -386,6 +400,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.4463277}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 372
@@ -410,112 +425,126 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: bossyukselis_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 177
       spriteId: acd8c8b4fb550914ab226f54de18cbe7
-    - name: bossyukselis_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 184
       spriteId: 4c309c44712ad8b4198f39b7de650eec
-    - name: bossyukselis_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 177
       spriteId: 1c1dbb20a0798014cb7fdc7e7ec85a4b
-    - name: bossyukselis_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 177
       spriteId: 6d1c177dbc71a3f47b9a9b29dedebd6c
-    - name: bossyukselis_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 177
       spriteId: 00fb637e7eead934b899a621c1ce28d7
-    - name: bossyukselis_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 177
       spriteId: 99b421905ca9207439bb8aaa752e96fc
-    - name: bossyukselis_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 177
       spriteId: 7ad45700216a92a49a710083c2b67bfb
-    - name: bossyukselis_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 177
       spriteId: 6d19d2740fe403946835d4481f492855
-    - name: bossyukselis_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 185
       spriteId: 93d1292c1c9cc004baffc99e8356bae3
-    - name: bossyukselis_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 35
         y: 79
         width: 184
         height: 191
       spriteId: 928e8293f87ce274b9a007da4a7622de
-    - name: bossyukselis_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 35
         y: 79
         width: 184
         height: 191
       spriteId: 03cac7f750d66a640adeea48eef5a9a5
-    - name: bossyukselis_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 185
       spriteId: e1460acc5146b824bb55d18461ca8ff7
-    - name: bossyukselis_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79
         width: 168
         height: 177
       spriteId: 8b447d37a303b4441b66553fb45b266b
-    - name: bossyukselis_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 79

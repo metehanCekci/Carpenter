@@ -53,7 +53,7 @@ public class movementScript : MonoBehaviour
 
 
 
-        if (rb.velocity.y <= 0)
+        if (rb.linearVelocity.y <= 0)
         {
             animator.SetBool("isFalling", true);
             animator.SetBool("isJumping", false);
@@ -66,7 +66,7 @@ public class movementScript : MonoBehaviour
 
 
 
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
 
         
 
@@ -98,13 +98,13 @@ public class movementScript : MonoBehaviour
         if (context.performed && isGrounded())
         {
             if (gravCheck.GravChanged)
-                rb.velocity = new Vector2(rb.velocity.x, jumpingPower * -1);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower * -1);
             else
-                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
         }
-        if (context.canceled && rb.velocity.y > 0f)
+        if (context.canceled && rb.linearVelocity.y > 0f)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
     }
 
@@ -191,7 +191,7 @@ public class movementScript : MonoBehaviour
                 Vector3 targetPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
 
                 // Perform the dash with physics
-                rb.velocity = new Vector2(transform.localScale.x * Dashpower, 0f);
+                rb.linearVelocity = new Vector2(transform.localScale.x * Dashpower, 0f);
 
                 // Use a RaycastHit2D to check for collisions during the dash
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, Vector3.Distance(transform.position, targetPosition), LayerMask.GetMask("ObstacleLayer"));
@@ -218,7 +218,7 @@ public class movementScript : MonoBehaviour
                 Vector3 targetPosition = transform.position + new Vector3(1f * transform.localScale.x, 0f, 0f);
 
                 // Perform the dash with physics (negating x component for inverted dash)
-                rb.velocity = new Vector2(transform.localScale.x * -Dashpower * 2, 0f);
+                rb.linearVelocity = new Vector2(transform.localScale.x * -Dashpower * 2, 0f);
 
                 // Use a RaycastHit2D to check for collisions during the dash
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, Vector3.Distance(transform.position, targetPosition), LayerMask.GetMask("ObstacleLayer"));
@@ -251,7 +251,7 @@ public class movementScript : MonoBehaviour
 
 
 
-            rb.velocity = new Vector2(0f, rb.velocity.y);
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
 
             yield return new WaitForSeconds(dashingCooldown);
             cDash = false;

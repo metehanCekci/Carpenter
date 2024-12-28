@@ -105,6 +105,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +127,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.36723167}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 181
@@ -146,6 +148,7 @@ ScriptedImporter:
     pivot: {x: 0.50595236, y: -0.37356323}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -166,6 +169,7 @@ ScriptedImporter:
     pivot: {x: 0.5088757, y: -0.3483146}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -190,24 +194,27 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: bossZoridle_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 65
         width: 168
         height: 177
       spriteId: 79605751a539404479170b619e775e1c
-    - name: bossZoridle_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 50
         y: 65
         width: 168
         height: 174
       spriteId: 723703ee11bbf8f4d968745fa370e3fa
-    - name: bossZoridle_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 49
         y: 62
